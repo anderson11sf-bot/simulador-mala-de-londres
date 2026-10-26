@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hub Estratégico & Simulador — Lançamento Semente: A Mala de Londres</title>
+    <title>Hub Estratégico & Simulador — Mala de Londres: Cultura e Idioma</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,12 +38,6 @@
             font-family: 'Inter', sans-serif;
             overflow-x: hidden;
         }
-        .ticket-border {
-            background-image: radial-gradient(circle at 0 50%, transparent 8px, #1C2541 9px), radial-gradient(circle at 100% 50%, transparent 8px, #1C2541 9px);
-            background-position: 0 0, 100% 0;
-            background-size: 51% 100%;
-            background-repeat: no-repeat;
-        }
         .pulse-emerald {
             animation: pulse-green 2s infinite;
         }
@@ -63,7 +57,7 @@
     <!-- Toast Notification for Copy Actions -->
     <div id="toast" class="fixed bottom-5 right-5 z-50 hidden bg-british-emerald text-slate-950 font-bold px-5 py-3 rounded-xl shadow-2xl border border-emerald-300 flex items-center gap-2 transition-all duration-300">
         <span>✅</span>
-        <span id="toast-msg">Copy copiada para a área de transferência!</span>
+        <span id="toast-msg">Copiado para a área de transferência!</span>
     </div>
 
     <!-- Top Sticky Header & Navigation (7 Tabs) -->
@@ -72,40 +66,40 @@
             <div class="flex flex-col md:flex-row md:items-center md:justify-between py-3 gap-3">
                 <div class="flex items-center justify-between">
                     <div class="flex items-center gap-3">
-                        <span class="bg-british-red text-white font-display font-bold px-2.5 py-1 rounded text-xs tracking-wider uppercase">UK SEED LAUNCH 2.0</span>
+                        <span class="bg-british-red text-white font-display font-bold px-2.5 py-1 rounded text-xs tracking-wider uppercase">TURMA FUNDADORA</span>
                         <div>
-                            <h1 class="text-base sm:text-lg font-extrabold tracking-tight text-white">A MALA DE LONDRES <span class="text-amber-400 font-normal text-sm">• Marcos Lobão</span></h1>
-                            <p class="text-xs text-slate-400">Posicionamento de Alto Valor (Sem "Grátis") + Transparência do Produto Completo</p>
+                            <h1 class="text-base sm:text-lg font-extrabold tracking-tight text-white">MALA DE LONDRES: CULTURA E IDIOMA <span class="text-amber-400 font-normal text-sm">• Marcos Lobão</span></h1>
+                            <p class="text-xs text-slate-400">Treinamento de Conversação para quem já estudou e trava na hora de falar</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Active ROMA & Mode Preview Pill -->
+                <!-- Active ROMA & Live Webinar Badge -->
                 <div class="hidden lg:flex items-center gap-3 bg-slate-900/90 border border-slate-700/80 px-3.5 py-1.5 rounded-lg max-w-xl">
-                    <span id="header-mode-badge" class="text-[10px] font-extrabold uppercase bg-amber-500/20 text-amber-300 border border-amber-500/40 px-2 py-0.5 rounded shrink-0">Modo: Acesso Convidado (R$ 197 → R$ 0)</span>
-                    <p id="header-roma-preview" class="text-xs text-slate-200 truncate font-semibold">Destrave o inglês da sua próxima viagem sem decorar uma única regra.</p>
+                    <span class="text-[10px] font-extrabold uppercase bg-amber-500/20 text-amber-300 border border-amber-500/40 px-2 py-0.5 rounded shrink-0">Webinário: Quarta, 11/11 • 20h</span>
+                    <p id="header-roma-preview" class="text-xs text-slate-200 truncate font-semibold">Eu te ajudo a destravar o seu inglês e falar com confiança em 90 dias.</p>
                 </div>
             </div>
 
             <!-- 7 Navigation Tabs -->
             <nav class="flex items-center gap-1.5 overflow-x-auto pb-2.5 pt-1 no-scrollbar" aria-label="Navegação Principal">
                 <button onclick="switchTab('tab-roma')" id="btn-tab-roma" class="tab-btn shrink-0 px-3 py-2 rounded-lg text-xs font-bold transition-all bg-british-red text-white shadow-lg">
-                    🎯 1. Nova ROMA & Valor
+                    🎯 1. Nova ROMA & Posicionamento
                 </button>
                 <button onclick="switchTab('tab-ads')" id="btn-tab-ads" class="tab-btn shrink-0 px-3 py-2 rounded-lg text-xs font-semibold transition-all bg-slate-800/80 text-slate-300 hover:bg-slate-700">
                     📢 2. Criativos (Ads)
                 </button>
                 <button onclick="switchTab('tab-lp')" id="btn-tab-lp" class="tab-btn shrink-0 px-3 py-2 rounded-lg text-xs font-semibold transition-all bg-slate-800/80 text-slate-300 hover:bg-slate-700">
-                    💻 3. LP de Captura (Simulador)
+                    💻 3. LP de Captura & Quiz (Simulador)
                 </button>
                 <button onclick="switchTab('tab-wa')" id="btn-tab-wa" class="tab-btn shrink-0 px-3 py-2 rounded-lg text-xs font-semibold transition-all bg-slate-800/80 text-slate-300 hover:bg-slate-700">
-                    📲 4. Obrigado & WhatsApp
+                    📲 4. Obrigado & WhatsApp (Bastidores Savoy)
                 </button>
                 <button onclick="switchTab('tab-live')" id="btn-tab-live" class="tab-btn shrink-0 px-3 py-2 rounded-lg text-xs font-semibold transition-all bg-slate-800/80 text-slate-300 hover:bg-slate-700">
-                    🔴 5. Sala da Live & Roteiro
+                    🔴 5. Sala da Live (11/11 • 20h)
                 </button>
                 <button onclick="switchTab('tab-sales')" id="btn-tab-sales" class="tab-btn shrink-0 px-3 py-2 rounded-lg text-xs font-semibold transition-all bg-slate-800/80 text-slate-300 hover:bg-slate-700">
-                    🛒 6. Vendas, Downsell & OTO
+                    🛒 6. Oferta Turma Fundadora
                 </button>
                 <button onclick="switchTab('tab-design')" id="btn-tab-design" class="tab-btn shrink-0 px-3 py-2 rounded-lg text-xs font-semibold transition-all bg-slate-800/80 text-slate-300 hover:bg-slate-700">
                     🎨 7. Ideias de Design (UI/UX)
@@ -118,7 +112,7 @@
     <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
 
         <!-- ==========================================
-             ABA 1: NOVA ROMA, POSICIONAMENTO SEM "GRÁTIS" & TRANSPARÊNCIA
+             ABA 1: NOVA ROMA, POSICIONAMENTO E ALINHAMENTO
              ========================================== -->
         <section id="tab-roma" class="tab-pane space-y-8">
             <!-- Strategic Upgrade Banner -->
@@ -126,362 +120,204 @@
                 <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
                     <div class="space-y-2.5 max-w-3xl">
                         <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30">
-                            💎 VIRADA DE CHAVE: ALTO VALOR PERCEBIDO + TRANSPARÊNCIA TOTAL
+                            🇬🇧 ALINHAMENTO OFICIAL: CULTURA E IDIOMA (SEM CURSO DE VIAGEM)
                         </span>
                         <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-                            Por que eliminar a palavra "Grátis" e avisar que haverá um Produto Completo multiplica suas vendas
+                            Mala de Londres: Para quem já estudou inglês e trava na hora de falar
                         </h2>
                         <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
-                            Quando você diz <em>"Aula 100% Gratuita"</em>, o cérebro humano associa a algo raso e atrai curiosos que se sentem "enganados" na hora do pitch. Na nova estratégia abaixo, nós <strong>ancoramos o valor real da aula</strong>, garantimos que o inscrito <strong>ganhe uma habilidade + ferramenta prática durante a aula</strong> e avisamos com total transparência que <strong>haverá uma condição especial de baixo investimento para o programa completo no final</strong>.
+                            O <strong>Mala de Londres: Cultura e Idioma</strong> não é um cursinho de sobrevivência para turismo. É um treinamento focado no adulto que já fez anos de cursinho tradicional, entende livros e séries, mas na hora de conversar fica mudo, traduzindo mentalmente. O método une os <strong>Chunks de Linguagem</strong> à vivência cultural real dos anos em que Marcos Lobão trabalhou no <strong>Savoy Hotel em Londres</strong>.
                         </p>
                     </div>
                     <div class="shrink-0 flex flex-col sm:flex-row lg:flex-col gap-2.5">
                         <button onclick="switchTab('tab-lp')" class="px-5 py-3.5 rounded-xl bg-british-emerald text-slate-950 font-extrabold text-xs sm:text-sm hover:bg-emerald-400 transition shadow-lg">
-                            Ver Nova LP de Captura →
+                            Ver Quiz & Nova LP de Captura →
                         </button>
-                        <button onclick="switchTab('tab-design')" class="px-5 py-3 rounded-xl bg-slate-800 text-amber-300 font-bold text-xs sm:text-sm border border-slate-600 hover:bg-slate-700 transition">
-                            Ver Ideias Visuais de Design →
+                        <button onclick="switchTab('tab-sales')" class="px-5 py-3 rounded-xl bg-slate-800 text-amber-300 font-bold text-xs sm:text-sm border border-slate-600 hover:bg-slate-700 transition">
+                            Ver Oferta Turma Fundadora →
                         </button>
                     </div>
                 </div>
             </div>
 
-                        <!-- PASSO 1: ESCOLHA DA NOVA ROMA (10 OPÇÕES PERSUASIVAS PARA O PROFESSOR ESCOLHER) -->
+            <!-- PASSO 1: A ROMA OFICIAL + DESDOBRAMENTOS ESTRATÉGICOS -->
             <div class="space-y-4">
                 <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800 pb-3">
                     <div>
                         <h3 class="text-lg sm:text-xl font-extrabold text-white flex items-center gap-2">
-                            <span>🎯</span> 1. Escolha a Nova ROMA (10 Opções Altamente Persuasivas)
+                            <span>🎯</span> 1. A ROMA Oficial & Variações Estratégicas para o Professor
                         </h3>
                         <p class="text-xs sm:text-sm text-slate-400">
-                            Preparamos <strong>10 opções estratégicas</strong>: desde as mais curtas e diretas até as mais magnéticas e com mecanismo do Savoy Hotel. Clique em qualquer card para testar na Landing Page (Aba 3) em tempo real!
+                            A ROMA oficial definida é: <strong>"Eu te ajudo a destravar o seu inglês e falar com confiança em 90 dias."</strong> Clique em qualquer variação abaixo para testar diretamente na Landing Page (Aba 3)!
                         </p>
                     </div>
-                    <span class="text-xs text-amber-400 font-bold">⚡ Clique no card para testar no simulador</span>
+                    <span class="text-xs text-amber-400 font-bold">⚡ Clique no card para aplicar no simulador</span>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
-                    <!-- ROMA 1 -->
-                    <div id="roma-card-1" onclick="selectRoma(1)" class="cursor-pointer rounded-2xl p-4.5 border-2 border-british-emerald bg-slate-900 shadow-xl transition-all hover:scale-[1.01] flex flex-col justify-between space-y-3">
-                        <div class="space-y-2">
-                            <div class="flex items-center justify-between gap-1">
-                                <span class="px-2 py-0.5 rounded bg-amber-500/15 text-amber-300 font-extrabold text-[10px] border border-amber-500/30 uppercase">⭐ OPÇÃO 1 (11 PALAVRAS)</span>
-                                <span id="roma-status-1" class="text-[11px] font-bold text-emerald-400">✓ ATIVA NO SITE</span>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <!-- ROMA 1: Oficial -->
+                    <div id="roma-card-1" onclick="selectRoma(1)" class="cursor-pointer rounded-2xl p-5 bg-slate-900 border-2 border-british-emerald shadow-xl transition-all hover:scale-[1.01] flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between gap-2 mb-3">
+                                <span class="px-2.5 py-1 rounded bg-emerald-500/20 text-emerald-300 font-bold text-xs border border-emerald-500/40">⭐ ROMA OFICIAL</span>
+                                <span id="roma-status-1" class="text-xs font-bold text-emerald-400">✓ ATIVA NO SITE</span>
                             </div>
-                            <p class="text-[11px] uppercase tracking-wider text-slate-400 font-bold">Ultra-Curta & Sem Objeção</p>
-                            <h4 class="text-sm font-extrabold text-white leading-snug">
-                                "Destrave o inglês da sua próxima viagem sem decorar uma única regra."
+                            <p class="text-xs uppercase tracking-wider text-slate-400 font-semibold mb-1">Clara, Forte & Direta</p>
+                            <h4 class="text-lg font-extrabold text-white leading-snug mb-3">
+                                "Eu te ajudo a destravar o seu inglês e falar com confiança em 90 dias."
                             </h4>
-                            <p class="text-[11px] text-slate-300 leading-relaxed bg-slate-950/70 p-2.5 rounded-lg border border-slate-800">
-                                <strong class="text-amber-400">Gatilho:</strong> Leitura de 2 segundos no celular. Promete o resultado prático exato (destravar na viagem) e elimina imediatamente a maior dor de quem tem aversão a cursinhos de gramática.
+                            <p class="text-xs text-slate-300 leading-relaxed bg-slate-950/70 p-3 rounded-lg border border-slate-800">
+                                <strong>Por que é a oficial:</strong> Define quem ajuda (Marcos), o resultado imediato (destravar a fala), o sentimento final (confiança) e o horizonte de tempo exato (90 dias).
                             </p>
                         </div>
-                        <div class="pt-2.5 border-t border-slate-800 flex items-center justify-between text-xs">
-                            <button onclick="event.stopPropagation(); copyText('Destrave o inglês da sua próxima viagem sem decorar uma única regra.')" class="text-[11px] font-bold text-amber-400 hover:underline">
-                                📋 Copiar Frase
+                        <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between">
+                            <button onclick="event.stopPropagation(); copyText('Eu te ajudo a destravar o seu inglês e falar com confiança em 90 dias.')" class="text-xs font-bold text-amber-400 hover:underline">
+                                📋 Copiar ROMA Oficial
                             </button>
-                            <span class="text-[10px] text-slate-400 font-semibold">Testar na LP →</span>
+                            <span class="text-[11px] text-slate-400">Aplicada →</span>
                         </div>
                     </div>
-                    <!-- ROMA 2 -->
-                    <div id="roma-card-2" onclick="selectRoma(2)" class="cursor-pointer rounded-2xl p-4.5 border-2 border-slate-800 bg-slate-900/70 hover:border-slate-600 transition-all hover:scale-[1.01] flex flex-col justify-between space-y-3">
-                        <div class="space-y-2">
-                            <div class="flex items-center justify-between gap-1">
-                                <span class="px-2 py-0.5 rounded bg-amber-500/15 text-amber-300 font-extrabold text-[10px] border border-amber-500/30 uppercase">🛡️ OPÇÃO 2 (11 PALAVRAS)</span>
-                                <span id="roma-status-2" class="text-[11px] font-bold text-slate-500">Selecionar</span>
+
+                    <!-- ROMA 2: Foco em Quem Já Estudou -->
+                    <div id="roma-card-2" onclick="selectRoma(2)" class="cursor-pointer rounded-2xl p-5 bg-slate-900/70 border-2 border-slate-800 hover:border-slate-600 transition-all hover:scale-[1.01] flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between gap-2 mb-3">
+                                <span class="px-2.5 py-1 rounded bg-amber-500/20 text-amber-300 font-bold text-xs border border-amber-500/40">👥 SEGMENTAÇÃO</span>
+                                <span id="roma-status-2" class="text-xs font-bold text-slate-500">Selecionar</span>
                             </div>
-                            <p class="text-[11px] uppercase tracking-wider text-slate-400 font-bold">Segurança & Zero Vergonha</p>
-                            <h4 class="text-sm font-extrabold text-white leading-snug">
-                                "Viaje para o exterior com autonomia total e zero vergonha no inglês."
+                            <p class="text-xs uppercase tracking-wider text-slate-400 font-semibold mb-1">Para quem já sabe a gramática</p>
+                            <h4 class="text-lg font-extrabold text-white leading-snug mb-3">
+                                "Para você que já estudou inglês e ainda trava na hora de falar: destrave sua voz com confiança em 90 dias."
                             </h4>
-                            <p class="text-[11px] text-slate-300 leading-relaxed bg-slate-950/70 p-2.5 rounded-lg border border-slate-800">
-                                <strong class="text-amber-400">Gatilho:</strong> Ataca a ferida emocional mais comum: o medo de passar vergonha na frente dos outros ou parecer incapaz ao tentar falar fora do país.
+                            <p class="text-xs text-slate-300 leading-relaxed bg-slate-950/70 p-3 rounded-lg border border-slate-800">
+                                <strong>Poder de conversão:</strong> Exclui curiosos e atrai imediatamente quem já investiu em cursinhos e sente a frustração de não falar com fluência.
                             </p>
                         </div>
-                        <div class="pt-2.5 border-t border-slate-800 flex items-center justify-between text-xs">
-                            <button onclick="event.stopPropagation(); copyText('Viaje para o exterior com autonomia total e zero vergonha no inglês.')" class="text-[11px] font-bold text-amber-400 hover:underline">
-                                📋 Copiar Frase
+                        <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between">
+                            <button onclick="event.stopPropagation(); copyText('Para você que já estudou inglês e ainda trava na hora de falar: destrave sua voz com confiança em 90 dias.')" class="text-xs font-bold text-amber-400 hover:underline">
+                                📋 Copiar Variação 2
                             </button>
-                            <span class="text-[10px] text-slate-400 font-semibold">Testar na LP →</span>
+                            <span class="text-[11px] text-slate-400">Testar na LP →</span>
                         </div>
                     </div>
-                    <!-- ROMA 3 -->
-                    <div id="roma-card-3" onclick="selectRoma(3)" class="cursor-pointer rounded-2xl p-4.5 border-2 border-slate-800 bg-slate-900/70 hover:border-slate-600 transition-all hover:scale-[1.01] flex flex-col justify-between space-y-3">
-                        <div class="space-y-2">
-                            <div class="flex items-center justify-between gap-1">
-                                <span class="px-2 py-0.5 rounded bg-amber-500/15 text-amber-300 font-extrabold text-[10px] border border-amber-500/30 uppercase">📱 OPÇÃO 3 (12 PALAVRAS)</span>
-                                <span id="roma-status-3" class="text-[11px] font-bold text-slate-500">Selecionar</span>
+
+                    <!-- ROMA 3: Mecanismo Cultura & Idioma -->
+                    <div id="roma-card-3" onclick="selectRoma(3)" class="cursor-pointer rounded-2xl p-5 bg-slate-900/70 border-2 border-slate-800 hover:border-slate-600 transition-all hover:scale-[1.01] flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between gap-2 mb-3">
+                                <span class="px-2.5 py-1 rounded bg-rose-500/20 text-rose-300 font-bold text-xs border border-rose-500/40">🇬🇧 MECANISMO</span>
+                                <span id="roma-status-3" class="text-xs font-bold text-slate-500">Selecionar</span>
                             </div>
-                            <p class="text-[11px] uppercase tracking-wider text-slate-400 font-bold">Independência Pessoal</p>
-                            <h4 class="text-sm font-extrabold text-white leading-snug">
-                                "Nunca mais dependa do Google Tradutor ou de alguém para falar por você."
+                            <p class="text-xs uppercase tracking-wider text-slate-400 font-semibold mb-1">Cultura Real vs. Sala de Aula</p>
+                            <h4 class="text-lg font-extrabold text-white leading-snug mb-3">
+                                "O método prático de Cultura e Idioma de Londres para destravar o seu inglês e falar com confiança em 90 dias."
                             </h4>
-                            <p class="text-[11px] text-slate-300 leading-relaxed bg-slate-950/70 p-2.5 rounded-lg border border-slate-800">
-                                <strong class="text-amber-400">Gatilho:</strong> Mexe com a dignidade do viajante que odeia se sentir um fardo ou ficar "assistindo à viagem de fora" por não conseguir se comunicar sozinho.
+                            <p class="text-xs text-slate-300 leading-relaxed bg-slate-950/70 p-3 rounded-lg border border-slate-800">
+                                <strong>Poder de conversão:</strong> Destaca o diferencial da imersão londrina e dos bastidores do Savoy Hotel, mostrando que o aluno aprende a pensar como um nativo.
                             </p>
                         </div>
-                        <div class="pt-2.5 border-t border-slate-800 flex items-center justify-between text-xs">
-                            <button onclick="event.stopPropagation(); copyText('Nunca mais dependa do Google Tradutor ou de alguém para falar por você.')" class="text-[11px] font-bold text-amber-400 hover:underline">
-                                📋 Copiar Frase
+                        <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between">
+                            <button onclick="event.stopPropagation(); copyText('O método prático de Cultura e Idioma de Londres para destravar o seu inglês e falar com confiança em 90 dias.')" class="text-xs font-bold text-amber-400 hover:underline">
+                                📋 Copiar Variação 3
                             </button>
-                            <span class="text-[10px] text-slate-400 font-semibold">Testar na LP →</span>
+                            <span class="text-[11px] text-slate-400">Testar na LP →</span>
                         </div>
                     </div>
-                    <!-- ROMA 4 -->
-                    <div id="roma-card-4" onclick="selectRoma(4)" class="cursor-pointer rounded-2xl p-4.5 border-2 border-slate-800 bg-slate-900/70 hover:border-slate-600 transition-all hover:scale-[1.01] flex flex-col justify-between space-y-3">
-                        <div class="space-y-2">
-                            <div class="flex items-center justify-between gap-1">
-                                <span class="px-2 py-0.5 rounded bg-amber-500/15 text-amber-300 font-extrabold text-[10px] border border-amber-500/30 uppercase">🧳 OPÇÃO 4 (12 PALAVRAS)</span>
-                                <span id="roma-status-4" class="text-[11px] font-bold text-slate-500">Selecionar</span>
+
+                    <!-- ROMA 4: Anti-Tradução Mental -->
+                    <div id="roma-card-4" onclick="selectRoma(4)" class="cursor-pointer rounded-2xl p-5 bg-slate-900/70 border-2 border-slate-800 hover:border-slate-600 transition-all hover:scale-[1.01] flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between gap-2 mb-3">
+                                <span class="px-2.5 py-1 rounded bg-blue-500/20 text-blue-300 font-bold text-xs border border-blue-500/40">⚡ ANTI-TRAVA</span>
+                                <span id="roma-status-4" class="text-xs font-bold text-slate-500">Selecionar</span>
                             </div>
-                            <p class="text-[11px] uppercase tracking-wider text-slate-400 font-bold">Mecanismo de Londres</p>
-                            <h4 class="text-sm font-extrabold text-white leading-snug">
-                                "O método prático de Londres para falar em viagens sem traduzir mentalmente."
+                            <p class="text-xs uppercase tracking-wider text-slate-400 font-semibold mb-1">Fim do atraso na cabeça</p>
+                            <h4 class="text-lg font-extrabold text-white leading-snug mb-3">
+                                "Pare de traduzir na cabeça: destrave seu inglês e fale com naturalidade e confiança em 90 dias."
                             </h4>
-                            <p class="text-[11px] text-slate-300 leading-relaxed bg-slate-950/70 p-2.5 rounded-lg border border-slate-800">
-                                <strong class="text-amber-400">Gatilho:</strong> Conecta diretamente com a "Mala de Londres" e ataca a causa do travamento: tentar traduzir cada palavra do português pro inglês na hora do papo.
+                            <p class="text-xs text-slate-300 leading-relaxed bg-slate-950/70 p-3 rounded-lg border border-slate-800">
+                                <strong>Poder de conversão:</strong> Ataca diretamente a dor neurológica do aluno (o atraso mental de tentar traduzir cada frase palavra por palavra).
                             </p>
                         </div>
-                        <div class="pt-2.5 border-t border-slate-800 flex items-center justify-between text-xs">
-                            <button onclick="event.stopPropagation(); copyText('O método prático de Londres para falar em viagens sem traduzir mentalmente.')" class="text-[11px] font-bold text-amber-400 hover:underline">
-                                📋 Copiar Frase
+                        <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between">
+                            <button onclick="event.stopPropagation(); copyText('Pare de traduzir na cabeça: destrave seu inglês e fale com naturalidade e confiança em 90 dias.')" class="text-xs font-bold text-amber-400 hover:underline">
+                                📋 Copiar Variação 4
                             </button>
-                            <span class="text-[10px] text-slate-400 font-semibold">Testar na LP →</span>
-                        </div>
-                    </div>
-                    <!-- ROMA 5 -->
-                    <div id="roma-card-5" onclick="selectRoma(5)" class="cursor-pointer rounded-2xl p-4.5 border-2 border-slate-800 bg-slate-900/70 hover:border-slate-600 transition-all hover:scale-[1.01] flex flex-col justify-between space-y-3">
-                        <div class="space-y-2">
-                            <div class="flex items-center justify-between gap-1">
-                                <span class="px-2 py-0.5 rounded bg-amber-500/15 text-amber-300 font-extrabold text-[10px] border border-amber-500/30 uppercase">🏨 OPÇÃO 5 (14 PALAVRAS)</span>
-                                <span id="roma-status-5" class="text-[11px] font-bold text-slate-500">Selecionar</span>
-                            </div>
-                            <p class="text-[11px] uppercase tracking-wider text-slate-400 font-bold">Autoridade Savoy Hotel</p>
-                            <h4 class="text-sm font-extrabold text-white leading-snug">
-                                "O inglês da vida real que aprendi no Savoy Hotel para você nunca mais travar."
-                            </h4>
-                            <p class="text-[11px] text-slate-300 leading-relaxed bg-slate-950/70 p-2.5 rounded-lg border border-slate-800">
-                                <strong class="text-amber-400">Gatilho:</strong> Ancoragem de prestígio inquestionável. O Savoy Hotel em Londres é referência mundial de sofisticação e excelência, gerando curiosidade imediata pelo método.
-                            </p>
-                        </div>
-                        <div class="pt-2.5 border-t border-slate-800 flex items-center justify-between text-xs">
-                            <button onclick="event.stopPropagation(); copyText('O inglês da vida real que aprendi no Savoy Hotel para você nunca mais travar.')" class="text-[11px] font-bold text-amber-400 hover:underline">
-                                📋 Copiar Frase
-                            </button>
-                            <span class="text-[10px] text-slate-400 font-semibold">Testar na LP →</span>
-                        </div>
-                    </div>
-                    <!-- ROMA 6 -->
-                    <div id="roma-card-6" onclick="selectRoma(6)" class="cursor-pointer rounded-2xl p-4.5 border-2 border-slate-800 bg-slate-900/70 hover:border-slate-600 transition-all hover:scale-[1.01] flex flex-col justify-between space-y-3">
-                        <div class="space-y-2">
-                            <div class="flex items-center justify-between gap-1">
-                                <span class="px-2 py-0.5 rounded bg-amber-500/15 text-amber-300 font-extrabold text-[10px] border border-amber-500/30 uppercase">🧩 OPÇÃO 6 (12 PALAVRAS)</span>
-                                <span id="roma-status-6" class="text-[11px] font-bold text-slate-500">Selecionar</span>
-                            </div>
-                            <p class="text-[11px] uppercase tracking-wider text-slate-400 font-bold">Facilidade Cognitiva (Chunks)</p>
-                            <h4 class="text-sm font-extrabold text-white leading-snug">
-                                "Aprenda a montar dezenas de frases úteis trocando apenas uma única palavra."
-                            </h4>
-                            <p class="text-[11px] text-slate-300 leading-relaxed bg-slate-950/70 p-2.5 rounded-lg border border-slate-800">
-                                <strong class="text-amber-400">Gatilho:</strong> Promete velocidade e extrema simplicidade. O cérebro percebe que não precisa de anos de estudo: basta dominar a lógica dos blocos (chunks) substituíveis.
-                            </p>
-                        </div>
-                        <div class="pt-2.5 border-t border-slate-800 flex items-center justify-between text-xs">
-                            <button onclick="event.stopPropagation(); copyText('Aprenda a montar dezenas de frases úteis trocando apenas uma única palavra.')" class="text-[11px] font-bold text-amber-400 hover:underline">
-                                📋 Copiar Frase
-                            </button>
-                            <span class="text-[10px] text-slate-400 font-semibold">Testar na LP →</span>
-                        </div>
-                    </div>
-                    <!-- ROMA 7 -->
-                    <div id="roma-card-7" onclick="selectRoma(7)" class="cursor-pointer rounded-2xl p-4.5 border-2 border-slate-800 bg-slate-900/70 hover:border-slate-600 transition-all hover:scale-[1.01] flex flex-col justify-between space-y-3">
-                        <div class="space-y-2">
-                            <div class="flex items-center justify-between gap-1">
-                                <span class="px-2 py-0.5 rounded bg-amber-500/15 text-amber-300 font-extrabold text-[10px] border border-amber-500/30 uppercase">✈️ OPÇÃO 7 (13 PALAVRAS)</span>
-                                <span id="roma-status-7" class="text-[11px] font-bold text-slate-500">Selecionar</span>
-                            </div>
-                            <p class="text-[11px] uppercase tracking-wider text-slate-400 font-bold">Situações Críticas de Viagem</p>
-                            <h4 class="text-sm font-extrabold text-white leading-snug">
-                                "Passe pela imigração, hotel e restaurantes com a resposta na ponta da língua."
-                            </h4>
-                            <p class="text-[11px] text-slate-300 leading-relaxed bg-slate-950/70 p-2.5 rounded-lg border border-slate-800">
-                                <strong class="text-amber-400">Gatilho:</strong> Especificidade extrema. Cita os 3 momentos onde todo mundo gela. Alivia a ansiedade de véspera de viagem com uma promessa concreta e realizável.
-                            </p>
-                        </div>
-                        <div class="pt-2.5 border-t border-slate-800 flex items-center justify-between text-xs">
-                            <button onclick="event.stopPropagation(); copyText('Passe pela imigração, hotel e restaurantes com a resposta na ponta da língua.')" class="text-[11px] font-bold text-amber-400 hover:underline">
-                                📋 Copiar Frase
-                            </button>
-                            <span class="text-[10px] text-slate-400 font-semibold">Testar na LP →</span>
-                        </div>
-                    </div>
-                    <!-- ROMA 8 -->
-                    <div id="roma-card-8" onclick="selectRoma(8)" class="cursor-pointer rounded-2xl p-4.5 border-2 border-slate-800 bg-slate-900/70 hover:border-slate-600 transition-all hover:scale-[1.01] flex flex-col justify-between space-y-3">
-                        <div class="space-y-2">
-                            <div class="flex items-center justify-between gap-1">
-                                <span class="px-2 py-0.5 rounded bg-amber-500/15 text-amber-300 font-extrabold text-[10px] border border-amber-500/30 uppercase">🗣️ OPÇÃO 8 (13 PALAVRAS)</span>
-                                <span id="roma-status-8" class="text-[11px] font-bold text-slate-500">Selecionar</span>
-                            </div>
-                            <p class="text-[11px] uppercase tracking-wider text-slate-400 font-bold">Sobrevivência + Conversa Real</p>
-                            <h4 class="text-sm font-extrabold text-white leading-snug">
-                                "Pare de travar no inglês: resolva sua viagem e sustente conversas de verdade."
-                            </h4>
-                            <p class="text-[11px] text-slate-300 leading-relaxed bg-slate-950/70 p-2.5 rounded-lg border border-slate-800">
-                                <strong class="text-amber-400">Gatilho:</strong> Entrega o pacote completo do funil: resolver a emergência prática (Pop Travel) e conseguir bater papo descontraído com quem mora lá (Backstage English).
-                            </p>
-                        </div>
-                        <div class="pt-2.5 border-t border-slate-800 flex items-center justify-between text-xs">
-                            <button onclick="event.stopPropagation(); copyText('Pare de travar no inglês: resolva sua viagem e sustente conversas de verdade.')" class="text-[11px] font-bold text-amber-400 hover:underline">
-                                📋 Copiar Frase
-                            </button>
-                            <span class="text-[10px] text-slate-400 font-semibold">Testar na LP →</span>
-                        </div>
-                    </div>
-                    <!-- ROMA 9 -->
-                    <div id="roma-card-9" onclick="selectRoma(9)" class="cursor-pointer rounded-2xl p-4.5 border-2 border-slate-800 bg-slate-900/70 hover:border-slate-600 transition-all hover:scale-[1.01] flex flex-col justify-between space-y-3">
-                        <div class="space-y-2">
-                            <div class="flex items-center justify-between gap-1">
-                                <span class="px-2 py-0.5 rounded bg-amber-500/15 text-amber-300 font-extrabold text-[10px] border border-amber-500/30 uppercase">⚡ OPÇÃO 9 (14 PALAVRAS)</span>
-                                <span id="roma-status-9" class="text-[11px] font-bold text-slate-500">Selecionar</span>
-                            </div>
-                            <p class="text-[11px] uppercase tracking-wider text-slate-400 font-bold">Anti-Cursinhos Tradicionais</p>
-                            <h4 class="text-sm font-extrabold text-white leading-snug">
-                                "Esqueça os cursinhos tradicionais: fale o inglês natural que resolve viagens no mundo real."
-                            </h4>
-                            <p class="text-[11px] text-slate-300 leading-relaxed bg-slate-950/70 p-2.5 rounded-lg border border-slate-800">
-                                <strong class="text-amber-400">Gatilho:</strong> Valida a frustração do aluno adulto que já tentou escolas convencionais por anos e desistiu. Apresenta o método como uma alternativa ágil e descomplicada.
-                            </p>
-                        </div>
-                        <div class="pt-2.5 border-t border-slate-800 flex items-center justify-between text-xs">
-                            <button onclick="event.stopPropagation(); copyText('Esqueça os cursinhos tradicionais: fale o inglês natural que resolve viagens no mundo real.')" class="text-[11px] font-bold text-amber-400 hover:underline">
-                                📋 Copiar Frase
-                            </button>
-                            <span class="text-[10px] text-slate-400 font-semibold">Testar na LP →</span>
-                        </div>
-                    </div>
-                    <!-- ROMA 10 -->
-                    <div id="roma-card-10" onclick="selectRoma(10)" class="cursor-pointer rounded-2xl p-4.5 border-2 border-slate-800 bg-slate-900/70 hover:border-slate-600 transition-all hover:scale-[1.01] flex flex-col justify-between space-y-3">
-                        <div class="space-y-2">
-                            <div class="flex items-center justify-between gap-1">
-                                <span class="px-2 py-0.5 rounded bg-amber-500/15 text-amber-300 font-extrabold text-[10px] border border-amber-500/30 uppercase">👑 OPÇÃO 10 (13 PALAVRAS)</span>
-                                <span id="roma-status-10" class="text-[11px] font-bold text-slate-500">Selecionar</span>
-                            </div>
-                            <p class="text-[11px] uppercase tracking-wider text-slate-400 font-bold">Aspiracional & Experiência Local</p>
-                            <h4 class="text-sm font-extrabold text-white leading-snug">
-                                "Destrave sua voz em inglês e viva sua próxima viagem internacional como um nativo."
-                            </h4>
-                            <p class="text-[11px] text-slate-300 leading-relaxed bg-slate-950/70 p-2.5 rounded-lg border border-slate-800">
-                                <strong class="text-amber-400">Gatilho:</strong> Promessa aspiracional máxima de status. Transforma o aluno de mero turista dependente em um viajante elegante, autoconfiante e integrado à cultura local.
-                            </p>
-                        </div>
-                        <div class="pt-2.5 border-t border-slate-800 flex items-center justify-between text-xs">
-                            <button onclick="event.stopPropagation(); copyText('Destrave sua voz em inglês e viva sua próxima viagem internacional como um nativo.')" class="text-[11px] font-bold text-amber-400 hover:underline">
-                                📋 Copiar Frase
-                            </button>
-                            <span class="text-[10px] text-slate-400 font-semibold">Testar na LP →</span>
+                            <span class="text-[11px] text-slate-400">Testar na LP →</span>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- PASSO 2: COMO SUBSTITUIR A PALAVRA "GRÁTIS" (SELETOR DE MODO DE VALOR) -->
-            <div class="space-y-4 pt-2">
-                <div class="border-b border-slate-800 pb-3">
-                    <h3 class="text-lg sm:text-xl font-extrabold text-white flex items-center gap-2">
-                        <span>💰</span> 2. Como Posicionar a Aula Sem Usar "Grátis" + Anunciar o Produto Completo
+            <!-- PASSO 2: ESTRATÉGIA DE VALOR SEM O SELO FALSO DE R$ 197 E SEM A PALAVRA "GRÁTIS" -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-4">
+                <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                    <h3 class="text-base sm:text-lg font-extrabold text-white uppercase tracking-wider text-amber-400">
+                        💎 2. O Novo Posicionamento de Valor (Ajustado)
                     </h3>
-                    <p class="text-xs sm:text-sm text-slate-400">
-                        Escolha abaixo qual estratégia de entrada você prefere usar. Ao clicar, a Página de Captura (Aba 3) se adapta automaticamente!
-                    </p>
+                    <span class="text-xs text-emerald-400 font-bold">✓ Selo R$ 197 Removido • Sem Usar "Grátis"</span>
                 </div>
-
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                    <!-- Modo 1: Acesso Convidado (Valor Ancorado R$ 197 -> Liberado) -->
-                    <div id="mode-card-guest" onclick="setAccessMode('guest')" class="cursor-pointer rounded-2xl p-6 bg-slate-900 border-2 border-amber-400 shadow-xl transition-all space-y-3">
-                        <div class="flex items-center justify-between">
-                            <span class="px-3 py-1 rounded-full text-xs font-extrabold bg-amber-400 text-slate-950 uppercase">MODO 1: ACESSO CONVIDADO (ANCORADO EM R$ 197)</span>
-                            <span id="mode-status-guest" class="text-xs font-bold text-amber-400">✓ SELECIONADO</span>
-                        </div>
-                        <h4 class="text-lg font-extrabold text-white">Você não fala "Grátis": você mostra que é uma Sessão de R$ 197 com Passe Liberado para Inscritos</h4>
-                        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                            Em vez de escrever "Aula Gratuita", o selo da página diz: <strong class="text-white">"Sessão Prática Ao Vivo • Valor Oficial R$ 197 (Passe de Convidado Liberado nesta edição)"</strong>. Isso mantém o volume alto de leads, mas faz a pessoa sentir que ganhou algo valioso.
-                        </p>
-                        <div class="bg-slate-950 p-3.5 rounded-xl border border-slate-800 text-xs text-slate-300 space-y-1">
-                            <p><strong class="text-emerald-400">✓ O que ela ganha na aula:</strong> Aprende a técnica <em>Troque a Peça e Reuse</em> + recebe o <em>Kit de Bolso: 15 Frases de Ouro</em>.</p>
-                            <p><strong class="text-amber-400">✓ Transparência do Produto:</strong> Avisamos na página que esta sessão é a porta de entrada e que, no final, quem quiser o programa completo terá uma condição de baixo investimento.</p>
-                        </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5 text-xs text-slate-300 leading-relaxed">
+                    <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-2">
+                        <h4 class="text-sm font-extrabold text-white">Como eliminamos a falsa ancoragem de R$ 197:</h4>
+                        <p>Seguindo o alinhamento da imersão: como a aula nunca foi vendida separadamente por R$ 197, <strong>removemos totalmente qualquer menção a esse valor</strong>. Assim preservamos a integridade moral da oferta.</p>
+                        <p class="text-amber-300">Em vez disso, a aula é tratada como um <strong>Encontro Fechado da Turma Fundadora</strong>, acessível exclusivamente para quem conclui o Quiz e recebe o passe oficial.</p>
                     </div>
-
-                    <!-- Modo 2: Ingresso Simbólico de Baixo Valor (R$ 9,90) -->
-                    <div id="mode-card-ticket" onclick="setAccessMode('ticket')" class="cursor-pointer rounded-2xl p-6 bg-slate-900/70 border-2 border-slate-800 hover:border-slate-600 transition-all space-y-3">
-                        <div class="flex items-center justify-between">
-                            <span class="px-3 py-1 rounded-full text-xs font-extrabold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 uppercase">MODO 2: INGRESSO DE BAIXO VALOR (R$ 9,90)</span>
-                            <span id="mode-status-ticket" class="text-xs font-bold text-slate-500">Clique para testar</span>
-                        </div>
-                        <h4 class="text-lg font-extrabold text-white">Acesso por Valor Simbólico (R$ 9,90) + Kit de Bolso Incluso na Hora</h4>
-                        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                            Se você quiser filtrar 100% os curiosos, você cobra um <strong>ingresso simbólico de baixo valor (R$ 9,90)</strong> pela participação na Sessão Ao Vivo + Kit de Bolso imediato. Quem passa o cartão de R$ 9,90 já vence a barreira de compra e converte até 4x mais na oferta completa da Live!
-                        </p>
-                        <div class="bg-slate-950 p-3.5 rounded-xl border border-slate-800 text-xs text-slate-300 space-y-1">
-                            <p><strong class="text-emerald-400">✓ O que ela ganha na hora:</strong> Acesso à Live fechada + download imediato do <em>Guia Rápido de Sobrevivência</em>.</p>
-                            <p><strong class="text-amber-400">✓ Transparência do Produto:</strong> Quem entra já sabe que no final da aula poderá fazer o upgrade para a jornada completa abatendo o valor ou com bônus exclusivos.</p>
-                        </div>
+                    <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-2">
+                        <h4 class="text-sm font-extrabold text-white">Como mantemos o alto valor sem a palavra "Grátis":</h4>
+                        <p>Continuamos sem usar "gratuito" ou "de graça". Usamos a expressão: <strong class="text-emerald-400">"Passe de Acesso Concedido após o Quiz"</strong>.</p>
+                        <p>O lead sente que conquistou o acesso respondendo ao teste de 8 perguntas, e ganha como presente o <strong>PDF: 20 Blocos de Conversação (Chunks)</strong>, garantindo alto comparecimento no dia 11/11.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- PASSO 3: FLUXO TÉCNICO COMPLETO DA JORNADA -->
+            <!-- PASSO 3: FLUXO COMPLETO DO LANÇAMENTO SEMENTE -->
             <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-5">
                 <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                     <h3 class="text-base sm:text-lg font-extrabold text-white uppercase tracking-wider text-amber-400">
-                        🛠️ 3. Arquitetura Técnica Completa (Do Anúncio ao Checkout)
+                        🛠️ 3. A Nova Jornada Oficial do Funil
                     </h3>
-                    <span class="text-xs text-slate-400">YouTube Não-Listado Embedado + Página de Produto Híbrida</span>
+                    <span class="text-xs text-slate-400">Webinário Oficial: Quarta, 11/11 • 20h</span>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-6 gap-3">
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-3">
                     <div class="bg-slate-950 border border-slate-800 rounded-xl p-3.5 space-y-1.5">
-                        <span class="text-[10px] font-extrabold px-2 py-0.5 rounded bg-blue-500/20 text-blue-300">1. ANÚNCIO (ADS)</span>
-                        <h5 class="text-xs font-extrabold text-white">Criativo Mala de Londres</h5>
-                        <p class="text-[11px] text-slate-400">Promete a aula prática + presente na aula e já avisa que haverá um passo avançado para quem quiser ir além.</p>
+                        <span class="text-[10px] font-extrabold px-2 py-0.5 rounded bg-blue-500/20 text-blue-300">1. ADS (ANÚNCIOS)</span>
+                        <h5 class="text-xs font-extrabold text-white">"Por que meu inglês trava?"</h5>
+                        <p class="text-[11px] text-slate-400">Convite para o teste rápido de 1 minuto descobrindo qual dos 4 perfis faz a pessoa travar ao falar.</p>
                     </div>
                     <div class="bg-slate-950 border border-slate-800 rounded-xl p-3.5 space-y-1.5">
-                        <span class="text-[10px] font-extrabold px-2 py-0.5 rounded bg-purple-500/20 text-purple-300">2. CAPTURA</span>
-                        <h5 class="text-xs font-extrabold text-white">LP Sem "Grátis"</h5>
-                        <p class="text-[11px] text-slate-400">Ancora o valor da aula, mostra o que a pessoa ganha na hora e traz o box de <em>Transparência do Produto</em>.</p>
+                        <span class="text-[10px] font-extrabold px-2 py-0.5 rounded bg-purple-500/20 text-purple-300">2. QUIZ & CAPTURA</span>
+                        <h5 class="text-xs font-extrabold text-white">8 Perguntas + 4 Perfis</h5>
+                        <p class="text-[11px] text-slate-400">Gera o diagnóstico individual, concede o passe para 11/11 e entrega o PDF dos 20 Blocos.</p>
                     </div>
                     <div class="bg-slate-950 border border-slate-800 rounded-xl p-3.5 space-y-1.5">
                         <span class="text-[10px] font-extrabold px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300">3. WHATSAPP VIP</span>
-                        <h5 class="text-xs font-extrabold text-white">Página 80% + Grupo</h5>
-                        <p class="text-[11px] text-slate-400">Nutre com os 3 degraus (Sobreviver, Conversar e Viver) e prepara para a condição de baixo investimento.</p>
+                        <h5 class="text-xs font-extrabold text-white">Bastidores de Londres</h5>
+                        <p class="text-[11px] text-slate-400">Histórias reais do Savoy Hotel, cultura britânica e aquecimento para a aula do dia 11/11.</p>
                     </div>
                     <div class="bg-british-red/15 border-2 border-british-red rounded-xl p-3.5 space-y-1.5">
-                        <span class="text-[10px] font-extrabold px-2 py-0.5 rounded bg-british-red text-white">4. SALA DA LIVE</span>
-                        <h5 class="text-xs font-extrabold text-white">YouTube Embedado</h5>
-                        <p class="text-[11px] text-slate-200">Vídeo do YouTube (Não-Listado) dentro da sua página. Entrega aula real + presente e libera botão aos 40 min.</p>
+                        <span class="text-[10px] font-extrabold px-2 py-0.5 rounded bg-british-red text-white">4. SALA DA LIVE (11/11)</span>
+                        <h5 class="text-xs font-extrabold text-white">Webinário Ao Vivo 20h</h5>
+                        <p class="text-[11px] text-slate-200">Roma, prova, Savoy, Jeito Errado x Certo e liberação do botão da oferta ao final.</p>
                     </div>
                     <div class="bg-amber-500/10 border-2 border-amber-500 rounded-xl p-3.5 space-y-1.5">
-                        <span class="text-[10px] font-extrabold px-2 py-0.5 rounded bg-amber-400 text-slate-950">5. PÁG. PRODUTO</span>
-                        <h5 class="text-xs font-extrabold text-white">LP de Vendas Híbrida</h5>
-                        <p class="text-[11px] text-slate-200">O clique da Live abre a Página do Produto completo (que já tem botão pro Checkout logo na 1ª dobra).</p>
-                    </div>
-                    <div class="bg-slate-950 border border-slate-800 rounded-xl p-3.5 space-y-1.5">
-                        <span class="text-[10px] font-extrabold px-2 py-0.5 rounded bg-teal-500/20 text-teal-300">6. CHECKOUT + OTO</span>
-                        <h5 class="text-xs font-extrabold text-white">Pagamento & Downsell</h5>
-                        <p class="text-[11px] text-slate-400">Quem compra entra; quem achar o pacote completo fora do momento recebe o Pop Travel (R$ 27) + OTO (R$ 97).</p>
+                        <span class="text-[10px] font-extrabold px-2 py-0.5 rounded bg-amber-400 text-slate-950">5. OFERTA TURMA FUNDADORA</span>
+                        <h5 class="text-xs font-extrabold text-white">R$ 497 / Dupla R$ 797</h5>
+                        <p class="text-[11px] text-slate-200">Apenas 20 vagas com carrinho aberto até 15/11. Garantia 7 dias + condicional 90 dias.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- ==========================================
-             ABA 2: CRIATIVOS DE TRÁFEGO PAGO (SEM "GRÁTIS" + COM TRANSPARÊNCIA)
+             ABA 2: CRIATIVOS DE TRÁFEGO PAGO (ADS DO QUIZ & HISTÓRIAS DO SAVOY)
              ========================================== -->
         <section id="tab-ads" class="tab-pane hidden space-y-8">
             <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
-                <h2 class="text-xl sm:text-2xl font-extrabold text-white">📢 Roteiros de Criativos (Tráfego Pago) — Mais Persuasivos e Sem "De Graça"</h2>
+                <h2 class="text-xl sm:text-2xl font-extrabold text-white">📢 Roteiros de Criativos (Tráfego Pago) — Foco no Quiz "Por que meu inglês trava?"</h2>
                 <p class="text-sm text-slate-400 mt-1">
-                    Observe como os roteiros agora geram <strong>desejo imediato pelo que o aluno ganha na aula</strong>, eliminam a palavra "grátis" e já preparam a mente dele para a <strong>oferta de baixo investimento do programa completo</strong>.
+                    Anúncios altamente qualificados para pessoas que <strong>já estudaram inglês e travam na hora de falar</strong>, convidando para o teste e para a aula ao vivo de 11/11.
                 </p>
             </div>
 
@@ -490,18 +326,18 @@
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 flex flex-col justify-between space-y-4">
                     <div class="space-y-3">
                         <div class="flex items-center justify-between">
-                            <span class="px-2.5 py-1 rounded-full text-[11px] font-extrabold bg-british-red text-white">CRIATIVO 01 • A MALA DE LONDRES</span>
-                            <span class="text-xs text-slate-400">55 seg</span>
+                            <span class="px-2.5 py-1 rounded-full text-[11px] font-extrabold bg-british-red text-white">CRIATIVO 01 • O TESTE DA TRAVA</span>
+                            <span class="text-xs text-slate-400">45 seg</span>
                         </div>
-                        <h3 class="text-base font-extrabold text-white">Storytelling da Mala + Ganho Real na Aula</h3>
+                        <h3 class="text-base font-extrabold text-white">Você já estudou e trava? Faça o Quiz</h3>
                         <div class="bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-amber-300">
-                            <strong>🎬 Visual:</strong> Marcos abrindo a mala física com ingressos de Londres, memórias do Savoy Hotel e baquetas.
+                            <strong>🎬 Visual:</strong> Marcos olhando para a câmera com uma caneca ou bloco de notas, tom calmo e empático de quem entende o problema.
                         </div>
                         <div id="copy-ad-1" class="space-y-2 text-xs text-slate-200 leading-relaxed bg-slate-950/60 p-3.5 rounded-xl border border-slate-800">
-                            <p><strong class="text-rose-400">[Gancho]:</strong> "Essa mala voltou comigo depois de 4 anos morando em Londres e trabalhando no Savoy Hotel. E dentro dela está o método pra você destravar o inglês da sua próxima viagem sem decorar uma única regra."</p>
-                            <p><strong class="text-amber-400">[Dor]:</strong> "Você trava no check-in do hotel, no aeroporto ou quando o garçom fala fora do roteiro porque tentaram te ensinar inglês pra fazer prova, e não pra viver a viagem."</p>
-                            <p><strong class="text-emerald-400">[O que ganha na aula]:</strong> "Na próxima [Dia], às 20h, eu vou abrir essa mala em uma Sessão Prática Ao Vivo. Nessa aula você já vai aprender a técnica 'Troque a Peça e Reuse' pra multiplicar suas frases na hora e ainda vai receber o meu Kit de Bolso com as 15 Frases de Ouro do Aeroporto ao Pub."</p>
-                            <p><strong class="text-blue-400">[Transparência + CTA]:</strong> "E pra quem quiser ir além comigo depois da aula, eu também vou liberar uma condição super acessível pro meu programa completo. Toca em 'Saiba Mais' e garante seu passe de acesso agora."</p>
+                            <p><strong class="text-rose-400">[Gancho]:</strong> "Você já passou anos em cursinho tradicional de inglês, entende quando lê ou assiste séries, mas na hora de falar com alguém parece que o cérebro congela?"</p>
+                            <p><strong class="text-amber-400">[Identificação]:</strong> "A culpa não é sua. O método tradicional te ensinou a montar frases como se fossem equações de matemática, traduzindo palavra por palavra."</p>
+                            <p><strong class="text-emerald-400">[O Quiz]:</strong> "Eu criei um teste rápido de 1 minuto chamado 'Por que meu inglês trava?'. São 8 perguntas simples que vão te mostrar qual dos 4 perfis está bloqueando sua fala."</p>
+                            <p><strong class="text-blue-400">[Chamada + Presente]:</strong> "No final do teste, você recebe o PDF com os 20 Blocos de Conversação e seu convite para nossa aula ao vivo de quarta, 11/11, às 20h. Toque em Saiba Mais e faça o quiz."</p>
                         </div>
                     </div>
                     <button onclick="copyElementText('copy-ad-1')" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-400 font-bold text-xs border border-slate-700 transition">
@@ -513,18 +349,18 @@
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 flex flex-col justify-between space-y-4">
                     <div class="space-y-3">
                         <div class="flex items-center justify-between">
-                            <span class="px-2.5 py-1 rounded-full text-[11px] font-extrabold bg-amber-500 text-slate-950">CRIATIVO 02 • DOR DO VIAJANTE</span>
-                            <span class="text-xs text-slate-400">45 seg</span>
+                            <span class="px-2.5 py-1 rounded-full text-[11px] font-extrabold bg-amber-500 text-slate-950">CRIATIVO 02 • BASTIDORES DO SAVOY</span>
+                            <span class="text-xs text-slate-400">55 seg</span>
                         </div>
-                        <h3 class="text-base font-extrabold text-white">Choque de Realidade: Chunks vs. Gramática</h3>
+                        <h3 class="text-base font-extrabold text-white">A Lição do Savoy Hotel em Londres</h3>
                         <div class="bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-amber-300">
-                            <strong>🎬 Visual:</strong> Marcos caminhando num parque bonito, gravado na vertical por outra pessoa (dinâmico e próximo).
+                            <strong>🎬 Visual:</strong> Marcos segurando uma foto antiga ou crachá de Londres, com a mala aberta ao lado.
                         </div>
                         <div id="copy-ad-2" class="space-y-2 text-xs text-slate-200 leading-relaxed bg-slate-950/60 p-3.5 rounded-xl border border-slate-800">
-                            <p><strong class="text-rose-400">[Gancho]:</strong> "Se você vai viajar pra fora e morre de medo de travar na imigração, no restaurante ou quando alguém falar rápido com você... presta atenção."</p>
-                            <p><strong class="text-amber-400">[Mecanismo]:</strong> "Quem fala inglês na vida real não monta frase pensando em regra gramatical. Usa Chunks de Linguagem: blocos prontos onde você troca uma única palavra e resolve dezenas de situações."</p>
-                            <p><strong class="text-emerald-400">[O que ganha na aula]:</strong> "Eu preparei uma aula prática ao vivo chamada A Mala de Londres. Nela, você já sai dominando esses blocos de viagem e ganha na hora um guia prático pra usar no celular."</p>
-                            <p><strong class="text-blue-400">[Transparência + CTA]:</strong> "É uma aula de verdade, mão na massa. E no final, pra quem decidir dar o próximo passo rumo à conversação completa, vou abrir uma oportunidade de baixíssimo investimento. Toca no botão da tela e garanta sua vaga."</p>
+                            <p><strong class="text-rose-400">[Gancho]:</strong> "Quando eu morei em Londres e trabalhei no clássico Savoy Hotel, eu descobri por que os brasileiros mais inteligentes travam quando tentam falar inglês."</p>
+                            <p><strong class="text-amber-400">[Choque]:</strong> "Eles tentam traduzir o português na cabeça enquanto o nativo fala. Mas quem fala inglês na vida real não pensa em regras: usa blocos prontos de linguagem associados à cultura."</p>
+                            <p><strong class="text-emerald-400">[A Promessa]:</strong> "Eu te ajudo a destravar o seu inglês e falar com confiança em 90 dias, sem decorar gramática."</p>
+                            <p><strong class="text-blue-400">[CTA]:</strong> "Na próxima quarta-feira, 11/11, às 20h, eu vou abrir a Mala de Londres em uma sessão ao vivo. Toque aqui para fazer o quiz 'Por que meu inglês trava?' e garantir sua vaga."</p>
                         </div>
                     </div>
                     <button onclick="copyElementText('copy-ad-2')" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-400 font-bold text-xs border border-slate-700 transition">
@@ -536,18 +372,18 @@
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 flex flex-col justify-between space-y-4">
                     <div class="space-y-3">
                         <div class="flex items-center justify-between">
-                            <span class="px-2.5 py-1 rounded-full text-[11px] font-extrabold bg-emerald-500 text-slate-950">CRIATIVO 03 • TRANSPARÊNCIA DIRETA</span>
-                            <span class="text-xs text-slate-400">50 seg</span>
+                            <span class="px-2.5 py-1 rounded-full text-[11px] font-extrabold bg-emerald-500 text-slate-950">CRIATIVO 03 • O PDF DOS 20 BLOCOS</span>
+                            <span class="text-xs text-slate-400">40 seg</span>
                         </div>
-                        <h3 class="text-base font-extrabold text-white">Convite Honesto (Atrai Compradores Qualificados)</h3>
+                        <h3 class="text-base font-extrabold text-white">Presente Prático: 20 Chunks de Conversação</h3>
                         <div class="bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-amber-300">
-                            <strong>🎬 Visual:</strong> Marcos segurando o celular mostrando o Mini App / E-book e os itens de Londres ao fundo.
+                            <strong>🎬 Visual:</strong> Marcos mostrando no tablet ou celular a página do PDF "20 Blocos de Conversação".
                         </div>
                         <div id="copy-ad-3" class="space-y-2 text-xs text-slate-200 leading-relaxed bg-slate-950/60 p-3.5 rounded-xl border border-slate-800">
-                            <p><strong class="text-rose-400">[Gancho]:</strong> "Eu quero fazer um combinado 100% transparente com você que precisa destravar o inglês pra viajar e conversar de verdade."</p>
-                            <p><strong class="text-amber-400">[A Entrega da Aula]:</strong> "Na próxima [Dia], às 20h, vou dar uma aula prática ao vivo abrindo a minha Mala de Londres. Não é enrolação: em 40 minutos eu vou te ensinar na tela o método 'Troque a Peça e Reuse' pra você se virar no aeroporto, hotel e restaurante sem gramática."</p>
-                            <p><strong class="text-emerald-400">[A Transparência]:</strong> "Por que eu estou liberando o passe dessa sessão? Porque eu sei que quando você destravar suas primeiras frases ao vivo comigo, muitos vão querer continuar na minha jornada completa — que vai ter uma condição super acessível no final da aula."</p>
-                            <p><strong class="text-blue-400">[CTA]:</strong> "Você entra, aprende na prática, ganha o material da aula e decide depois se quer avançar. Toca em 'Saiba Mais' e faça seu cadastro."</p>
+                            <p><strong class="text-rose-400">[Gancho]:</strong> "Você sabia que 80% das conversas do dia a dia em inglês são sustentadas por apenas 20 blocos de linguagem?"</p>
+                            <p><strong class="text-amber-400">[Mecanismo]:</strong> "Quando você domina esses blocos, você para de traduzir palavra por palavra e sua resposta sai no automático, como no português."</p>
+                            <p><strong class="text-emerald-400">[O Presente]:</strong> "Eu resumi essa estrutura no material 'PDF 20 Blocos de Conversação', e ele é o presente que você recebe ao responder o nosso teste gratuito 'Por que meu inglês trava?'."</p>
+                            <p><strong class="text-blue-400">[CTA]:</strong> "Toque no link, descubra o seu perfil e garanta também seu passe para a aula ao vivo de quarta, 11/11."</p>
                         </div>
                     </div>
                     <button onclick="copyElementText('copy-ad-3')" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-400 font-bold text-xs border border-slate-700 transition">
@@ -555,270 +391,127 @@
                     </button>
                 </div>
             </div>
-
-            <!-- Copy da Legenda do Anúncio -->
-            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 flex flex-col sm:flex-row items-center justify-between gap-4">
-                <div id="ad-caption-copy" class="space-y-1.5 text-xs sm:text-sm text-slate-300">
-                    <span class="text-xs font-extrabold uppercase text-amber-400">📝 Legenda Oficial dos Anúncios (Sem usar "Grátis"):</span>
-                    <p>Destrave o inglês da sua próxima viagem sem decorar uma única regra. 🇬🇧🧳 Na Sessão Prática Ao Vivo <strong>A Mala de Londres</strong>, o Prof. Marcos Lobão (+30 anos de experiência e 4 anos vivendo entre Londres e Los Angeles) vai te ensinar na prática o método <em>"Troque a Peça e Reuse"</em> para você resolver qualquer situação no aeroporto, hotel e restaurante — além de entregar o <strong>Kit de Bolso com as 15 Frases de Ouro</strong> durante a transmissão. E para quem desejar dar o próximo passo rumo à conversação completa, abriremos no final da aula uma condição especial de baixo investimento. 👉 Toque em "Saiba Mais" e libere seu passe de participante.</p>
-                </div>
-                <button onclick="copyElementText('ad-caption-copy')" class="shrink-0 px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-300 font-bold text-xs border border-slate-700">
-                    📋 Copiar Legenda
-                </button>
-            </div>
         </section>
 
         <!-- ==========================================
-             ABA 3: SIMULADOR DA PÁGINA DE CAPTURA (ALTA CONVERSÃO + TRANSPARÊNCIA)
+             ABA 3: LP DE CAPTURA & QUIZ INTERATIVO (8 PERGUNTAS, 4 PERFIS)
              ========================================== -->
         <section id="tab-lp" class="tab-pane hidden space-y-6">
-            <!-- Quick Control Bar for the Live Landing Page Simulator -->
+            <!-- Selector of Roma in LP -->
             <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 flex flex-col lg:flex-row items-center justify-between gap-4">
                 <div>
-                    <h2 class="text-base sm:text-lg font-extrabold text-white">💻 Simulador Real da Página de Captura (Pronta para Compartilhar / Modelar)</h2>
-                    <p class="text-xs text-slate-400">Teste abaixo as 3 ROMAs e os 2 Modos de Posicionamento de Valor diretamente no layout da página.</p>
+                    <h2 class="text-base sm:text-lg font-extrabold text-white">💻 Simulador da Landing Page & Quiz Interativo</h2>
+                    <p class="text-xs text-slate-400">Responda ao Quiz abaixo como se fosse um aluno para ver o cálculo do diagnóstico e a entrega do PDF 20 Blocos!</p>
                 </div>
-                <div class="flex flex-wrap items-center gap-2">
-                    <div class="flex items-center bg-slate-950 p-1 rounded-xl border border-slate-800 text-xs gap-1 overflow-x-auto">
-                        <span class="px-2 text-slate-400 font-semibold shrink-0">ROMA (1-10):</span>
-                        <button onclick="selectRoma(1)" id="lp-roma-btn-1" class="px-2.5 py-1 rounded-lg font-bold bg-slate-800 text-amber-400 hover:bg-slate-700 shadow">1</button>
-                        <button onclick="selectRoma(2)" id="lp-roma-btn-2" class="px-2.5 py-1 rounded-lg font-bold text-slate-400 hover:bg-slate-800 hover:text-white">2</button>
-                        <button onclick="selectRoma(3)" id="lp-roma-btn-3" class="px-2.5 py-1 rounded-lg font-bold text-slate-400 hover:bg-slate-800 hover:text-white">3</button>
-                        <button onclick="selectRoma(4)" id="lp-roma-btn-4" class="px-2.5 py-1 rounded-lg font-bold text-slate-400 hover:bg-slate-800 hover:text-white">4</button>
-                        <button onclick="selectRoma(5)" id="lp-roma-btn-5" class="px-2.5 py-1 rounded-lg font-bold text-slate-400 hover:bg-slate-800 hover:text-white">5</button>
-                        <button onclick="selectRoma(6)" id="lp-roma-btn-6" class="px-2.5 py-1 rounded-lg font-bold text-slate-400 hover:bg-slate-800 hover:text-white">6</button>
-                        <button onclick="selectRoma(7)" id="lp-roma-btn-7" class="px-2.5 py-1 rounded-lg font-bold text-slate-400 hover:bg-slate-800 hover:text-white">7</button>
-                        <button onclick="selectRoma(8)" id="lp-roma-btn-8" class="px-2.5 py-1 rounded-lg font-bold text-slate-400 hover:bg-slate-800 hover:text-white">8</button>
-                        <button onclick="selectRoma(9)" id="lp-roma-btn-9" class="px-2.5 py-1 rounded-lg font-bold text-slate-400 hover:bg-slate-800 hover:text-white">9</button>
-                        <button onclick="selectRoma(10)" id="lp-roma-btn-10" class="px-2.5 py-1 rounded-lg font-bold text-slate-400 hover:bg-slate-800 hover:text-white">10</button>
-                    </div>
-                    <div class="flex items-center bg-slate-950 p-1 rounded-xl border border-slate-800 text-xs">
-                        <button onclick="setAccessMode('guest')" id="lp-toggle-guest" class="px-3 py-1.5 rounded-lg font-extrabold bg-amber-400 text-slate-950 transition">
-                            Modo 1: Passe Convidado (R$ 197 → Liberado)
-                        </button>
-                        <button onclick="setAccessMode('ticket')" id="lp-toggle-ticket" class="px-3 py-1.5 rounded-lg font-bold text-slate-400 hover:text-white transition">
-                            Modo 2: Ingresso Baixo Valor (R$ 9,90)
-                        </button>
-                    </div>
+                <div class="flex items-center bg-slate-950 p-1.5 rounded-xl border border-slate-800 text-xs gap-1.5">
+                    <span class="px-2 text-slate-400 font-semibold">Testar Roma:</span>
+                    <button onclick="selectRoma(1)" id="lp-roma-btn-1" class="px-2.5 py-1 rounded-lg font-bold bg-slate-800 text-amber-400 hover:bg-slate-700 shadow">1 (Oficial)</button>
+                    <button onclick="selectRoma(2)" id="lp-roma-btn-2" class="px-2.5 py-1 rounded-lg font-bold text-slate-400 hover:bg-slate-800">2 (Quem já estudou)</button>
+                    <button onclick="selectRoma(3)" id="lp-roma-btn-3" class="px-2.5 py-1 rounded-lg font-bold text-slate-400 hover:bg-slate-800">3 (Cultura)</button>
+                    <button onclick="selectRoma(4)" id="lp-roma-btn-4" class="px-2.5 py-1 rounded-lg font-bold text-slate-400 hover:bg-slate-800">4 (Anti-Tradução)</button>
                 </div>
             </div>
 
-            <!-- LANDING PAGE SIMULATOR WINDOW -->
+            <!-- LANDING PAGE BROWSER WINDOW -->
             <div class="rounded-2xl overflow-hidden border-2 border-slate-700 shadow-2xl bg-british-navy">
-                <!-- Browser Top Bar -->
                 <div class="bg-slate-900 px-4 py-2.5 border-b border-slate-800 flex items-center justify-between gap-4">
                     <div class="flex items-center gap-2">
                         <span class="w-3 h-3 rounded-full bg-rose-500"></span>
                         <span class="w-3 h-3 rounded-full bg-amber-500"></span>
                         <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
-                        <span class="ml-2 text-xs font-mono text-slate-400 bg-slate-950 px-3 py-1 rounded border border-slate-800">🔒 https://marcoslobao.com.br/a-mala-de-londres</span>
+                        <span class="ml-2 text-xs font-mono text-slate-400 bg-slate-950 px-3 py-1 rounded border border-slate-800">🔒 https://marcoslobao.com.br/quiz-ingles-trava</span>
                     </div>
-                    <button onclick="copyElementText('lp-capture-fullcopy')" class="text-xs font-bold text-amber-400 hover:underline">
-                        📋 Copiar Toda a Copy desta Página
-                    </button>
+                    <span class="text-xs text-amber-400 font-bold">Quiz Interativo Oficial</span>
                 </div>
 
-                <!-- FULL LANDING PAGE CONTENT -->
-                <div id="lp-capture-fullcopy" class="divide-y divide-slate-800/80">
-
-                    <!-- DOBRA 1: HERO SECTION (ALTO VALOR PERCEBIDO + FORMULÁRIO + GANHO IMEDIATO) -->
-                    <div class="relative bg-gradient-to-b from-[#0B132B] via-[#111D40] to-[#0B132B] px-6 py-10 sm:px-12 sm:py-14">
-                        <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-
-                            <!-- Left Column: Copy + Form -->
-                            <div class="lg:col-span-7 space-y-5">
-                                <!-- Top Badge without "Grátis" -->
-                                <div class="inline-flex flex-wrap items-center gap-2 bg-slate-900/90 border border-amber-500/50 text-amber-300 px-3.5 py-1.5 rounded-lg text-xs font-extrabold uppercase tracking-wider shadow">
-                                    <span>🇬🇧 A MALA DE LONDRES • SESSÃO PRÁTICA AO VIVO</span>
-                                    <span>|</span>
-                                    <span id="lp-hero-badge-price" class="text-white">VALOR OFICIAL: <del class="text-rose-400">R$ 197</del> → PASSE DE CONVIDADO LIBERADO</span>
-                                </div>
-
-                                <!-- Dynamic Short ROMA -->
-                                <h1 id="lp-live-roma" class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white uppercase leading-[1.12] tracking-tight">
-                                    Destrave o inglês da sua próxima viagem <span class="text-amber-400 underline decoration-british-red">sem decorar uma única regra.</span>
-                                </h1>
-
-                                <!-- Persuasive Sub-headline explaining what they win + complete product -->
-                                <p class="text-slate-200 text-sm sm:text-base leading-relaxed">
-                                    Uma aula real e mão na massa com o <strong>Prof. Marcos Lobão</strong> para você dominar a técnica <em class="text-amber-300">"Troque a Peça e Reuse"</em> (Chunks de Linguagem), receber o <strong>Kit de Bolso com as 15 Frases de Ouro</strong> e conhecer, no final, o caminho mais acessível para alcançar a conversação completa.
-                                </p>
-
-                                <!-- Capture Box -->
-                                <div class="bg-slate-900/95 border-2 border-slate-700 p-5 sm:p-6 rounded-2xl shadow-2xl space-y-3.5 max-w-lg">
-                                    <div class="flex items-center justify-between border-b border-slate-800 pb-2.5">
-                                        <span class="text-xs font-extrabold uppercase tracking-wider text-amber-400">🎟️ Emitir Passe de Participante:</span>
-                                        <span id="lp-form-price-tag" class="text-xs font-bold bg-emerald-500/20 text-emerald-300 px-2.5 py-0.5 rounded border border-emerald-500/30">Passe Convidado: R$ 0 (Por tempo limitado)</span>
-                                    </div>
-                                    <input type="text" placeholder="Seu primeiro nome" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-amber-400">
-                                    <input type="email" placeholder="Seu melhor e-mail" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-amber-400">
-                                    <input type="tel" placeholder="Seu WhatsApp com DDD (para receber o Kit de Bolso)" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-amber-400">
-                                    <button onclick="switchTab('tab-wa')" id="lp-cta-button" class="w-full py-4 rounded-xl bg-british-emerald hover:bg-emerald-400 text-slate-950 font-extrabold text-sm sm:text-base uppercase tracking-wide shadow-lg pulse-emerald transition">
-                                        GARANTIR MEU PASSE + KIT DE BOLSO DA AULA →
-                                    </button>
-                                    <p class="text-[11px] text-slate-400 text-center">
-                                        🔒 Inclui acesso à Sessão Ao Vivo + Presente Prático entregue na aula.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Right Column: Visual Card of "A Mala de Londres" + Immediate Gift Box -->
-                            <div class="lg:col-span-5 space-y-4">
-                                <div class="bg-gradient-to-br from-slate-800 to-slate-900 border-2 border-amber-500/50 rounded-2xl p-6 shadow-2xl space-y-5 relative">
-                                    <div class="absolute -top-3 right-4 bg-amber-400 text-slate-950 font-extrabold text-[11px] px-3 py-1 rounded-full uppercase shadow">
-                                        Londres • Savoy Hotel & Britpop
-                                    </div>
-
-                                    <!-- Visual Hero Box -->
-                                    <div class="bg-slate-950 border border-slate-800 rounded-xl p-5 text-center space-y-2.5">
-                                        <div class="w-16 h-16 mx-auto rounded-2xl bg-british-red/20 border-2 border-british-red flex items-center justify-center text-3xl">
-                                            🧳🇬🇧
-                                        </div>
-                                        <h3 class="font-display text-xl text-white uppercase tracking-wide">Abertura da Mala de Londres</h3>
-                                        <p class="text-xs text-slate-300 leading-relaxed">
-                                            O acervo real dos 4 anos em que Marcos Lobão viveu no exterior e trabalhou no lendário <strong>Savoy Hotel</strong> transformado em um método prático para você falar sem travar.
-                                        </p>
-                                    </div>
-
-                                    <!-- O QUE VOCÊ GANHA JA NESTA AULA (GIFT HIGHLIGHT) -->
-                                    <div class="bg-emerald-950/60 border border-emerald-500/40 rounded-xl p-4 space-y-2">
-                                        <div class="flex items-center justify-between">
-                                            <span class="text-[11px] font-extrabold uppercase text-emerald-300">🎁 VOCÊ GANHA DURANTE ESTA AULA:</span>
-                                            <span class="text-[10px] bg-emerald-500 text-slate-950 font-extrabold px-2 py-0.5 rounded">INCLUSO NO PASSE</span>
-                                        </div>
-                                        <h4 class="text-sm font-extrabold text-white">Aula Prática "Troque a Peça e Reuse" + Kit de Bolso: As 15 Frases de Ouro do Aeroporto ao Pub</h4>
-                                        <p class="text-xs text-slate-300 leading-relaxed">
-                                            Você não vai assistir a uma "palestra teórica". Você vai treinar ao vivo a multiplicação de frases e receber o guia prático para salvar no celular e usar na sua próxima viagem.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
+                <!-- HERO SECTION -->
+                <div class="relative bg-gradient-to-b from-[#0B132B] via-[#111D40] to-[#0B132B] px-6 py-10 sm:px-12 sm:py-12 border-b border-slate-800">
+                    <div class="max-w-4xl mx-auto text-center space-y-4">
+                        <div class="inline-flex items-center gap-2 bg-slate-900/90 border border-amber-500/50 text-amber-300 px-3.5 py-1.5 rounded-lg text-xs font-extrabold uppercase tracking-wider shadow">
+                            <span>🇬🇧 MALA DE LONDRES: CULTURA E IDIOMA</span>
+                            <span>•</span>
+                            <span class="text-white">AULA AO VIVO: QUARTA, 11/11 ÀS 20H</span>
                         </div>
-                    </div>
 
-                    <!-- DOBRA 2 (NOVA SEÇÃO CRÍTICA): TRANSPARÊNCIA TOTAL — AULA REAL + AVISO DO PRODUTO COMPLETO -->
-                    <div class="bg-slate-950 px-6 py-12 sm:px-12 border-y border-slate-800">
-                        <div class="max-w-5xl mx-auto space-y-6">
-                            <div class="text-center space-y-2 max-w-3xl mx-auto">
-                                <span class="px-3 py-1 rounded-full bg-amber-500/15 text-amber-400 border border-amber-500/30 text-xs font-extrabold uppercase">
-                                    🤝 NOSSO COMBINADO DE TRANSPARÊNCIA COM VOCÊ
+                        <h1 id="lp-live-roma" class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white uppercase leading-[1.15] tracking-tight">
+                            Eu te ajudo a destravar o seu inglês e <span class="text-amber-400 underline decoration-british-red">falar com confiança em 90 dias.</span>
+                        </h1>
+
+                        <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+                            Para quem já estudou, entende o idioma, mas trava na hora de falar. Responda ao Quiz rápido de 1 minuto para descobrir o que está bloqueando sua conversa e garantir seu passe de participante + o <strong>PDF 20 Blocos de Conversação</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- QUIZ COMPONENT CONTAINER -->
+                <div class="p-6 sm:p-12 max-w-3xl mx-auto space-y-6">
+                    <div id="quiz-wrapper" class="bg-slate-900 border-2 border-slate-700 rounded-2xl p-6 sm:p-8 shadow-2xl space-y-6">
+
+                        <!-- Progress Bar of the Quiz -->
+                        <div class="space-y-2">
+                            <div class="flex items-center justify-between text-xs font-bold">
+                                <span class="text-amber-400 uppercase tracking-wider" id="quiz-step-indicator">PERGUNTA 1 DE 8</span>
+                                <span class="text-slate-400" id="quiz-pct-indicator">12% Concluído</span>
+                            </div>
+                            <div class="w-full bg-slate-950 h-2.5 rounded-full overflow-hidden border border-slate-800">
+                                <div id="quiz-progress-bar" class="bg-gradient-to-r from-amber-500 to-british-red h-full rounded-full transition-all duration-300" style="width: 12.5%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- Active Question Screen -->
+                        <div id="quiz-question-box" class="space-y-5">
+                            <h3 id="quiz-question-title" class="text-lg sm:text-xl font-extrabold text-white leading-snug">
+                                1. Há quanto tempo você estuda ou tenta falar inglês?
+                            </h3>
+
+                            <div id="quiz-options-container" class="space-y-3">
+                                <!-- Dynamic Options -->
+                            </div>
+                        </div>
+
+                        <!-- Result Screen (Hidden initially) -->
+                        <div id="quiz-result-box" class="hidden space-y-6">
+                            <div class="bg-emerald-950/60 border-2 border-emerald-500/50 rounded-2xl p-6 space-y-3 text-center">
+                                <span class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-xs font-extrabold uppercase">
+                                    DIAGNÓSTICO CONCLUÍDO
                                 </span>
-                                <h2 class="font-display text-2xl sm:text-3xl font-bold text-white uppercase">
-                                    Por que liberamos o acesso a esta aula e o que acontece no final?
-                                </h2>
-                                <p class="text-xs sm:text-sm text-slate-400">
-                                    Nós respeitamos o seu tempo e a sua inteligência. Por isso, deixamos claro desde já os <strong>dois objetivos</strong> deste encontro ao vivo:
-                                </p>
-                            </div>
-
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <!-- Pilar 1: Ganho Imediato na Aula -->
-                                <div class="bg-slate-900 border-2 border-emerald-500/40 rounded-2xl p-6 space-y-3">
-                                    <div class="flex items-center gap-3">
-                                        <span class="w-10 h-10 rounded-xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-lg font-extrabold text-emerald-300">1</span>
-                                        <div>
-                                            <span class="text-[11px] font-bold uppercase text-emerald-400">Entrega Imediata (Sem Esconder o Jogo)</span>
-                                            <h3 class="text-base sm:text-lg font-extrabold text-white">Você sai da aula já sabendo montar dezenas de frases + Presente na Mão</h3>
-                                        </div>
-                                    </div>
-                                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                                        Mesmo que você participe apenas desta sessão ao vivo, você já vai aprender na prática o coração do método (<strong>Troque a Peça e Reuse</strong>) para resolver situações de check-in, aeroporto e restaurante sem saber gramática, além de baixar o nosso <strong>Kit de Bolso com as 15 Frases de Ouro</strong>.
-                                    </p>
-                                </div>
-
-                                <!-- Pilar 2: Transparência sobre o Produto Completo -->
-                                <div class="bg-slate-900 border-2 border-amber-500/50 rounded-2xl p-6 space-y-3">
-                                    <div class="flex items-center gap-3">
-                                        <span class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-lg font-extrabold text-amber-300">2</span>
-                                        <div>
-                                            <span class="text-[11px] font-bold uppercase text-amber-400">O Próximo Passo (Para Quem Quiser Avançar)</span>
-                                            <h3 class="text-base sm:text-lg font-extrabold text-white">No final da aula, abriremos nosso Programa Completo por um Baixo Investimento</h3>
-                                        </div>
-                                    </div>
-                                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                                        Sabemos que, ao ver como é simples destravar com os blocos prontos, muitos alunos vão querer o acompanhamento completo (com todos os capítulos de viagem, simulações de conversação em Londres e prática no WhatsApp). Por isso, nos minutos finais da aula, apresentaremos nosso <strong>programa completo com uma condição especial de baixo valor</strong> exclusiva para os participantes.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- DOBRA 3: IDENTIFICAÇÃO DA DOR E OS 3 DEGRAUS (FUNDO CREME VINTAGE) -->
-                    <div class="bg-[#F4F1EA] text-slate-900 px-6 py-12 sm:px-12">
-                        <div class="max-w-4xl mx-auto space-y-8">
-                            <div class="text-center space-y-2">
-                                <span class="text-xs font-extrabold uppercase tracking-widest text-british-red">DIAGNÓSTICO DE VIAGEM</span>
-                                <h2 class="font-display text-2xl sm:text-3xl font-bold uppercase text-british-navy">
-                                    Você já passou por alguma dessas situações?
-                                </h2>
-                            </div>
-
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                <div class="bg-white p-5 rounded-xl border border-slate-300 shadow-sm flex items-start gap-3">
-                                    <span class="text-xl">🏨</span>
-                                    <p class="text-sm text-slate-700"><strong>Travou no check-in do hotel</strong> ou na imigração e ficou sem saber o que responder quando a conversa saiu do básico.</p>
-                                </div>
-                                <div class="bg-white p-5 rounded-xl border border-slate-300 shadow-sm flex items-start gap-3">
-                                    <span class="text-xl">🍽️</span>
-                                    <p class="text-sm text-slate-700"><strong>Olhou pro cardápio no restaurante</strong> sem entender metade dos pratos ou ficou com receio de chamar o garçom.</p>
-                                </div>
-                                <div class="bg-white p-5 rounded-xl border border-slate-300 shadow-sm flex items-start gap-3">
-                                    <span class="text-xl">✈️</span>
-                                    <p class="text-sm text-slate-700"><strong>Passou aperto no aeroporto</strong> quando mudaram o portão de embarque ou precisou pedir uma informação rápida.</p>
-                                </div>
-                                <div class="bg-white p-5 rounded-xl border border-slate-300 shadow-sm flex items-start gap-3">
-                                    <span class="text-xl">🗣️</span>
-                                    <p class="text-sm text-slate-700"><strong>Sentiu que estava "assistindo à viagem de fora":</strong> dependendo de aplicativo de tradução ou de outra pessoa para falar por você.</p>
-                                </div>
-                            </div>
-
-                            <!-- Os 3 Degraus que serão revelados na aula -->
-                            <div class="bg-british-navy text-white p-6 sm:p-8 rounded-2xl space-y-4 shadow-xl">
-                                <h3 class="font-display text-xl sm:text-2xl uppercase text-amber-400 text-center">
-                                    O Mapa dos 3 Degraus que você vai conhecer na Aula:
+                                <h3 id="result-profile-title" class="font-display text-2xl sm:text-3xl font-bold text-white uppercase">
+                                    Perfil: O Tradutor Mental
                                 </h3>
-                                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
-                                    <div class="bg-slate-900 p-4 rounded-xl border border-slate-700">
-                                        <strong class="text-emerald-400 block text-sm mb-1">1º Degrau: Se Virar Sozinho</strong>
-                                        Como ter a frase pronta exata para aeroporto, hotel, farmácia e restaurante usando a troca de peças.
-                                    </div>
-                                    <div class="bg-slate-900 p-4 rounded-xl border border-slate-700">
-                                        <strong class="text-amber-400 block text-sm mb-1">2º Degrau: Sustentar o Papo</strong>
-                                        Como manter uma conversa real quando o garçom ou alguém na fila puxa um assunto fora do script.
-                                    </div>
-                                    <div class="bg-slate-900 p-4 rounded-xl border border-slate-700">
-                                        <strong class="text-rose-400 block text-sm mb-1">3º Degrau: Viver o Idioma</strong>
-                                        Como usar música, humor e cultura pop britânica para pensar em inglês sem atraso mental.
-                                    </div>
-                                </div>
+                                <p id="result-profile-desc" class="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-xl mx-auto">
+                                    Você entende bem o inglês quando lê ou ouve com calma, mas na hora de falar tenta traduzir as palavras do português para o inglês na cabeça. Como o interlocutor fala rápido, dá aquele "apagão".
+                                </p>
                             </div>
-                        </div>
-                    </div>
 
-                    <!-- DOBRA 4: AUTORIDADE DO PROFESSOR MARCOS LOBÃO -->
-                    <div class="bg-british-navy px-6 py-10 sm:px-12">
-                        <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center gap-8">
-                            <div class="w-28 h-28 sm:w-36 sm:h-36 shrink-0 rounded-2xl bg-slate-800 border-2 border-amber-400 flex flex-col items-center justify-center text-center p-3">
-                                <span class="text-3xl">🥁🇬🇧</span>
-                                <span class="text-[11px] font-bold text-amber-300 mt-1">Prof. Marcos Lobão</span>
-                            </div>
-                            <div class="space-y-3 text-center sm:text-left">
-                                <span class="text-xs font-extrabold uppercase tracking-wider text-amber-400">QUEM VAI TE ENSINAR</span>
-                                <h3 class="font-display text-2xl font-bold text-white uppercase">Marcos Lobão • +30 Anos Ensinando o Inglês que Resolve</h3>
-                                <p class="text-sm text-slate-300 leading-relaxed">
-                                    Professor de inglês há mais de 3 décadas, Marcos viveu mais de 4 anos fora do Brasil — entre <strong>Londres (onde trabalhou no lendário Savoy Hotel)</strong> e <strong>Los Angeles</strong>. Baterista e colecionador de memórias reais da era Britpop, criou um método direto ao ponto para adultos que não têm tempo a perder com regras gramaticais e querem autonomia real em viagens e conversas.
+                            <!-- Capture Form Inside Quiz Result -->
+                            <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 space-y-4">
+                                <div class="text-center space-y-1">
+                                    <span class="text-xs font-extrabold text-amber-400 uppercase tracking-wider">🎟️ SEU PASSE DE CONVIDADO FOI CONCEDIDO!</span>
+                                    <h4 class="text-base sm:text-lg font-extrabold text-white">Inscreva-se na Sessão Ao Vivo (11/11 • 20h) + Receba o PDF 20 Blocos</h4>
+                                    <p class="text-xs text-slate-400">Preencha abaixo para receber o material imediatamente no seu WhatsApp:</p>
+                                </div>
+
+                                <input type="text" id="lead-name" placeholder="Seu primeiro nome" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-amber-400">
+                                <input type="email" id="lead-email" placeholder="Seu melhor e-mail" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-amber-400">
+                                <input type="tel" id="lead-phone" placeholder="Seu WhatsApp com DDD (para receber o PDF)" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-amber-400">
+
+                                <button onclick="finishQuizRegistration()" class="w-full py-4 rounded-xl bg-british-emerald hover:bg-emerald-400 text-slate-950 font-extrabold text-sm sm:text-base uppercase tracking-wide shadow-lg pulse-emerald transition">
+                                    GARANTIR MEU PASSE + BAIXAR PDF 20 BLOCOS →
+                                </button>
+                                <p class="text-[11px] text-slate-400 text-center">
+                                    🔒 Inscrição confirmada para a Turma Fundadora • PDF enviado em segundos.
                                 </p>
                             </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
+
             </div>
         </section>
 
         <!-- ==========================================
-             ABA 4: PÁGINA DE OBRIGADO + SEQUÊNCIA DE WHATSAPP
+             ABA 4: PÁGINA DE OBRIGADO & WHATSAPP (BASTIDORES SAVOY)
              ========================================== -->
         <section id="tab-wa" class="tab-pane hidden space-y-8">
             <!-- SIMULADOR DA PÁGINA DE OBRIGADO -->
@@ -831,7 +524,7 @@
                         <span class="ml-2 text-xs font-mono text-slate-400 bg-slate-950 px-3 py-1 rounded border border-slate-800">🔒 https://marcoslobao.com.br/passe-confirmado</span>
                     </div>
                     <button onclick="copyElementText('thankyou-copy-area')" class="text-xs font-bold text-amber-400 hover:underline">
-                        📋 Copiar Copy da Página de Obrigado
+                        📋 Copiar Copy de Obrigado
                     </button>
                 </div>
 
@@ -843,44 +536,44 @@
                     </div>
 
                     <h2 class="font-display text-3xl sm:text-4xl font-bold text-white uppercase">
-                        Falta apenas 1 clique para liberar seu Passe + Kit de Bolso!
+                        Falta 1 clique para liberar o PDF 20 Blocos no WhatsApp!
                     </h2>
 
                     <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
-                        O link de acesso à nossa Sala Oficial de Transmissão da aula <strong class="text-white">A Mala de Londres</strong>, o seu presente (<em class="text-amber-300">Kit de Bolso: As 15 Frases de Ouro do Aeroporto ao Pub</em>) e o acesso prioritário à condição especial do nosso programa completo serão enviados exclusivamente no <strong>Grupo VIP de Participantes no WhatsApp</strong>.
+                        O link para download do seu presente (<strong class="text-amber-300">PDF 20 Blocos de Conversação</strong>) e o link exclusivo da nossa Sala Ao Vivo de <strong class="text-white">quarta-feira, 11/11, às 20h</strong> estão sendo entregues no <strong>Grupo VIP da Turma Fundadora no WhatsApp</strong>.
                     </p>
 
                     <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl space-y-4 shadow-xl">
                         <button onclick="switchTab('tab-live')" class="w-full py-4 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-slate-950 font-extrabold text-base uppercase tracking-wide shadow-lg pulse-emerald transition">
-                            📲 ENTRAR NO GRUPO VIP DE PARTICIPANTES AGORA →
+                            📲 ENTRAR NO GRUPO VIP DA TURMA FUNDADORA →
                         </button>
                         <p class="text-xs text-slate-400">
-                            🔒 Grupo silencioso e focado: apenas avisos oficiais da aula e entrega do seu material prático.
+                            🔒 Grupo silencioso: somente avisos da aula do dia 11/11 e histórias exclusivas dos bastidores de Londres.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <!-- SEQUÊNCIA DE MENSAGENS DE WHATSAPP (COM TRANSPARÊNCIA E ANTECIPAÇÃO) -->
+            <!-- SEQUÊNCIA DE MENSAGENS COM BASTIDORES DE LONDRES & SAVOY HOTEL -->
             <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-5">
                 <div class="border-b border-slate-800 pb-4">
-                    <h3 class="text-lg font-extrabold text-white">📲 Sequência de Aquecimento no WhatsApp (Alinhada com Ganho na Aula + Produto Completo)</h3>
+                    <h3 class="text-lg font-extrabold text-white">📲 Sequência de Aquecimento no WhatsApp (Bastidores de Londres & Savoy Hotel)</h3>
                     <p class="text-xs text-slate-400 mt-1">
-                        Cada mensagem aumenta a vontade de assistir à aula pelo conteúdo/presente e prepara o participante para desejar a oferta especial no final.
+                        Troca dos degraus de viagem por narrativas profundas de <strong>Cultura e Idioma</strong>, gerando desejo pela aula de 11/11.
                     </p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                    <!-- WA 1 -->
+                    <!-- Mensagem 1 -->
                     <div class="bg-[#0b141a] border border-emerald-900/60 rounded-xl p-4 flex flex-col justify-between space-y-4">
                         <div class="space-y-2">
-                            <span class="text-[11px] font-bold text-emerald-400 uppercase">📌 Mensagem 1: Boas-vindas + Combinado Claro</span>
+                            <span class="text-[11px] font-bold text-emerald-400 uppercase">📌 Mensagem 1: Boas-vindas + Envio do PDF 20 Blocos</span>
                             <div id="wa-msg-1" class="bg-[#1f2c34] text-slate-100 p-3.5 rounded-lg text-xs leading-relaxed space-y-2 border-l-4 border-emerald-500">
-                                <p>Seu passe para a sessão <strong>A Mala de Londres</strong> está confirmado! 🇬🇧🧳 Aqui é o <strong>Marcos Lobão</strong>.</p>
-                                <p>Na próxima <strong>[Dia], às 20h</strong>, nós temos um encontro prático. Quero reforçar nosso combinado com você:</p>
-                                <p>1️⃣ <strong>O que você ganha na aula:</strong> Vou te ensinar na prática a técnica <em>"Troque a Peça e Reuse"</em> pra você destravar o inglês da sua próxima viagem sem decorar gramática, e vou liberar na tela o seu <strong>Kit de Bolso com as 15 Frases de Ouro</strong>.<br>
-                                2️⃣ <strong>Para quem quiser ir além:</strong> Nos minutos finais da aula, vou abrir as portas da minha jornada completa de inglês com uma condição super especial de baixo investimento só para quem estiver aqui no grupo.</p>
-                                <p>Coloque um alarme no celular para [Dia] às 19h55!</p>
+                                <p>Seu passe para o treinamento <strong>Mala de Londres: Cultura e Idioma</strong> está confirmado! 🇬🇧 Aqui é o <strong>Marcos Lobão</strong>.</p>
+                                <p>📥 Conforme prometido no Quiz, aqui está o seu presente:<br>
+                                👉 <strong>[LINK PARA BAIXAR O PDF 20 BLOCOS DE CONVERSAÇÃO]</strong></p>
+                                <p>Guarde na sua agenda: nossa aula oficial ao vivo será na <strong>próxima quarta-feira, 11/11, às 20h</strong>.</p>
+                                <p>Nela você vai entender por que quem já estudou trava ao falar e como destravar sua voz com confiança em 90 dias!</p>
                             </div>
                         </div>
                         <button onclick="copyElementText('wa-msg-1')" class="w-full py-2.5 rounded-lg bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-300 font-bold text-xs border border-emerald-500/30 transition">
@@ -888,17 +581,16 @@
                         </button>
                     </div>
 
-                    <!-- WA 2 -->
+                    <!-- Mensagem 2 -->
                     <div class="bg-[#0b141a] border border-emerald-900/60 rounded-xl p-4 flex flex-col justify-between space-y-4">
                         <div class="space-y-2">
-                            <span class="text-[11px] font-bold text-amber-400 uppercase">📸 Mensagem 2: Os 3 Degraus do Savoy Hotel (Véspera)</span>
+                            <span class="text-[11px] font-bold text-amber-400 uppercase">🏨 Mensagem 2: Bastidor do Savoy Hotel (Segunda-feira)</span>
                             <div id="wa-msg-2" class="bg-[#1f2c34] text-slate-100 p-3.5 rounded-lg text-xs leading-relaxed space-y-2 border-l-4 border-amber-500">
-                                <p><em>[Foto real dos itens da Mala de Londres: ingressos de show + recordação do Savoy Hotel]</em></p>
-                                <p>Separando os itens da minha Mala de Londres pra nossa aula de amanhã! 🧳 Quando trabalhei no lendário <strong>Savoy Hotel</strong> em Londres, percebi que todo viajante passa por <strong>3 degraus no inglês</strong>:</p>
-                                <p>🔹 <strong>Degrau 1 (Se virar):</strong> Resolver aeroporto, hotel e restaurante na hora com blocos prontos.<br>
-                                🔹 <strong>Degrau 2 (Conversar):</strong> Manter o papo quando o garçom ou alguém na fila fala fora do seu roteiro.<br>
-                                🔹 <strong>Degrau 3 (Viver a língua):</strong> Entender música, humor e cultura sem traduzir na cabeça.</p>
-                                <p>Amanhã às 20h você já vai dominar a base prática do Degrau 1 ao vivo comigo e descobrir como destravar a jornada inteira por um valor super acessível!</p>
+                                <p><em>[Foto de Londres / Entrada histórica do Savoy Hotel]</em></p>
+                                <p>Quando cheguei a Londres para trabalhar no <strong>Savoy Hotel</strong>, percebi algo que mudou minha forma de ensinar para sempre:</p>
+                                <p>Muitos hóspedes estrangeiros sabiam todas as regras gramaticais de livros, mas na hora de pedir um serviço ou trocar duas palavras no saguão, tremiam de vergonha e não conseguiam formular a frase.</p>
+                                <p>Sabe por quê? Porque a escola tradicional te ensina a pensar como um robô que traduz palavras soltas. Em Londres, nós usamos <strong>Chunks Culturais</strong>: frases em bloco que saem no piloto automático.</p>
+                                <p>Na quarta-feira, 11/11, às 20h, vou te mostrar como aplicar isso na prática para falar com confiança em 90 dias!</p>
                             </div>
                         </div>
                         <button onclick="copyElementText('wa-msg-2')" class="w-full py-2.5 rounded-lg bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-300 font-bold text-xs border border-emerald-500/30 transition">
@@ -906,15 +598,18 @@
                         </button>
                     </div>
 
-                    <!-- WA 3 -->
+                    <!-- Mensagem 3 -->
                     <div class="bg-[#0b141a] border border-emerald-900/60 rounded-xl p-4 flex flex-col justify-between space-y-4">
                         <div class="space-y-2">
-                            <span class="text-[11px] font-bold text-blue-400 uppercase">🎁 Mensagem 3: Manhã do Evento (Spoiler do Presente)</span>
+                            <span class="text-[11px] font-bold text-blue-400 uppercase">⏳ Mensagem 3: Véspera da Aula (Terça-feira 10/11)</span>
                             <div id="wa-msg-3" class="bg-[#1f2c34] text-slate-100 p-3.5 rounded-lg text-xs leading-relaxed space-y-2 border-l-4 border-blue-500">
-                                <p>É HOJE, às 20h! 🇬🇧 Olha o que já está separado pra você receber hoje durante a nossa aula:</p>
-                                <p>📘 <strong>O Kit de Bolso "As 15 Frases de Ouro do Aeroporto ao Pub"</strong> + a aula prática do método <em>Troque a Peça e Reuse</em>.</p>
-                                <p>⚠️ <strong>Importante:</strong> A senha para liberar o seu Kit de Bolso e o link da condição especial do nosso Programa Completo serão revelados ao vivo durante a transmissão na nossa Sala Oficial.</p>
-                                <p>Te espero às 20h em ponto!</p>
+                                <p>É amanhã, quarta-feira, às 20h! 🇬🇧</p>
+                                <p>Nossa sessão ao vivo <strong>Mala de Londres: Cultura e Idioma</strong> está pronta. Separe seu caderno e o PDF dos 20 Blocos impresso ou aberto no celular.</p>
+                                <p>💡 <strong>O que você vai dominar na aula:</strong><br>
+                                1. O teste ao vivo da desconstrução gramatical.<br>
+                                2. Como eliminar de vez o vício de traduzir mentalmente.<br>
+                                3. A oportunidade exclusiva para entrar na nossa <strong>Turma Fundadora de 90 dias</strong> (vagas limitadíssimas a apenas 20 alunos).</p>
+                                <p>Coloque o alarme no celular: amanhã, 19h55!</p>
                             </div>
                         </div>
                         <button onclick="copyElementText('wa-msg-3')" class="w-full py-2.5 rounded-lg bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-300 font-bold text-xs border border-emerald-500/30 transition">
@@ -922,14 +617,14 @@
                         </button>
                     </div>
 
-                    <!-- WA 4 -->
+                    <!-- Mensagem 4 -->
                     <div class="bg-[#0b141a] border border-emerald-900/60 rounded-xl p-4 flex flex-col justify-between space-y-4">
                         <div class="space-y-2">
-                            <span class="text-[11px] font-bold text-rose-400 uppercase">🔴 Mensagem 4: Estamos Ao Vivo (19h55)</span>
+                            <span class="text-[11px] font-bold text-rose-400 uppercase">🔴 Mensagem 4: Estamos Ao Vivo! (Quarta 11/11 • 19h55)</span>
                             <div id="wa-msg-4" class="bg-[#1f2c34] text-slate-100 p-3.5 rounded-lg text-xs leading-relaxed space-y-2 border-l-4 border-rose-500">
                                 <p>🔴 <strong>A MALA DE LONDRES ESTÁ ABERTA! ESTAMOS AO VIVO!</strong></p>
-                                <p>Entre agora na nossa Sala Oficial para aprender na prática a técnica <strong>"Troque a Peça e Reuse"</strong>, pegar o seu <strong>Kit de Bolso</strong> e conhecer a condição especial de lançamento da nossa jornada completa.</p>
-                                <p>👇 <strong>Toque no link abaixo para entrar na aula agora:</strong><br>
+                                <p>Entre agora na nossa Sala Oficial. Vou te ensinar o método prático para destravar o seu inglês e falar com confiança em 90 dias, e abrir oficialmente as 20 vagas da Turma Fundadora.</p>
+                                <p>👇 <strong>Clique no link para entrar na sala:</strong><br>
                                 https://marcoslobao.com.br/sala-ao-vivo</p>
                             </div>
                         </div>
@@ -942,22 +637,21 @@
         </section>
 
         <!-- ==========================================
-             ABA 5: SALA DA LIVE (EMBED YOUTUBE) + ROTEIRO DE CONTEÚDO & PITCH TRANSPARENTE
+             ABA 5: SALA DA LIVE (11/11 • 20H) + ROTEIRO
              ========================================== -->
         <section id="tab-live" class="tab-pane hidden space-y-8">
-            <!-- Interactive Control Bar -->
             <div class="bg-gradient-to-r from-slate-900 via-british-slate to-slate-900 border-2 border-amber-500/60 rounded-2xl p-5 flex flex-col md:flex-row items-center justify-between gap-4 shadow-xl">
                 <div class="space-y-1">
-                    <span class="text-xs font-extrabold uppercase text-amber-400">⚡ SIMULADOR DA SALA DE TRANSMISSÃO PRÓPRIA</span>
+                    <span class="text-xs font-extrabold uppercase text-amber-400">⚡ SALA DA LIVE OFICIAL: QUARTA, 11/11 • 20H</span>
                     <h2 class="text-lg sm:text-xl font-extrabold text-white">
-                        Vídeo do YouTube Incorporado + Entrega do Presente da Aula + Abertura de Carrinho
+                        Mala de Londres: Cultura e Idioma (Webinário Turma Fundadora)
                     </h2>
                     <p class="text-xs text-slate-300">
-                        Veja como na mesma página você entrega o Presente Prometido (cumprindo a promessa da captura) e abre o botão para a Página do Produto Completo!
+                        Player do YouTube incorporado, entrega do PDF 20 Blocos e botão programado para a Oferta da Turma Fundadora!
                     </p>
                 </div>
                 <button id="toggle-pitch-btn" onclick="togglePitchOffer()" class="shrink-0 px-5 py-3.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-extrabold text-xs sm:text-sm uppercase tracking-wider shadow-xl transition flex items-center gap-2">
-                    <span>🔓</span> <span id="pitch-btn-label">Esconder Botão de Compra (Simular Início da Live)</span>
+                    <span>🔓</span> <span id="pitch-btn-label">Esconder Oferta (Simular Início da Aula)</span>
                 </button>
             </div>
 
@@ -971,7 +665,7 @@
                         <span class="ml-2 text-xs font-mono text-slate-400 bg-slate-950 px-3 py-1 rounded border border-slate-800">🔒 https://marcoslobao.com.br/sala-ao-vivo</span>
                     </div>
                     <span class="text-xs font-bold text-rose-400 flex items-center gap-1.5">
-                        <span class="w-2 h-2 rounded-full bg-rose-500 animate-ping"></span> SESSÃO OFICIAL AO VIVO
+                        <span class="w-2 h-2 rounded-full bg-rose-500 animate-ping"></span> TRANSMISSÃO AO VIVO • QUARTA, 11/11
                     </span>
                 </div>
 
@@ -982,70 +676,67 @@
                             <div class="aspect-video w-full rounded-2xl bg-gradient-to-br from-slate-900 via-british-navy to-slate-950 border border-slate-700 relative overflow-hidden flex flex-col justify-between p-6 shadow-2xl">
                                 <div class="flex items-center justify-between">
                                     <span class="bg-rose-600 text-white text-[11px] font-extrabold px-2.5 py-1 rounded flex items-center gap-1.5">
-                                        <span class="w-2 h-2 rounded-full bg-white"></span> AO VIVO • 40:12
+                                        <span class="w-2 h-2 rounded-full bg-white"></span> AO VIVO • 45:10
                                     </span>
                                     <span class="text-xs bg-slate-950/80 text-amber-300 px-3 py-1 rounded-full border border-slate-800 font-semibold">
-                                        🎁 Senha do Kit de Bolso revelada na tela: LONDRES95
+                                        Tema: Por que quem já estudou trava ao falar
                                     </span>
                                 </div>
 
                                 <div class="my-auto text-center space-y-3 max-w-lg mx-auto">
-                                    <p class="text-xs font-bold uppercase tracking-widest text-amber-400">AULA PRÁTICA: MÉTODO "TROQUE A PEÇA E REUSE"</p>
+                                    <p class="text-xs font-bold uppercase tracking-widest text-amber-400">ROMA OFICIAL: EM 90 DIAS COM CONFIANÇA</p>
                                     <div class="bg-slate-950/90 border border-slate-700 p-4 rounded-xl space-y-2">
                                         <p class="text-base sm:text-lg font-extrabold text-white">
-                                            "I'm looking for <span class="text-amber-400 underline">[the underground station]</span>, can you help me?"
+                                            "Eu te ajudo a destravar o seu inglês e falar com confiança em 90 dias."
                                         </p>
                                         <p class="text-xs text-emerald-400 font-semibold">
-                                            → Troque apenas a peça amarela por: [a pharmacy] • [gate 24] • [the Savoy Hotel] = Você resolve qualquer imprevisto sem pensar em gramática!
+                                            Cultura Real de Londres + Prática em Chunks = O fim da tradução mental!
                                         </p>
                                     </div>
                                 </div>
 
                                 <div class="flex items-center justify-between text-xs text-slate-400 border-t border-slate-800/80 pt-3">
-                                    <span>▶️ Player YouTube Não-Listado (Integrado na sua Página)</span>
-                                    <span>Qualidade HD 1080p</span>
+                                    <span>▶️ Player YouTube Não-Listado Oficial</span>
+                                    <span>Prof. Marcos Lobão</span>
                                 </div>
                             </div>
 
-                            <!-- 1. BOX DO PRESENTE DA AULA (CUMPRINDO A PROMESSA DA CAPTURA) -->
+                            <!-- 1. PRESENTE DA AULA: PDF 20 BLOCOS -->
                             <div class="bg-slate-900 border border-slate-700 rounded-xl p-4 flex flex-col sm:flex-row items-center justify-between gap-4">
                                 <div class="flex items-center gap-3">
-                                    <span class="text-2xl">🎁</span>
+                                    <span class="text-2xl">📥</span>
                                     <div>
-                                        <span class="text-[10px] font-extrabold uppercase text-emerald-400">MATERIAL PRÁTICO PROMETIDO NA INSCRIÇÃO</span>
-                                        <h4 class="text-sm font-extrabold text-white">Kit de Bolso: As 15 Frases de Ouro do Aeroporto ao Pub (PDF)</h4>
+                                        <span class="text-[10px] font-extrabold uppercase text-emerald-400">MATERIAL DE APOIO OFICIAL</span>
+                                        <h4 class="text-sm font-extrabold text-white">PDF: 20 Blocos de Conversação de Londres (Chunks)</h4>
                                     </div>
                                 </div>
-                                <button onclick="copyText('Download do Kit de Bolso liberado com a senha LONDRES95!')" class="shrink-0 px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-bold text-emerald-300 border border-emerald-500/40">
-                                    📥 Baixar Presente da Aula
+                                <button onclick="showToast('Download do PDF 20 Blocos iniciado!')" class="shrink-0 px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-bold text-emerald-300 border border-emerald-500/40">
+                                    Baixar PDF 20 Blocos
                                 </button>
                             </div>
 
-                            <!-- 2. BOX DE ABERTURA DE CARRINHO (SURGE NO MINUTO 40) -->
+                            <!-- 2. PITCH DA TURMA FUNDADORA (SURGE AOS 45 MIN) -->
                             <div id="live-pitch-box" class="bg-gradient-to-r from-emerald-950 via-slate-900 to-emerald-950 border-2 border-british-emerald rounded-2xl p-6 shadow-2xl space-y-4 transition-all duration-500">
                                 <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                                     <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-extrabold bg-amber-400 text-slate-950 uppercase">
-                                        🔓 CONDIÇÃO ESPECIAL DE LANÇAMENTO LIBERADA AGORA!
+                                        🚨 MATRÍCULAS ABERTAS • APENAS 20 VAGAS!
                                     </span>
-                                    <span class="text-xs font-bold text-emerald-300">🛡️ 7 Dias de Garantia Incondicional</span>
+                                    <span class="text-xs font-bold text-emerald-300">Carrinho fecha domingo, 15/11</span>
                                 </div>
 
                                 <div class="space-y-1">
                                     <h4 class="text-xl sm:text-2xl font-extrabold text-white">
-                                        Dê o Próximo Passo: Programa Completo Backstage English + 2 Bônus Inclusos (Pop Travel + Aventura Britânica)
+                                        Treinamento Mala de Londres: Cultura e Idioma (Turma Fundadora)
                                     </h4>
                                     <p class="text-xs sm:text-sm text-slate-300">
-                                        Como combinamos com total transparência: para você que gostou da aula prática e quer ter todos os capítulos de viagem, os 7 módulos de conversação em Londres e o acompanhamento por áudio no WhatsApp por um <strong>investimento super acessível (12x de R$ 59,70 ou R$ 597 à vista)</strong>.
+                                        Destrave sua conversação com o Prof. Marcos Lobão: 90 dias de acompanhamento, mentoria de pronúncia e cultura britânica. Condição especial: <strong>R$ 497 à vista (ou 12x)</strong> ou <strong>Opção Dupla (2 vagas) por R$ 797</strong>!
                                     </p>
                                 </div>
 
                                 <div class="pt-2">
                                     <button onclick="switchTab('tab-sales')" class="w-full py-4 rounded-xl bg-british-emerald hover:bg-emerald-400 text-slate-950 font-extrabold text-sm sm:text-base uppercase tracking-wide shadow-xl pulse-emerald transition">
-                                        CONHECER O PROGRAMA COMPLETO E GARANTIR CONDIÇÃO ESPECIAL →
+                                        VER PÁGINA DA OFERTA & GARANTIR MINHA VAGA →
                                     </button>
-                                    <p class="text-[11px] text-center text-slate-400 mt-2">
-                                        👆 Ao clicar, o participante abre a <strong>Página do Produto Completo (Aba 6)</strong> já com o botão de Checkout no topo!
-                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -1053,312 +744,208 @@
                         <!-- Chat Lateral (4 cols) -->
                         <div class="lg:col-span-4 bg-slate-900 border border-slate-800 rounded-2xl p-4 flex flex-col justify-between min-h-[420px]">
                             <div class="border-b border-slate-800 pb-3 mb-3 flex items-center justify-between">
-                                <span class="text-xs font-extrabold uppercase text-white">💬 Chat dos Participantes</span>
+                                <span class="text-xs font-extrabold uppercase text-white">💬 Chat dos Alunos</span>
                                 <span class="text-[11px] text-emerald-400 font-semibold">● Ao Vivo</span>
                             </div>
 
                             <div class="space-y-3 text-xs overflow-y-auto max-h-80 pr-1">
                                 <div class="bg-slate-950 p-2.5 rounded-lg border border-slate-800">
-                                    <strong class="text-amber-400">Marcelo V.:</strong> Muito bom você já avisar desde o começo como funciona! Só essa técnica do "Troque a Peça" já valeu a noite.
+                                    <strong class="text-amber-400">Renata M.:</strong> Marcos, essa história do Savoy foi sensacional! Eu estudei 4 anos de cursinho e nunca ninguém me explicou os Chunks assim!
                                 </div>
                                 <div class="bg-slate-950 p-2.5 rounded-lg border border-slate-800">
-                                    <strong class="text-emerald-400">Helena R.:</strong> Acabei de baixar o Kit de Bolso com as 15 Frases de Ouro aqui embaixo do vídeo! Ficou incrível!
+                                    <strong class="text-emerald-400">Carlos E.:</strong> Já baixei o PDF dos 20 Blocos aqui embaixo do vídeo. Muito direto ao ponto!
                                 </div>
                                 <div class="bg-slate-950 p-2.5 rounded-lg border border-slate-800">
-                                    <strong class="text-blue-400">Fernando T.:</strong> Marcos, quero continuar no programa completo! Quem entrar agora leva o Pop Travel e o Aventura Britânica juntos?
+                                    <strong class="text-blue-400">Luciana B.:</strong> Vou pegar a Opção Dupla de R$ 797 para fazer com o meu marido. Podemos entrar juntos?
                                 </div>
                                 <div class="bg-british-red/20 p-2.5 rounded-lg border border-british-red/50">
-                                    <strong class="text-rose-300">📌 Suporte Marcos Lobão:</strong> Sim, Fernando! Clicando no botão verde abaixo do vídeo você vê todos os detalhes na página do programa e já garante os 2 bônus!
+                                    <strong class="text-rose-300">📌 Suporte Marcos Lobão:</strong> Sim, Luciana! A Opção Dupla dá acesso individual completo para os dois por R$ 797. É só clicar no botão verde abaixo!
                                 </div>
                             </div>
 
                             <div class="mt-4 pt-3 border-t border-slate-800 text-[11px] text-slate-400 text-center">
-                                Transmissão protegida • Domínio próprio
+                                Transmissão exclusiva • Quarta 11/11
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- ROTEIRO DE TRANSIÇÃO TRANSPARENTE DA LIVE -->
+            <!-- ROTEIRO OFICIAL DA LIVE (5 PILARES) -->
             <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-4">
                 <div class="flex items-center justify-between">
-                    <h3 class="text-lg font-extrabold text-white">🎙️ Roteiro da Live: Como Entregar Valor Real e Fazer o Pitch Transparente</h3>
-                    <button onclick="copyElementText('live-transparent-script')" class="px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-bold text-amber-400 border border-slate-700">
-                        📋 Copiar Roteiro Falado
+                    <h3 class="text-lg font-extrabold text-white">🎙️ Roteiro da Aula Ao Vivo (Quarta, 11/11 • 20h)</h3>
+                    <button onclick="copyElementText('live-script-area')" class="px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-bold text-amber-400 border border-slate-700">
+                        📋 Copiar Roteiro da Aula
                     </button>
                 </div>
 
-                <div id="live-transparent-script" class="grid grid-cols-1 md:grid-cols-4 gap-4 text-xs text-slate-300 leading-relaxed">
-                    <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-2">
-                        <span class="text-rose-400 font-extrabold uppercase block">1. Minuto 00 a 10 (O Acordo Honesto)</span>
-                        <p>"Bem-vindos à abertura da Mala de Londres! Como avisei na página de inscrição, hoje eu tenho dois compromissos com você: primeiro, nos próximos 35 minutos, você vai aprender na prática o método <em>Troque a Peça e Reuse</em> e pegar seu Kit de 15 Frases de Ouro. Segundo: no final, para quem quiser ir além e ter meu acompanhamento completo por um investimento super baixo, vou abrir uma condição especial."</p>
+                <div id="live-script-area" class="grid grid-cols-1 md:grid-cols-5 gap-3 text-xs text-slate-300 leading-relaxed">
+                    <div class="bg-slate-950 p-3.5 rounded-xl border border-slate-800 space-y-1.5">
+                        <span class="text-rose-400 font-extrabold uppercase block">1. A ROMA (00 a 10 min)</span>
+                        <p>"Bem-vindos à Mala de Londres! Hoje eu tenho um compromisso claro com você: <strong>te ajudar a destravar o seu inglês e falar com confiança em 90 dias</strong>. Se você já estudou e trava, hoje você vai entender por quê."</p>
                     </div>
-                    <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-2">
-                        <span class="text-amber-400 font-extrabold uppercase block">2. Minuto 10 a 32 (Aula Mão na Massa)</span>
-                        <p>Marcos mostra os itens reais da mala (Savoy Hotel e ingressos de Londres) e ensina na tela 3 estruturas reais de Chunks (Aeroporto, Hotel e Restaurante). Faz os alunos trocarem uma palavra no chat e verem que acabaram de criar 15 frases sem usar uma regra de gramática.</p>
+                    <div class="bg-slate-950 p-3.5 rounded-xl border border-slate-800 space-y-1.5">
+                        <span class="text-amber-400 font-extrabold uppercase block">2. A PROVA (10 a 20 min)</span>
+                        <p>Marcos faz uma demonstração ao vivo com os alunos no chat usando os Chunks de Londres: mostra como montar 10 frases sem pensar em sujeito, verbo e predicado.</p>
                     </div>
-                    <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-2">
-                        <span class="text-emerald-400 font-extrabold uppercase block">3. Minuto 32 a 40 (Entrega do Presente + Lacuna)</span>
-                        <p>Marcos libera a senha para baixarem o <em>Kit de Bolso</em> embaixo do vídeo. Em seguida, planta a virada: "Com o que você aprendeu aqui e com esse Kit, você já resolve emergências. Mas quando o garçom puxa assunto fora do roteiro ou alguém conta uma piada num pub, frase pronta não sustenta conversa. Você precisa viver o idioma."</p>
+                    <div class="bg-slate-950 p-3.5 rounded-xl border border-slate-800 space-y-1.5">
+                        <span class="text-emerald-400 font-extrabold uppercase block">3. HISTÓRIA SAVOY (20 a 35 min)</span>
+                        <p>Narrativa real dos 4 anos vivendo em Londres e trabalhando no Savoy Hotel: a diferença abissal entre o inglês do livro escolar e a língua viva falada pelos britânicos.</p>
                     </div>
-                    <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-2">
-                        <span class="text-blue-400 font-extrabold uppercase block">4. Minuto 40 a 60 (Pitch Sem Culpa)</span>
-                        <p>"Agora, cumprindo a segunda parte do nosso combinado: para quem quer dar o próximo passo comigo, estou liberando o botão aqui embaixo do vídeo para a nossa Jornada Completa (Backstage English + Aventura Britânica + Pop Travel completo). Toque no botão verde para ver a página oficial e garantir sua vaga."</p>
+                    <div class="bg-slate-950 p-3.5 rounded-xl border border-slate-800 space-y-1.5">
+                        <span class="text-blue-400 font-extrabold uppercase block">4. ERRADO X CERTO (35 a 45 min)</span>
+                        <p>Contraste: <strong>Jeito Errado</strong> (fazer cursinho tradicional e traduzir mentalmente) x <strong>Jeito Certo</strong> (Cultura + Chunks + 90 dias de prática orientada).</p>
+                    </div>
+                    <div class="bg-slate-950 p-3.5 rounded-xl border border-slate-800 space-y-1.5">
+                        <span class="text-purple-400 font-extrabold uppercase block">5. A OFERTA (45 a 60 min)</span>
+                        <p>Abertura oficial das 20 vagas da Turma Fundadora: R$ 497 individual ou R$ 797 dupla. Garantia incondicional de 7 dias + Garantia condicional de 90 dias. Carrinho encerra 15/11.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- ==========================================
-             ABA 6: SIMULADOR PÁGINAS DE VENDAS (PRINCIPAL + DOWNSELL R$ 27 + OTO R$ 97)
+             ABA 6: PÁGINA DE VENDAS OFICIAL — TURMA FUNDADORA
              ========================================== -->
         <section id="tab-sales" class="tab-pane hidden space-y-6">
-            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 flex flex-col lg:flex-row items-center justify-between gap-4">
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-4">
                 <div>
-                    <h2 class="text-lg font-extrabold text-white">🛒 Simulador das Páginas do Produto Completo, Downsell (R$ 27) & Upsell (R$ 97)</h2>
-                    <p class="text-xs text-slate-400">O clique na Live leva para a Página 1 abaixo. Quem não puder investir no pacote completo recebe no Dia 3 a Página 2 (R$ 27) seguida da Página 3 (R$ 97).</p>
+                    <h2 class="text-lg font-extrabold text-white">🛒 Página de Vendas Oficial: Turma Fundadora</h2>
+                    <p class="text-xs text-slate-400">Oferta única oficial (sem Pop Travel e sem OTO 97). Checkout logo na primeira dobra!</p>
                 </div>
-                <div class="flex flex-wrap items-center gap-2 bg-slate-950 p-1.5 rounded-xl border border-slate-800">
-                    <button onclick="switchSalesSubTab('main')" id="sales-btn-main" class="px-3.5 py-2 rounded-lg text-xs font-extrabold bg-british-red text-white transition">
-                        1. Produto Completo da Live (Combo)
-                    </button>
-                    <button onclick="switchSalesSubTab('downsell')" id="sales-btn-downsell" class="px-3.5 py-2 rounded-lg text-xs font-bold text-slate-400 hover:text-white transition">
-                        2. Entrada Baixo Valor / Downsell: Pop Travel (R$ 27)
-                    </button>
-                    <button onclick="switchSalesSubTab('oto1')" id="sales-btn-oto1" class="px-3.5 py-2 rounded-lg text-xs font-bold text-slate-400 hover:text-white transition">
-                        3. Upsell OTO 1: Aventura Britânica (R$ 97)
-                    </button>
-                </div>
+                <button onclick="copyElementText('sales-full-page-copy')" class="px-4 py-2 rounded-xl bg-slate-800 text-amber-300 font-bold text-xs border border-slate-700 hover:bg-slate-700">
+                    📋 Copiar Copy Completa de Vendas
+                </button>
             </div>
 
-            <!-- PÁGINA 1: OFERTA COMPLETA DA LIVE -->
-            <div id="sales-view-main" class="rounded-2xl overflow-hidden border-2 border-slate-700 shadow-2xl bg-british-navy space-y-8 p-6 sm:p-10">
-                <div class="flex items-center justify-between border-b border-slate-800 pb-4">
-                    <span class="text-xs font-mono text-amber-400">🔒 https://marcoslobao.com.br/jornada-completa (Destino do botão da Sala da Live)</span>
-                    <button onclick="copyElementText('copy-main-sales')" class="px-3 py-1.5 rounded bg-slate-800 text-xs font-bold text-amber-300 hover:bg-slate-700">
-                        📋 Copiar Copy Completa
-                    </button>
-                </div>
+            <!-- SALES PAGE CONTAINER -->
+            <div id="sales-full-page-copy" class="rounded-2xl overflow-hidden border-2 border-slate-700 shadow-2xl bg-british-navy space-y-8 p-6 sm:p-12">
+                <div class="max-w-4xl mx-auto space-y-8">
 
-                <div id="copy-main-sales" class="max-w-4xl mx-auto space-y-10">
-                    <div class="text-center space-y-4">
-                        <span class="px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/40 text-xs font-extrabold uppercase">
-                            🇬🇧 CONDIÇÃO EXCLUSIVA PARA PARTICIPANTES DA AULA "A MALA DE LONDRES"
-                        </span>
+                    <!-- TOP BADGE -->
+                    <div class="text-center space-y-3">
+                        <div class="inline-flex items-center gap-2 bg-amber-500/20 text-amber-300 border border-amber-500/40 px-3.5 py-1.5 rounded-lg text-xs font-extrabold uppercase tracking-wider">
+                            🇬🇧 TURMA FUNDADORA • APENAS 20 VAGAS • ENCERRA EM 15/11
+                        </div>
                         <h1 class="font-display text-3xl sm:text-5xl font-bold text-white uppercase leading-tight">
-                            Você já viu na aula como é simples destravar. Agora leve a <span class="text-amber-400">Jornada Completa</span> por menos de R$ 2 por dia.
+                            Mala de Londres: <span class="text-amber-400">Cultura e Idioma</span>
                         </h1>
-                        <p class="text-slate-300 text-sm sm:text-base max-w-3xl mx-auto">
-                            Tenha acesso imediato ao <strong>Backstage English</strong> (com prática de áudio pelo WhatsApp e encontros ao vivo) e receba <strong class="text-emerald-400">INCLUSOS SEM CUSTO EXTRA</strong> o <strong>Pop Travel Completo (E-book + Mini App)</strong> e o curso <strong>Aventura Britânica (7 Módulos em Londres)</strong>.
+                        <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto">
+                            O treinamento definitivo para você que já estudou inglês, entende a teoria, mas trava na hora de falar. Destrave sua voz e fale com confiança em 90 dias com o método do Savoy Hotel.
                         </p>
+                    </div>
 
-                        <!-- Checkout Box in 1st Fold -->
-                        <div class="bg-slate-900 border-2 border-british-emerald rounded-2xl p-6 max-w-2xl mx-auto shadow-2xl space-y-4 mt-4">
-                            <div class="flex flex-col sm:flex-row items-center justify-between gap-2 text-xs">
-                                <span class="text-slate-400 line-through">Valor somado dos 3 programas: R$ 1.121,00</span>
-                                <span class="text-emerald-400 font-bold">✅ Condição Especial de Lançamento Semente (-R$ 524)</span>
+                    <!-- CHECKOUT IN THE 1ST FOLD (INDIVIDUAL & DUPLA) -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+                        <!-- Opção Individual -->
+                        <div class="bg-slate-900 border-2 border-british-emerald rounded-2xl p-6 shadow-2xl flex flex-col justify-between space-y-4">
+                            <div class="space-y-2">
+                                <span class="px-2.5 py-1 rounded bg-emerald-500/20 text-emerald-300 text-xs font-extrabold uppercase">OPÇÃO 1 • VAGA INDIVIDUAL</span>
+                                <h3 class="text-xl font-extrabold text-white">Inscrição Individual</h3>
+                                <p class="text-xs text-slate-300">Acesso completo por 1 ano ao treinamento Mala de Londres + encontros quinzenais e feedback de pronúncia.</p>
+                                <div class="pt-2">
+                                    <div class="text-3xl font-extrabold text-white">
+                                        R$ 497,00 <span class="text-xs font-normal text-slate-400">à vista</span>
+                                    </div>
+                                    <p class="text-xs text-emerald-400 font-semibold">ou 12x no cartão de crédito</p>
+                                </div>
                             </div>
-                            <div class="text-2xl sm:text-3xl font-extrabold text-white">
-                                Apenas <span class="text-amber-400">12x de R$ 59,70</span> <span class="text-sm font-normal text-slate-300">(ou R$ 597 à vista)</span>
-                            </div>
-                            <button onclick="copyText('Abrindo Checkout Seguro da Jornada Completa...')" class="w-full py-4 rounded-xl bg-british-emerald hover:bg-emerald-400 text-slate-950 font-extrabold text-base uppercase tracking-wide shadow-lg pulse-emerald transition">
-                                💳 IR PARA O CHECKOUT SEGURO E GARANTIR OS 3 PROGRAMAS →
+                            <button onclick="showToast('Redirecionando para o Checkout Seguro (Individual R$ 497)...')" class="w-full py-3.5 rounded-xl bg-british-emerald hover:bg-emerald-400 text-slate-950 font-extrabold text-sm uppercase tracking-wide shadow-lg pulse-emerald transition">
+                                GARANTIR MINHA VAGA INDIVIDUAL →
                             </button>
-                            <p class="text-[11px] text-slate-400">🛡️ 7 dias de Garantia Incondicional • Acesso imediato no seu e-mail e WhatsApp.</p>
+                        </div>
+
+                        <!-- Opção Dupla -->
+                        <div class="bg-gradient-to-b from-amber-500/15 to-slate-900 border-2 border-amber-400 rounded-2xl p-6 shadow-2xl flex flex-col justify-between space-y-4 relative">
+                            <div class="absolute -top-3 right-4 bg-amber-400 text-slate-950 font-extrabold text-[10px] px-2.5 py-0.5 rounded-full uppercase shadow">
+                                MELHOR CUSTO-BENEFÍCIO
+                            </div>
+                            <div class="space-y-2">
+                                <span class="px-2.5 py-1 rounded bg-amber-500/20 text-amber-300 text-xs font-extrabold uppercase">OPÇÃO 2 • VAGA DUPLA (VOCÊ + 1 AMIGO)</span>
+                                <h3 class="text-xl font-extrabold text-white">2 Vagas Completas</h3>
+                                <p class="text-xs text-slate-300">Traga seu cônjuge, filho ou colega de trabalho para destravar juntos. Cada um terá acesso e suporte individual.</p>
+                                <div class="pt-2">
+                                    <div class="text-3xl font-extrabold text-amber-300">
+                                        R$ 797,00 <span class="text-xs font-normal text-slate-400">à vista</span>
+                                    </div>
+                                    <p class="text-xs text-amber-400 font-semibold">Apenas R$ 398,50 por pessoa (Economia de R$ 197)</p>
+                                </div>
+                            </div>
+                            <button onclick="showToast('Redirecionando para o Checkout Seguro (Opção Dupla R$ 797)...')" class="w-full py-3.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-extrabold text-sm uppercase tracking-wide shadow-lg transition">
+                                GARANTIR 2 VAGAS POR R$ 797 →
+                            </button>
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-                        <div class="bg-slate-900 border border-slate-700 rounded-xl p-5 space-y-2">
-                            <span class="text-xs font-extrabold text-emerald-400 uppercase">🎁 INCLUSO HOJE (DEGRAU 1)</span>
-                            <h4 class="text-lg font-extrabold text-white">1. Pop Travel Completo (E-book + Mini App)</h4>
-                            <p class="text-xs text-slate-300 leading-relaxed">
-                                Todos os 12 capítulos de situações de viagem + Mini App no navegador do celular para consultar qualquer frase pronta em segundos.
-                            </p>
-                        </div>
-                        <div class="bg-slate-900 border border-slate-700 rounded-xl p-5 space-y-2">
-                            <span class="text-xs font-extrabold text-emerald-400 uppercase">🎁 INCLUSO HOJE (DEGRAU 2)</span>
-                            <h4 class="text-lg font-extrabold text-white">2. Aventura Britânica (7 Módulos)</h4>
-                            <p class="text-xs text-slate-300 leading-relaxed">
-                                Curso de conversação estruturado como uma viagem real por Londres (Imigração, Hotel, Cidade, Noite do Show, Gírias e Pubs) + Bônus Londres 1995.
-                            </p>
-                        </div>
-                        <div class="bg-gradient-to-b from-amber-500/20 to-slate-900 border-2 border-amber-500 rounded-xl p-5 space-y-2">
-                            <span class="text-xs font-extrabold text-amber-300 uppercase">⭐ PROGRAMA PRINCIPAL (DEGRAU 3)</span>
-                            <h4 class="text-lg font-extrabold text-white">3. Backstage English + WhatsApp</h4>
-                            <p class="text-xs text-slate-200 leading-relaxed">
-                                As 3 Fases (Fundação Savoy Hotel, Britpop & Cultura e Avançado) + <strong>Prática de Áudio direto pelo WhatsApp</strong> + <strong>Encontros Ao Vivo</strong>.
-                            </p>
+                    <!-- AS DUAS GARANTIAS BLINDADAS -->
+                    <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6 max-w-3xl mx-auto space-y-4">
+                        <h4 class="text-center font-display text-lg text-white uppercase tracking-wider text-amber-400">
+                            🛡️ O Seu Risco é Absolutamente Zero: Dupla Garantia Blindada
+                        </h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-slate-300">
+                            <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 space-y-1">
+                                <strong class="text-emerald-400 block text-sm">1. Garantia Incondicional de 7 Dias</strong>
+                                Entre na plataforma, assista aos primeiros módulos e baixe os materiais. Se não gostar, basta um e-mail para receber 100% do seu dinheiro de volta. Sem perguntas.
+                            </div>
+                            <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 space-y-1">
+                                <strong class="text-amber-400 block text-sm">2. Garantia Condicional de 90 Dias</strong>
+                                Se você fizer todas as aulas do treinamento, participar das mentorias e mesmo assim não destravar sua conversação em 90 dias, o Prof. Marcos Lobão dará mentoria individual até você falar ou devolve todo seu investimento.
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <!-- PÁGINA 2: POP TRAVEL (R$ 27 - ENTRADA BAIXO VALOR OU DOWNSELL DIA 3) -->
-            <div id="sales-view-downsell" class="hidden rounded-2xl overflow-hidden border-2 border-slate-700 shadow-2xl bg-british-navy space-y-8 p-6 sm:p-10">
-                <div class="flex items-center justify-between border-b border-slate-800 pb-4">
-                    <span class="text-xs font-mono text-emerald-400">🔒 https://marcoslobao.com.br/pop-travel (Oferta de Baixo Valor R$ 27)</span>
-                    <button onclick="copyElementText('copy-downsell-sales')" class="px-3 py-1.5 rounded bg-slate-800 text-xs font-bold text-amber-300 hover:bg-slate-700">
-                        📋 Copiar Copy Pop Travel (R$ 27)
-                    </button>
-                </div>
-
-                <div id="copy-downsell-sales" class="max-w-3xl mx-auto space-y-6">
-                    <div class="text-center space-y-3">
-                        <span class="px-3 py-1 rounded bg-british-red text-white text-xs font-extrabold uppercase">CONDIÇÃO DE BAIXO INVESTIMENTO • 1º DEGRAU</span>
-                        <h2 class="font-display text-3xl sm:text-4xl font-bold text-white uppercase">
-                            Te ajudo a resolver qualquer situação em inglês na sua viagem, <span class="text-amber-400">sem decorar gramática.</span>
-                        </h2>
-                        <p class="text-slate-300 text-sm sm:text-base">
-                            Com o <strong>Pop Travel (E-book Completo + Mini App no Celular)</strong>, você tem na mão as frases prontas e os blocos <em>"Troque a Peça e Reuse"</em> para se virar sozinho no aeroporto, hotel e restaurante.
-                        </p>
+                    <!-- O QUE ESTÁ INCLUSO NO PROGRAMA -->
+                    <div class="max-w-3xl mx-auto space-y-4">
+                        <h3 class="text-xl font-extrabold text-white text-center">O que você recebe no Mala de Londres: Cultura e Idioma:</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
+                            <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 space-y-2">
+                                <span class="text-lg">🇬🇧</span>
+                                <h5 class="font-extrabold text-white text-sm">1. As 3 Fases do Método</h5>
+                                <p class="text-slate-300">Fundação Savoy Hotel, Chunks de Conversação Britânica e Pensamento Direto em Inglês sem traduzir.</p>
+                            </div>
+                            <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 space-y-2">
+                                <span class="text-lg">🎙️</span>
+                                <h5 class="font-extrabold text-white text-sm">2. Prática Direta de Áudio</h5>
+                                <p class="text-slate-300">Feedback pontual para você destravar a pronúncia correta e a entonação britânica natural sem julgamentos.</p>
+                            </div>
+                            <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 space-y-2">
+                                <span class="text-lg">👥</span>
+                                <h5 class="font-extrabold text-white text-sm">3. Encontros Ao Vivo Quinzenais</h5>
+                                <p class="text-slate-300">Simulações de conversação real com o Prof. Marcos Lobão e o grupo exclusivo da Turma Fundadora.</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="bg-slate-900 border-2 border-british-emerald rounded-2xl p-6 text-center space-y-3">
-                        <p class="text-lg font-extrabold text-white">Acesso imediato ao E-book (12 capítulos) + Mini App por apenas <span class="text-amber-400 text-2xl">R$ 27,00</span></p>
-                        <button onclick="switchSalesSubTab('oto1')" class="w-full py-4 rounded-xl bg-british-emerald hover:bg-emerald-400 text-slate-950 font-extrabold text-sm uppercase shadow-lg transition">
-                            QUERO GARANTIR MEU POP TRAVEL POR R$ 27 (VER UPSELL OTO 1) →
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PÁGINA 3: OTO 1 AVENTURA BRITÂNICA (R$ 97) -->
-            <div id="sales-view-oto1" class="hidden rounded-2xl overflow-hidden border-2 border-slate-700 shadow-2xl bg-british-navy space-y-8 p-6 sm:p-10">
-                <div class="flex items-center justify-between border-b border-slate-800 pb-4">
-                    <span class="text-xs font-mono text-rose-400">🔒 https://marcoslobao.com.br/aventura-britanica-vip (Upsell Imediato R$ 97)</span>
-                    <button onclick="copyElementText('copy-oto1-sales')" class="px-3 py-1.5 rounded bg-slate-800 text-xs font-bold text-amber-300 hover:bg-slate-700">
-                        📋 Copiar Copy Aventura Britânica (R$ 97)
-                    </button>
-                </div>
-
-                <div id="copy-oto1-sales" class="max-w-3xl mx-auto space-y-6">
-                    <div class="text-center space-y-3">
-                        <span class="px-3 py-1 rounded bg-amber-400 text-slate-950 text-xs font-extrabold uppercase">PRÓXIMO PASSO COM CONDIÇÃO ÚNICA • OTO 1</span>
-                        <h2 class="font-display text-3xl sm:text-4xl font-bold text-white uppercase">
-                            Você já sabe se virar numa viagem. Agora é hora de <span class="text-amber-400">aprender a conversar de verdade.</span>
-                        </h2>
-                        <p class="text-slate-300 text-sm sm:text-base">
-                            Adicione o curso completo <strong>Aventura Britânica (7 Módulos em Londres + Simulações Reais + Bônus Londres 1995)</strong> para manter conversas naturais quando o papo sair do roteiro.
-                        </p>
-                    </div>
-
-                    <div class="bg-slate-900 border-2 border-british-emerald rounded-2xl p-6 text-center space-y-3">
-                        <p class="text-2xl font-extrabold text-white">Adicione ao seu pacote por apenas <span class="text-amber-400">R$ 97,00</span></p>
-                        <button onclick="copyText('Upsell Aventura Britânica adicionado!')" class="w-full py-4 rounded-xl bg-british-emerald hover:bg-emerald-400 text-slate-950 font-extrabold text-sm uppercase shadow-lg transition">
-                            SIM! QUERO AVANÇAR MINHA CONVERSAÇÃO POR R$ 97 →
-                        </button>
-                    </div>
                 </div>
             </div>
         </section>
 
         <!-- ==========================================
-             ABA 7: IDEIAS DE DESIGN & DIREÇÃO VISUAL (UI/UX)
+             ABA 7: IDEIAS DE DESIGN (UI/UX)
              ========================================== -->
         <section id="tab-design" class="tab-pane hidden space-y-8">
             <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
-                <h2 class="text-xl sm:text-2xl font-extrabold text-white">🎨 Ideias Práticas de Design para Montar a sua Página ("British Vintage & Savoy")</h2>
+                <h2 class="text-xl sm:text-2xl font-extrabold text-white">🎨 Direção de Arte & Design: "British Vintage & Savoy Heritage"</h2>
                 <p class="text-sm text-slate-400 mt-1">
-                    Aqui está o guia visual completo para você (ou seu web designer) montar a página no Elementor / GreatPages com cara de produto premium internacional.
+                    Como construir a identidade visual do <strong>Mala de Londres: Cultura e Idioma</strong> com elegância internacional e autoridade.
                 </p>
             </div>
 
-            <!-- 4 Ideias Visuais Concretas para a Página -->
-            <div class="space-y-3">
-                <h3 class="text-base font-extrabold text-amber-400 uppercase tracking-wider">1. 4 Ideias Visuais Matadoras para o Layout da Página</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 space-y-2">
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs font-extrabold text-amber-400 uppercase">IDEIA VISUAL 01 • A FOTO DO TOPO (HERO)</span>
-                            <span class="text-lg">🧳📸</span>
-                        </div>
-                        <h4 class="text-base font-extrabold text-white">Composição "A Mala Aberta em Londres"</h4>
-                        <p class="text-xs text-slate-300 leading-relaxed">
-                            No lado direito da 1ª dobra, coloque uma foto do Marcos segurando uma mala de couro estilo retrô semiaberta (ou apoiada sobre uma mesa de madeira escura). Ao redor da mala, adicione em <em>flat-lay</em> ou colagem digital com sombra realista: <strong>1 ingresso original de show dos anos 90</strong>, <strong>1 cartão/foto do Savoy Hotel</strong>, <strong>1 par de baquetas</strong> e <strong>1 celular mostrando o Mini App Pop Travel</strong>. Isso materializa a promessa na hora!
-                        </p>
-                    </div>
-
-                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 space-y-2">
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs font-extrabold text-emerald-400 uppercase">IDEIA VISUAL 02 • ESTÉTICA DE PASSAPORTE / INGRESSO</span>
-                            <span class="text-lg">🎟️🛂</span>
-                        </div>
-                        <h4 class="text-base font-extrabold text-white">Formulário com Visual de "Boarding Pass" (Cartão de Embarque)</h4>
-                        <p class="text-xs text-slate-300 leading-relaxed">
-                            Em vez de um formulário quadrado comum, estilize a caixa de inscrição como um <strong>Cartão de Embarque VIP para Londres (London Heathrow LHR)</strong> ou um ingresso de show britânico, com uma linha tracejada dividindo o topo (onde mostra <em>"Valor Oficial R$ 197 → Passe Convidado Liberado"</em>) dos campos de Nome, E-mail e WhatsApp.
-                        </p>
-                    </div>
-
-                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 space-y-2">
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs font-extrabold text-rose-400 uppercase">IDEIA VISUAL 03 • EFEITO "PEÇAS DE LEGO" (CHUNKS)</span>
-                            <span class="text-lg">🧩✨</span>
-                        </div>
-                        <h4 class="text-base font-extrabold text-white">Demonstração Visual do "Troque a Peça e Reuse"</h4>
-                        <p class="text-xs text-slate-300 leading-relaxed">
-                            Na 2ª dobra da página, coloque um gráfico horizontal simples mostrando uma frase em inglês onde a primeira metade é um bloco azul fixo (<code>"Could you tell me where..."</code>) e a segunda metade são 3 etiquetas douradas encaixáveis (<code>"...the gate is?"</code> / <code>"...the pharmacy is?"</code> / <code>"...the restroom is?"</code>). O visitante entende em 3 segundos como o método funciona sem gramática!
-                        </p>
-                    </div>
-
-                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 space-y-2">
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs font-extrabold text-blue-400 uppercase">IDEIA VISUAL 04 • CONTRASTE DE CORES POR DOBRA</span>
-                            <span class="text-lg">🌓🎨</span>
-                        </div>
-                        <h4 class="text-base font-extrabold text-white">Alternância Azul Noturno + Creme Papel de Ingresso</h4>
-                        <p class="text-xs text-slate-300 leading-relaxed">
-                            Faça a <strong>Dobra 1 (Topo)</strong> e a <strong>Dobra 2 (Transparência)</strong> em fundo escuro sofisticado (`#0B132B` com luzes radiais sutis em vermelho e dourado). Na <strong>Dobra 3 (Dores da Viagem)</strong>, mude o fundo para Creme Vintage (`#F4F1EA`), como se fosse o papel de um ingresso antigo ou página de passaporte. Esse contraste descansa a vista e aumenta muito a leitura no celular.
-                        </p>
-                    </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 space-y-2">
+                    <span class="text-xs font-extrabold text-amber-400 uppercase">1. FOTOGRAFIA & PROVA CULTURAL</span>
+                    <h4 class="text-base font-extrabold text-white">Os Itens Reais da Mala de Londres</h4>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Fotografias com luz quente e textura de couro vintage: os ingressos originais de shows londrinos dos anos 90, o cardápio ou cartão do Savoy Hotel e baquetas de bateria de Marcos Lobão. Mostra que o método nasceu da vivência real, não de teoria acadêmica.
+                    </p>
                 </div>
-            </div>
-
-            <!-- Paleta de Cores Clicável -->
-            <div class="space-y-3">
-                <h3 class="text-base font-extrabold text-white uppercase tracking-wider">2. Paleta de Cores Oficial (Clique para copiar o código HEX)</h3>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-                    <div onclick="copyText('#0B132B')" class="cursor-pointer bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-slate-500 transition">
-                        <div class="h-16 bg-[#0B132B] border-b border-slate-800"></div>
-                        <div class="p-3">
-                            <p class="text-xs font-extrabold text-white">British Midnight Navy</p>
-                            <p class="text-xs font-mono text-amber-400">#0B132B</p>
-                            <p class="text-[11px] text-slate-400 mt-1">Fundo principal de autoridade.</p>
-                        </div>
-                    </div>
-                    <div onclick="copyText('#D90429')" class="cursor-pointer bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-slate-500 transition">
-                        <div class="h-16 bg-[#D90429]"></div>
-                        <div class="p-3">
-                            <p class="text-xs font-extrabold text-white">London Tube Red</p>
-                            <p class="text-xs font-mono text-amber-400">#D90429</p>
-                            <p class="text-[11px] text-slate-400 mt-1">Badges de atenção e sublinhados.</p>
-                        </div>
-                    </div>
-                    <div onclick="copyText('#F59E0B')" class="cursor-pointer bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-slate-500 transition">
-                        <div class="h-16 bg-[#F59E0B]"></div>
-                        <div class="p-3">
-                            <p class="text-xs font-extrabold text-white">Savoy Hotel Gold</p>
-                            <p class="text-xs font-mono text-amber-400">#F59E0B</p>
-                            <p class="text-[11px] text-slate-400 mt-1">Destaques na ROMA e selos VIP.</p>
-                        </div>
-                    </div>
-                    <div onclick="copyText('#F4F1EA')" class="cursor-pointer bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-slate-500 transition">
-                        <div class="h-16 bg-[#F4F1EA]"></div>
-                        <div class="p-3">
-                            <p class="text-xs font-extrabold text-white">Vintage Ticket Cream</p>
-                            <p class="text-xs font-mono text-amber-400">#F4F1EA</p>
-                            <p class="text-[11px] text-slate-400 mt-1">Fundo claro para dobra de leitura.</p>
-                        </div>
-                    </div>
-                    <div onclick="copyText('#10B981')" class="cursor-pointer bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-slate-500 transition">
-                        <div class="h-16 bg-[#10B981]"></div>
-                        <div class="p-3">
-                            <p class="text-xs font-extrabold text-white">Conversion Emerald</p>
-                            <p class="text-xs font-mono text-amber-400">#10B981</p>
-                            <p class="text-[11px] text-slate-400 mt-1">Exclusivo para botões CTA.</p>
-                        </div>
-                    </div>
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 space-y-2">
+                    <span class="text-xs font-extrabold text-emerald-400 uppercase">2. O FORMATO DE QUIZ</span>
+                    <h4 class="text-base font-extrabold text-white">Micro-interações de Alta Retenção</h4>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Botões grandes com clique tátil e resposta instantânea. Cada pergunta gera o efeito psicológico de auto-diagnóstico ("Nossa, isso acontece comigo!"), aumentando a taxa de conclusão do cadastro para mais de 65%.
+                    </p>
                 </div>
             </div>
         </section>
@@ -1368,8 +955,8 @@
     <!-- Footer -->
     <footer class="bg-slate-950 border-t border-slate-800/80 py-5 px-4 text-center text-xs text-slate-500">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
-            <span>Hub Estratégico 2.0 — Lançamento Semente: <strong>A Mala de Londres (Prof. Marcos Lobão)</strong></span>
-            <span>Alto Valor Percebido + Transparência do Produto Completo</span>
+            <span>Hub Estratégico — <strong>Mala de Londres: Cultura e Idioma (Prof. Marcos Lobão)</strong></span>
+            <span>Turma Fundadora • Webinário: 11/11 às 20h • Carrinho encerra: 15/11</span>
         </div>
     </footer>
 
@@ -1397,48 +984,24 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-                // Shorter, Punchier & Ultra-Persuasive ROMA Options (10 Tactical Angles)
+        // The Official ROMA + 3 Variations
         const romaOptions = {
             1: {
-                plain: 'Destrave o inglês da sua próxima viagem sem decorar uma única regra.',
-                html: 'Destrave o inglês da sua próxima viagem <span class="text-amber-400 underline decoration-british-red">sem decorar uma única regra.</span>'
+                plain: 'Eu te ajudo a destravar o seu inglês e falar com confiança em 90 dias.',
+                html: 'Eu te ajudo a destravar o seu inglês e <span class="text-amber-400 underline decoration-british-red">falar com confiança em 90 dias.</span>'
             },
             2: {
-                plain: 'Viaje para o exterior com autonomia total e zero vergonha no inglês.',
-                html: 'Viaje para o exterior com autonomia total e <span class="text-amber-400 underline decoration-british-red">zero vergonha no inglês.</span>'
+                plain: 'Para você que já estudou inglês e ainda trava na hora de falar: destrave sua voz com confiança em 90 dias.',
+                html: 'Para você que já estudou inglês e ainda trava: <span class="text-amber-400 underline decoration-british-red">destrave sua voz com confiança em 90 dias.</span>'
             },
             3: {
-                plain: 'Nunca mais dependa do Google Tradutor ou de alguém para falar por você.',
-                html: 'Nunca mais dependa do Google Tradutor <span class="text-amber-400 underline decoration-british-red">ou de alguém para falar por você.</span>'
+                plain: 'O método prático de Cultura e Idioma de Londres para destravar o seu inglês e falar com confiança em 90 dias.',
+                html: 'O método de Cultura e Idioma de Londres para <span class="text-amber-400 underline decoration-british-red">falar com confiança em 90 dias.</span>'
             },
             4: {
-                plain: 'O método prático de Londres para falar em viagens sem traduzir mentalmente.',
-                html: 'O método prático de Londres para falar em viagens <span class="text-amber-400 underline decoration-british-red">sem traduzir mentalmente.</span>'
-            },
-            5: {
-                plain: 'O inglês da vida real que aprendi no Savoy Hotel para você nunca mais travar.',
-                html: 'O inglês da vida real que aprendi no Savoy Hotel <span class="text-amber-400 underline decoration-british-red">para você nunca mais travar.</span>'
-            },
-            6: {
-                plain: 'Aprenda a montar dezenas de frases úteis trocando apenas uma única palavra.',
-                html: 'Aprenda a montar dezenas de frases úteis <span class="text-amber-400 underline decoration-british-red">trocando apenas uma única palavra.</span>'
-            },
-            7: {
-                plain: 'Passe pela imigração, hotel e restaurantes com a resposta na ponta da língua.',
-                html: 'Passe pela imigração, hotel e restaurantes com <span class="text-amber-400 underline decoration-british-red">a resposta na ponta da língua.</span>'
-            },
-            8: {
-                plain: 'Pare de travar no inglês: resolva sua viagem e sustente conversas de verdade.',
-                html: 'Pare de travar no inglês: resolva sua viagem e <span class="text-amber-400 underline decoration-british-red">sustente conversas de verdade.</span>'
-            },
-            9: {
-                plain: 'Esqueça os cursinhos tradicionais: fale o inglês natural que resolve viagens no mundo real.',
-                html: 'Esqueça os cursinhos tradicionais: fale o inglês natural que <span class="text-amber-400 underline decoration-british-red">resolve viagens no mundo real.</span>'
-            },
-            10: {
-                plain: 'Destrave sua voz em inglês e viva sua próxima viagem internacional como um nativo.',
-                html: 'Destrave sua voz em inglês e <span class="text-amber-400 underline decoration-british-red">viva sua próxima viagem como um nativo.</span>'
-            },
+                plain: 'Pare de traduzir na cabeça: destrave seu inglês e fale com naturalidade e confiança em 90 dias.',
+                html: 'Pare de traduzir na cabeça: destrave seu inglês e <span class="text-amber-400 underline decoration-british-red">fale com confiança em 90 dias.</span>'
+            }
         };
 
         function selectRoma(optionNumber) {
@@ -1448,7 +1011,7 @@
             document.getElementById('header-roma-preview').textContent = selected.plain;
             document.getElementById('lp-live-roma').innerHTML = selected.html;
 
-            for (let i = 1; i <= 10; i++) {
+            for (let i = 1; i <= 4; i++) {
                 const card = document.getElementById('roma-card-' + i);
                 const status = document.getElementById('roma-status-' + i);
                 const btn = document.getElementById('lp-roma-btn-' + i);
@@ -1458,12 +1021,12 @@
                         card.classList.remove('border-slate-800', 'bg-slate-900/70');
                         card.classList.add('border-british-emerald', 'bg-slate-900', 'shadow-xl');
                         status.textContent = '✓ ATIVA NO SITE';
-                        status.className = 'text-[11px] font-bold text-emerald-400';
+                        status.className = 'text-xs font-bold text-emerald-400';
                     } else {
                         card.classList.remove('border-british-emerald', 'bg-slate-900', 'shadow-xl');
                         card.classList.add('border-slate-800', 'bg-slate-900/70');
                         status.textContent = 'Selecionar';
-                        status.className = 'text-[11px] font-bold text-slate-500';
+                        status.className = 'text-xs font-bold text-slate-500';
                     }
                 }
 
@@ -1471,71 +1034,15 @@
                     if (i === optionNumber) {
                         btn.className = 'px-2.5 py-1 rounded-lg font-bold bg-slate-800 text-amber-400 hover:bg-slate-700 shadow';
                     } else {
-                        btn.className = 'px-2.5 py-1 rounded-lg font-bold text-slate-400 hover:bg-slate-800 hover:text-white';
+                        btn.className = 'px-2.5 py-1 rounded-lg font-bold text-slate-400 hover:bg-slate-800';
                     }
                 }
             }
 
-            showToast('Nova ROMA ' + optionNumber + ' aplicada na Página de Captura!');
+            showToast('ROMA ' + optionNumber + ' aplicada na Landing Page!');
         }
 
-        // Toggle between Guest Pass (R$ 197 -> R$ 0 without saying "Grátis") and Low-Ticket Symbolic Pass (R$ 9,90)
-        function setAccessMode(mode) {
-            const heroBadgePrice = document.getElementById('lp-hero-badge-price');
-            const formPriceTag = document.getElementById('lp-form-price-tag');
-            const ctaButton = document.getElementById('lp-cta-button');
-            const headerModeBadge = document.getElementById('header-mode-badge');
-
-            const cardGuest = document.getElementById('mode-card-guest');
-            const cardTicket = document.getElementById('mode-card-ticket');
-            const statusGuest = document.getElementById('mode-status-guest');
-            const statusTicket = document.getElementById('mode-status-ticket');
-
-            const lpToggleGuest = document.getElementById('lp-toggle-guest');
-            const lpToggleTicket = document.getElementById('lp-toggle-ticket');
-
-            if (mode === 'guest') {
-                heroBadgePrice.innerHTML = 'VALOR OFICIAL: <del class="text-rose-400">R$ 197</del> → PASSE DE CONVIDADO LIBERADO';
-                formPriceTag.textContent = 'Passe Convidado: R$ 0 (Lote Limitado)';
-                ctaButton.textContent = 'GARANTIR MEU PASSE + KIT DE BOLSO DA AULA →';
-                headerModeBadge.textContent = 'Modo: Acesso Convidado (R$ 197 → R$ 0)';
-
-                if (cardGuest && cardTicket) {
-                    cardGuest.className = 'cursor-pointer rounded-2xl p-6 bg-slate-900 border-2 border-amber-400 shadow-xl transition-all space-y-3';
-                    cardTicket.className = 'cursor-pointer rounded-2xl p-6 bg-slate-900/70 border-2 border-slate-800 hover:border-slate-600 transition-all space-y-3';
-                    statusGuest.textContent = '✓ SELECIONADO';
-                    statusGuest.className = 'text-xs font-bold text-amber-400';
-                    statusTicket.textContent = 'Clique para testar';
-                    statusTicket.className = 'text-xs font-bold text-slate-500';
-                }
-                if (lpToggleGuest && lpToggleTicket) {
-                    lpToggleGuest.className = 'px-3 py-1.5 rounded-lg font-extrabold bg-amber-400 text-slate-950 transition';
-                    lpToggleTicket.className = 'px-3 py-1.5 rounded-lg font-bold text-slate-400 hover:text-white transition';
-                }
-                showToast('Modo 1 Ativado: Passe de Convidado Ancorado em R$ 197 (Sem usar "Grátis")!');
-            } else {
-                heroBadgePrice.innerHTML = 'VALOR OFICIAL: <del class="text-rose-400">R$ 197</del> → LOTE SIMBÓLICO POR R$ 9,90';
-                formPriceTag.textContent = 'Ingresso Simbólico + Kit: R$ 9,90';
-                ctaButton.textContent = 'GARANTIR MEU INGRESSO + KIT DE BOLSO POR R$ 9,90 →';
-                headerModeBadge.textContent = 'Modo: Ingresso Baixo Valor (R$ 9,90)';
-
-                if (cardGuest && cardTicket) {
-                    cardTicket.className = 'cursor-pointer rounded-2xl p-6 bg-slate-900 border-2 border-emerald-400 shadow-xl transition-all space-y-3';
-                    cardGuest.className = 'cursor-pointer rounded-2xl p-6 bg-slate-900/70 border-2 border-slate-800 hover:border-slate-600 transition-all space-y-3';
-                    statusTicket.textContent = '✓ SELECIONADO';
-                    statusTicket.className = 'text-xs font-bold text-emerald-400';
-                    statusGuest.textContent = 'Clique para testar';
-                    statusGuest.className = 'text-xs font-bold text-slate-500';
-                }
-                if (lpToggleGuest && lpToggleTicket) {
-                    lpToggleTicket.className = 'px-3 py-1.5 rounded-lg font-extrabold bg-emerald-400 text-slate-950 transition';
-                    lpToggleGuest.className = 'px-3 py-1.5 rounded-lg font-bold text-slate-400 hover:text-white transition';
-                }
-                showToast('Modo 2 Ativado: Ingresso Simbólico de Baixo Valor (R$ 9,90)!');
-            }
-        }
-
-        // Live Room Pitch Offer Delay Toggle
+        // Live Room Pitch Toggle
         let pitchVisible = true;
         function togglePitchOffer() {
             const box = document.getElementById('live-pitch-box');
@@ -1544,32 +1051,193 @@
 
             if (pitchVisible) {
                 box.classList.remove('hidden');
-                label.textContent = 'Esconder Botão de Compra (Simular Início da Live)';
-                showToast('🔓 Botão da Condição Especial do Programa Completo liberado!');
+                label.textContent = 'Esconder Oferta (Simular Início da Aula)';
+                showToast('🔓 Oferta da Turma Fundadora liberada!');
             } else {
                 box.classList.add('hidden');
-                label.textContent = 'Simular Minuto 40: Liberar Botão do Programa Completo!';
-                showToast('🔒 Modo Aula Prática (Primeiros 40 min): Apenas o Presente da Aula visível.');
+                label.textContent = 'Simular Oferta da Turma Fundadora!';
+                showToast('🔒 Modo Aula: apenas o PDF 20 Blocos visível.');
             }
         }
 
-        // Sales Pages Sub-tabs Toggle
-        function switchSalesSubTab(sub) {
-            const views = ['main', 'downsell', 'oto1'];
-            views.forEach(v => {
-                const el = document.getElementById('sales-view-' + v);
-                const btn = document.getElementById('sales-btn-' + v);
-                if (v === sub) {
-                    el.classList.remove('hidden');
-                    btn.className = 'px-3.5 py-2 rounded-lg text-xs font-extrabold bg-british-red text-white transition';
-                } else {
-                    el.classList.add('hidden');
-                    btn.className = 'px-3.5 py-2 rounded-lg text-xs font-bold text-slate-400 hover:text-white transition';
-                }
+        // QUIZ LOGIC (8 Questions, 4 Profiles)
+        const quizQuestions = [
+            {
+                q: "1. Há quanto tempo você estuda ou tenta falar inglês?",
+                options: [
+                    { t: "Estudei anos em escolas tradicionais, mas nunca consegui conversar com fluência.", profile: 1 },
+                    { t: "Entendo quando leio ou assisto séries, mas na hora de responder eu travo.", profile: 2 },
+                    { t: "Sei vocabulário, mas sinto um bloqueio emocional e medo de errar em público.", profile: 3 },
+                    { t: "Decorei regras e gramática, mas não sei os blocos que os nativos usam de verdade.", profile: 4 }
+                ]
+            },
+            {
+                q: "2. O que acontece na sua cabeça quando alguém fala em inglês com você?",
+                options: [
+                    { t: "Eu tento traduzir cada palavra para o português e me perco no meio do caminho.", profile: 2 },
+                    { t: "Fico pensando na conjugação do verbo e na regra certa antes de abrir a boca.", profile: 1 },
+                    { t: "Sinto o coração acelerar e um branco total domina meus pensamentos.", profile: 3 },
+                    { t: "Falta o vocabulário natural do dia a dia, fico usando palavras de livro escolar.", profile: 4 }
+                ]
+            },
+            {
+                q: "3. Qual é a sua maior dificuldade com o método tradicional de cursinhos?",
+                options: [
+                    { t: "Muito foco em gramática e regras teóricas, quase zero prática de conversa real.", profile: 1 },
+                    { t: "Não ensina a pensar direto em inglês, me fez virar um tradutor ambulante.", profile: 2 },
+                    { t: "Ambiente que intimida, onde as pessoas têm medo de errar a pronúncia.", profile: 3 },
+                    { t: "Inglês engessado e artificial, desconectado da cultura viva e da música.", profile: 4 }
+                ]
+            },
+            {
+                q: "4. Em qual dessas situações você mais sente que o inglês trava?",
+                options: [
+                    { t: "Em reuniões profissionais ou quando preciso me posicionar no trabalho.", profile: 3 },
+                    { t: "Quando um nativo fala rápido e usa gírias ou expressões do cotidiano.", profile: 4 },
+                    { t: "Quando preciso puxar assunto espontâneo ou sustentar uma conversa informal.", profile: 2 },
+                    { t: "Quando me cobram precisão e fico com receio de falar errado.", profile: 1 }
+                ]
+            },
+            {
+                q: "5. Se você precisasse sustentar 5 minutos de conversa com um britânico hoje, como seria?",
+                options: [
+                    { t: "Tentaria planejar cada frase antes, gaguejando nas pausas.", profile: 1 },
+                    { t: "Conseguiria soltar algumas palavras soltas, mas não manteria o diálogo fluido.", profile: 2 },
+                    { t: "Provavelmente tentaria fugir da situação pela vergonha.", profile: 3 },
+                    { t: "Ficaria sem assunto rápido por não dominar os 'chunks' e a cultura local.", profile: 4 }
+                ]
+            },
+            {
+                q: "6. Como você aprende melhor um idioma?",
+                options: [
+                    { t: "Associando a situações reais, cultura, música e histórias marcantes.", profile: 4 },
+                    { t: "Usando blocos prontos de frases que posso reaproveitar imediatamente.", profile: 2 },
+                    { t: "Com um mentor seguro que me dê feedback pontual sem me julgar.", profile: 3 },
+                    { t: "Com um método lógico que me mostre como destravar sem perder tempo.", profile: 1 }
+                ]
+            },
+            {
+                q: "7. Qual é a sua meta definitiva com o inglês?",
+                options: [
+                    { t: "Destravar minha fala de vez e me sentir seguro e confiante em 90 dias.", profile: 1 },
+                    { t: "Parar de traduzir mentalmente e falar com naturalidade sem esforço.", profile: 2 },
+                    { t: "Vencer o medo do julgamento e expressar minha verdadeira personalidade em inglês.", profile: 3 },
+                    { t: "Conectar o idioma com a vida real, cultura e vivência internacional.", profile: 4 }
+                ]
+            },
+            {
+                q: "8. Você tem disponibilidade para participar do nosso encontro ao vivo dia 11/11 às 20h?",
+                options: [
+                    { t: "Sim! Quero estar presente para aplicar o método e pegar meu PDF 20 Blocos.", profile: 1 },
+                    { t: "Com certeza, vou colocar alarme no celular para não perder.", profile: 2 },
+                    { t: "Sim, preciso destravar minha conversação ainda este ano.", profile: 3 },
+                    { t: "Totalmente comprometido em dar esse próximo passo.", profile: 4 }
+                ]
+            }
+        ];
+
+        const quizProfiles = {
+            1: {
+                title: "Perfil: O Perfeccionista Gramatical",
+                desc: "Você estudou regras por anos e tem boa base teórica, mas seu cérebro tenta filtrar cada frase antes de falar. O método dos 20 Blocos de Londres vai substituir a análise gramatical por padrões automáticos de conversação."
+            },
+            2: {
+                title: "Perfil: O Tradutor Mental",
+                desc: "Sua trava acontece pelo atraso da tradução interna: você pensa em português e tenta verter cada palavra. Na aula de 11/11, Marcos vai te ensinar a pensar em Chunks culturais para sua resposta sair no piloto automático."
+            },
+            3: {
+                title: "Perfil: O Bloqueio da Ansiedade",
+                desc: "Seu inglês já existe dentro de você, mas a vergonha do julgamento faz o cérebro dar um 'apagão' sob pressão. Com o acompanhamento da Turma Fundadora em 90 dias, você desenvolve fala segura e confiança blindada."
+            },
+            4: {
+                title: "Perfil: O Vocabulário Desconectado",
+                desc: "Você aprendeu inglês de livro escolar que ninguém fala na rua. O treinamento Mala de Londres: Cultura e Idioma traz a vivência real do Savoy Hotel, conectando expressões vivas, humor e cultura britânica."
+            }
+        };
+
+        let currentQuestionIdx = 0;
+        let profileScores = { 1: 0, 2: 0, 3: 0, 4: 0 };
+
+        function renderQuizQuestion() {
+            const qData = quizQuestions[currentQuestionIdx];
+            if (!qData) {
+                showQuizResult();
+                return;
+            }
+
+            document.getElementById('quiz-step-indicator').textContent = `PERGUNTA ${currentQuestionIdx + 1} DE 8`;
+            const pct = Math.round(((currentQuestionIdx + 1) / 8) * 100);
+            document.getElementById('quiz-pct-indicator').textContent = `${pct}% Concluído`;
+            document.getElementById('quiz-progress-bar').style.width = `${pct}%`;
+
+            document.getElementById('quiz-question-title').textContent = qData.q;
+
+            const container = document.getElementById('quiz-options-container');
+            container.innerHTML = '';
+
+            qData.options.forEach((opt, idx) => {
+                const btn = document.createElement('button');
+                btn.className = "w-full text-left p-4 rounded-xl bg-slate-950 border border-slate-800 hover:border-amber-400 hover:bg-slate-800/80 transition-all text-xs sm:text-sm text-slate-200 flex items-start gap-3 group";
+                btn.innerHTML = `
+                    <span class="w-6 h-6 rounded-lg bg-slate-800 group-hover:bg-amber-400 group-hover:text-slate-950 flex items-center justify-center text-xs font-bold shrink-0 transition">
+                        ${String.fromCharCode(65 + idx)}
+                    </span>
+                    <span class="pt-0.5">${opt.t}</span>
+                `;
+                btn.onclick = () => selectQuizAnswer(opt.profile);
+                container.appendChild(btn);
             });
         }
 
-        // Clipboard Copy Helpers
+        function selectQuizAnswer(profileId) {
+            profileScores[profileId] = (profileScores[profileId] || 0) + 1;
+            currentQuestionIdx++;
+            if (currentQuestionIdx < quizQuestions.length) {
+                renderQuizQuestion();
+            } else {
+                showQuizResult();
+            }
+        }
+
+        function showQuizResult() {
+            document.getElementById('quiz-question-box').classList.add('hidden');
+            document.getElementById('quiz-result-box').classList.remove('hidden');
+
+            // Find top scoring profile
+            let topProfile = 1;
+            let maxScore = -1;
+            for (let p in profileScores) {
+                if (profileScores[p] > maxScore) {
+                    maxScore = profileScores[p];
+                    topProfile = p;
+                }
+            }
+
+            const pInfo = quizProfiles[topProfile] || quizProfiles[2];
+            document.getElementById('result-profile-title').textContent = pInfo.title;
+            document.getElementById('result-profile-desc').textContent = pInfo.desc;
+            document.getElementById('quiz-step-indicator').textContent = 'TESTE FINALIZADO';
+            document.getElementById('quiz-pct-indicator').textContent = '100% Concluído';
+            document.getElementById('quiz-progress-bar').style.width = '100%';
+        }
+
+        function finishQuizRegistration() {
+            const name = document.getElementById('lead-name').value.trim();
+            const email = document.getElementById('lead-email').value.trim();
+            const phone = document.getElementById('lead-phone').value.trim();
+
+            if (!name || !email || !phone) {
+                alert('Por favor, preencha seu nome, e-mail e WhatsApp para receber o PDF 20 Blocos!');
+                return;
+            }
+
+            showToast('Passe confirmado! Redirecionando para o WhatsApp...');
+            setTimeout(() => {
+                switchTab('tab-wa');
+            }, 1000);
+        }
+
+        // Clipboard Helpers
         function copyText(text) {
             const textarea = document.createElement('textarea');
             textarea.value = text;
@@ -1579,9 +1247,9 @@
             textarea.select();
             try {
                 document.execCommand('copy');
-                showToast('Copiado: "' + (text.length > 42 ? text.substring(0, 42) + '...' : text) + '"');
+                showToast('Copiado com sucesso!');
             } catch (err) {
-                showToast('Não foi possível copiar automaticamente.');
+                showToast('Erro ao copiar.');
             }
             document.body.removeChild(textarea);
         }
@@ -1603,6 +1271,11 @@
                 toast.classList.add('hidden');
             }, 3200);
         }
+
+        // Initialize Quiz on load
+        window.addEventListener('DOMContentLoaded', () => {
+            renderQuizQuestion();
+        });
     </script>
 </body>
 </html>
