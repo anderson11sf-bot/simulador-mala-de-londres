@@ -146,87 +146,239 @@
                 </div>
             </div>
 
-            <!-- PASSO 1: ESCOLHA DA NOVA ROMA ULTRA-CURTA (12 A 14 PALAVRAS) -->
+                        <!-- PASSO 1: ESCOLHA DA NOVA ROMA (10 OPÇÕES PERSUASIVAS PARA O PROFESSOR ESCOLHER) -->
             <div class="space-y-4">
                 <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800 pb-3">
                     <div>
                         <h3 class="text-lg sm:text-xl font-extrabold text-white flex items-center gap-2">
-                            <span>🎯</span> 1. Escolha a Nova ROMA (Mais Curta, Direta e Magnética)
+                            <span>🎯</span> 1. Escolha a Nova ROMA (10 Opções Altamente Persuasivas)
                         </h3>
                         <p class="text-xs sm:text-sm text-slate-400">
-                            Reduzimos para <strong>12 a 14 palavras</strong>. Impacto imediato no anúncio e no topo da página. Clique em qualquer card para testar na Landing Page (Aba 3)!
+                            Preparamos <strong>10 opções estratégicas</strong>: desde as mais curtas e diretas até as mais magnéticas e com mecanismo do Savoy Hotel. Clique em qualquer card para testar na Landing Page (Aba 3) em tempo real!
                         </p>
                     </div>
-                    <span class="text-xs text-amber-400 font-bold">⚡ Clique no card para aplicar no simulador</span>
+                    <span class="text-xs text-amber-400 font-bold">⚡ Clique no card para testar no simulador</span>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
                     <!-- ROMA 1 -->
-                    <div id="roma-card-1" onclick="selectRoma(1)" class="cursor-pointer rounded-2xl p-5 bg-slate-900 border-2 border-british-emerald shadow-xl transition-all hover:scale-[1.01] flex flex-col justify-between">
-                        <div>
-                            <div class="flex items-center justify-between gap-2 mb-3">
-                                <span class="px-2.5 py-1 rounded bg-emerald-500/20 text-emerald-300 font-bold text-xs border border-emerald-500/40">⭐ OPÇÃO 1 (12 PALAVRAS)</span>
-                                <span id="roma-status-1" class="text-xs font-bold text-emerald-400">✓ ATIVA NO SITE</span>
+                    <div id="roma-card-1" onclick="selectRoma(1)" class="cursor-pointer rounded-2xl p-4.5 border-2 border-british-emerald bg-slate-900 shadow-xl transition-all hover:scale-[1.01] flex flex-col justify-between space-y-3">
+                        <div class="space-y-2">
+                            <div class="flex items-center justify-between gap-1">
+                                <span class="px-2 py-0.5 rounded bg-amber-500/15 text-amber-300 font-extrabold text-[10px] border border-amber-500/30 uppercase">⭐ OPÇÃO 1 (11 PALAVRAS)</span>
+                                <span id="roma-status-1" class="text-[11px] font-bold text-emerald-400">✓ ATIVA NO SITE</span>
                             </div>
-                            <p class="text-xs uppercase tracking-wider text-slate-400 font-semibold mb-1">Direta, Curta & Sem Objeção</p>
-                            <h4 class="text-xl font-extrabold text-white leading-snug mb-3">
+                            <p class="text-[11px] uppercase tracking-wider text-slate-400 font-bold">Ultra-Curta & Sem Objeção</p>
+                            <h4 class="text-sm font-extrabold text-white leading-snug">
                                 "Destrave o inglês da sua próxima viagem sem decorar uma única regra."
                             </h4>
-                            <p class="text-xs text-slate-300 leading-relaxed bg-slate-950/70 p-3 rounded-lg border border-slate-800">
-                                <strong>Por que é letal:</strong> Leitura de 2 segundos no celular. Promete o resultado exato (destravar na viagem) e elimina a maior dor (decorar regras).
+                            <p class="text-[11px] text-slate-300 leading-relaxed bg-slate-950/70 p-2.5 rounded-lg border border-slate-800">
+                                <strong class="text-amber-400">Gatilho:</strong> Leitura de 2 segundos no celular. Promete o resultado prático exato (destravar na viagem) e elimina imediatamente a maior dor de quem tem aversão a cursinhos de gramática.
                             </p>
                         </div>
-                        <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between">
-                            <button onclick="event.stopPropagation(); copyText('Destrave o inglês da sua próxima viagem sem decorar uma única regra.')" class="text-xs font-bold text-amber-400 hover:underline">
-                                📋 Copiar ROMA 1
+                        <div class="pt-2.5 border-t border-slate-800 flex items-center justify-between text-xs">
+                            <button onclick="event.stopPropagation(); copyText('Destrave o inglês da sua próxima viagem sem decorar uma única regra.')" class="text-[11px] font-bold text-amber-400 hover:underline">
+                                📋 Copiar Frase
                             </button>
-                            <span class="text-[11px] text-slate-400">Aplicar na LP →</span>
+                            <span class="text-[10px] text-slate-400 font-semibold">Testar na LP →</span>
                         </div>
                     </div>
-
                     <!-- ROMA 2 -->
-                    <div id="roma-card-2" onclick="selectRoma(2)" class="cursor-pointer rounded-2xl p-5 bg-slate-900/70 border-2 border-slate-800 hover:border-slate-600 transition-all hover:scale-[1.01] flex flex-col justify-between">
-                        <div>
-                            <div class="flex items-center justify-between gap-2 mb-3">
-                                <span class="px-2.5 py-1 rounded bg-amber-500/20 text-amber-300 font-bold text-xs border border-amber-500/40">🧳 OPÇÃO 2 (14 PALAVRAS)</span>
-                                <span id="roma-status-2" class="text-xs font-bold text-slate-500">Selecionar</span>
+                    <div id="roma-card-2" onclick="selectRoma(2)" class="cursor-pointer rounded-2xl p-4.5 border-2 border-slate-800 bg-slate-900/70 hover:border-slate-600 transition-all hover:scale-[1.01] flex flex-col justify-between space-y-3">
+                        <div class="space-y-2">
+                            <div class="flex items-center justify-between gap-1">
+                                <span class="px-2 py-0.5 rounded bg-amber-500/15 text-amber-300 font-extrabold text-[10px] border border-amber-500/30 uppercase">🛡️ OPÇÃO 2 (11 PALAVRAS)</span>
+                                <span id="roma-status-2" class="text-[11px] font-bold text-slate-500">Selecionar</span>
                             </div>
-                            <p class="text-xs uppercase tracking-wider text-slate-400 font-semibold mb-1">Mecanismo Único de Londres</p>
-                            <h4 class="text-xl font-extrabold text-white leading-snug mb-3">
-                                "O método prático de Londres para falar inglês em viagens sem traduzir na cabeça."
+                            <p class="text-[11px] uppercase tracking-wider text-slate-400 font-bold">Segurança & Zero Vergonha</p>
+                            <h4 class="text-sm font-extrabold text-white leading-snug">
+                                "Viaje para o exterior com autonomia total e zero vergonha no inglês."
                             </h4>
-                            <p class="text-xs text-slate-300 leading-relaxed bg-slate-950/70 p-3 rounded-lg border border-slate-800">
-                                <strong>Por que é letal:</strong> Conecta diretamente com o nome do evento (<em>A Mala de Londres</em>) e ataca o bloqueio de quem trava tentando traduzir palavra por palavra.
+                            <p class="text-[11px] text-slate-300 leading-relaxed bg-slate-950/70 p-2.5 rounded-lg border border-slate-800">
+                                <strong class="text-amber-400">Gatilho:</strong> Ataca a ferida emocional mais comum: o medo de passar vergonha na frente dos outros ou parecer incapaz ao tentar falar fora do país.
                             </p>
                         </div>
-                        <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between">
-                            <button onclick="event.stopPropagation(); copyText('O método prático de Londres para falar inglês em viagens sem traduzir na cabeça.')" class="text-xs font-bold text-amber-400 hover:underline">
-                                📋 Copiar ROMA 2
+                        <div class="pt-2.5 border-t border-slate-800 flex items-center justify-between text-xs">
+                            <button onclick="event.stopPropagation(); copyText('Viaje para o exterior com autonomia total e zero vergonha no inglês.')" class="text-[11px] font-bold text-amber-400 hover:underline">
+                                📋 Copiar Frase
                             </button>
-                            <span class="text-[11px] text-slate-400">Aplicar na LP →</span>
+                            <span class="text-[10px] text-slate-400 font-semibold">Testar na LP →</span>
                         </div>
                     </div>
-
                     <!-- ROMA 3 -->
-                    <div id="roma-card-3" onclick="selectRoma(3)" class="cursor-pointer rounded-2xl p-5 bg-slate-900/70 border-2 border-slate-800 hover:border-slate-600 transition-all hover:scale-[1.01] flex flex-col justify-between">
-                        <div>
-                            <div class="flex items-center justify-between gap-2 mb-3">
-                                <span class="px-2.5 py-1 rounded bg-rose-500/20 text-rose-300 font-bold text-xs border border-rose-500/40">🗣️ OPÇÃO 3 (13 PALAVRAS)</span>
-                                <span id="roma-status-3" class="text-xs font-bold text-slate-500">Selecionar</span>
+                    <div id="roma-card-3" onclick="selectRoma(3)" class="cursor-pointer rounded-2xl p-4.5 border-2 border-slate-800 bg-slate-900/70 hover:border-slate-600 transition-all hover:scale-[1.01] flex flex-col justify-between space-y-3">
+                        <div class="space-y-2">
+                            <div class="flex items-center justify-between gap-1">
+                                <span class="px-2 py-0.5 rounded bg-amber-500/15 text-amber-300 font-extrabold text-[10px] border border-amber-500/30 uppercase">📱 OPÇÃO 3 (12 PALAVRAS)</span>
+                                <span id="roma-status-3" class="text-[11px] font-bold text-slate-500">Selecionar</span>
                             </div>
-                            <p class="text-xs uppercase tracking-wider text-slate-400 font-semibold mb-1">Sobrevivência + Conversa Real</p>
-                            <h4 class="text-xl font-extrabold text-white leading-snug mb-3">
+                            <p class="text-[11px] uppercase tracking-wider text-slate-400 font-bold">Independência Pessoal</p>
+                            <h4 class="text-sm font-extrabold text-white leading-snug">
+                                "Nunca mais dependa do Google Tradutor ou de alguém para falar por você."
+                            </h4>
+                            <p class="text-[11px] text-slate-300 leading-relaxed bg-slate-950/70 p-2.5 rounded-lg border border-slate-800">
+                                <strong class="text-amber-400">Gatilho:</strong> Mexe com a dignidade do viajante que odeia se sentir um fardo ou ficar "assistindo à viagem de fora" por não conseguir se comunicar sozinho.
+                            </p>
+                        </div>
+                        <div class="pt-2.5 border-t border-slate-800 flex items-center justify-between text-xs">
+                            <button onclick="event.stopPropagation(); copyText('Nunca mais dependa do Google Tradutor ou de alguém para falar por você.')" class="text-[11px] font-bold text-amber-400 hover:underline">
+                                📋 Copiar Frase
+                            </button>
+                            <span class="text-[10px] text-slate-400 font-semibold">Testar na LP →</span>
+                        </div>
+                    </div>
+                    <!-- ROMA 4 -->
+                    <div id="roma-card-4" onclick="selectRoma(4)" class="cursor-pointer rounded-2xl p-4.5 border-2 border-slate-800 bg-slate-900/70 hover:border-slate-600 transition-all hover:scale-[1.01] flex flex-col justify-between space-y-3">
+                        <div class="space-y-2">
+                            <div class="flex items-center justify-between gap-1">
+                                <span class="px-2 py-0.5 rounded bg-amber-500/15 text-amber-300 font-extrabold text-[10px] border border-amber-500/30 uppercase">🧳 OPÇÃO 4 (12 PALAVRAS)</span>
+                                <span id="roma-status-4" class="text-[11px] font-bold text-slate-500">Selecionar</span>
+                            </div>
+                            <p class="text-[11px] uppercase tracking-wider text-slate-400 font-bold">Mecanismo de Londres</p>
+                            <h4 class="text-sm font-extrabold text-white leading-snug">
+                                "O método prático de Londres para falar em viagens sem traduzir mentalmente."
+                            </h4>
+                            <p class="text-[11px] text-slate-300 leading-relaxed bg-slate-950/70 p-2.5 rounded-lg border border-slate-800">
+                                <strong class="text-amber-400">Gatilho:</strong> Conecta diretamente com a "Mala de Londres" e ataca a causa do travamento: tentar traduzir cada palavra do português pro inglês na hora do papo.
+                            </p>
+                        </div>
+                        <div class="pt-2.5 border-t border-slate-800 flex items-center justify-between text-xs">
+                            <button onclick="event.stopPropagation(); copyText('O método prático de Londres para falar em viagens sem traduzir mentalmente.')" class="text-[11px] font-bold text-amber-400 hover:underline">
+                                📋 Copiar Frase
+                            </button>
+                            <span class="text-[10px] text-slate-400 font-semibold">Testar na LP →</span>
+                        </div>
+                    </div>
+                    <!-- ROMA 5 -->
+                    <div id="roma-card-5" onclick="selectRoma(5)" class="cursor-pointer rounded-2xl p-4.5 border-2 border-slate-800 bg-slate-900/70 hover:border-slate-600 transition-all hover:scale-[1.01] flex flex-col justify-between space-y-3">
+                        <div class="space-y-2">
+                            <div class="flex items-center justify-between gap-1">
+                                <span class="px-2 py-0.5 rounded bg-amber-500/15 text-amber-300 font-extrabold text-[10px] border border-amber-500/30 uppercase">🏨 OPÇÃO 5 (14 PALAVRAS)</span>
+                                <span id="roma-status-5" class="text-[11px] font-bold text-slate-500">Selecionar</span>
+                            </div>
+                            <p class="text-[11px] uppercase tracking-wider text-slate-400 font-bold">Autoridade Savoy Hotel</p>
+                            <h4 class="text-sm font-extrabold text-white leading-snug">
+                                "O inglês da vida real que aprendi no Savoy Hotel para você nunca mais travar."
+                            </h4>
+                            <p class="text-[11px] text-slate-300 leading-relaxed bg-slate-950/70 p-2.5 rounded-lg border border-slate-800">
+                                <strong class="text-amber-400">Gatilho:</strong> Ancoragem de prestígio inquestionável. O Savoy Hotel em Londres é referência mundial de sofisticação e excelência, gerando curiosidade imediata pelo método.
+                            </p>
+                        </div>
+                        <div class="pt-2.5 border-t border-slate-800 flex items-center justify-between text-xs">
+                            <button onclick="event.stopPropagation(); copyText('O inglês da vida real que aprendi no Savoy Hotel para você nunca mais travar.')" class="text-[11px] font-bold text-amber-400 hover:underline">
+                                📋 Copiar Frase
+                            </button>
+                            <span class="text-[10px] text-slate-400 font-semibold">Testar na LP →</span>
+                        </div>
+                    </div>
+                    <!-- ROMA 6 -->
+                    <div id="roma-card-6" onclick="selectRoma(6)" class="cursor-pointer rounded-2xl p-4.5 border-2 border-slate-800 bg-slate-900/70 hover:border-slate-600 transition-all hover:scale-[1.01] flex flex-col justify-between space-y-3">
+                        <div class="space-y-2">
+                            <div class="flex items-center justify-between gap-1">
+                                <span class="px-2 py-0.5 rounded bg-amber-500/15 text-amber-300 font-extrabold text-[10px] border border-amber-500/30 uppercase">🧩 OPÇÃO 6 (12 PALAVRAS)</span>
+                                <span id="roma-status-6" class="text-[11px] font-bold text-slate-500">Selecionar</span>
+                            </div>
+                            <p class="text-[11px] uppercase tracking-wider text-slate-400 font-bold">Facilidade Cognitiva (Chunks)</p>
+                            <h4 class="text-sm font-extrabold text-white leading-snug">
+                                "Aprenda a montar dezenas de frases úteis trocando apenas uma única palavra."
+                            </h4>
+                            <p class="text-[11px] text-slate-300 leading-relaxed bg-slate-950/70 p-2.5 rounded-lg border border-slate-800">
+                                <strong class="text-amber-400">Gatilho:</strong> Promete velocidade e extrema simplicidade. O cérebro percebe que não precisa de anos de estudo: basta dominar a lógica dos blocos (chunks) substituíveis.
+                            </p>
+                        </div>
+                        <div class="pt-2.5 border-t border-slate-800 flex items-center justify-between text-xs">
+                            <button onclick="event.stopPropagation(); copyText('Aprenda a montar dezenas de frases úteis trocando apenas uma única palavra.')" class="text-[11px] font-bold text-amber-400 hover:underline">
+                                📋 Copiar Frase
+                            </button>
+                            <span class="text-[10px] text-slate-400 font-semibold">Testar na LP →</span>
+                        </div>
+                    </div>
+                    <!-- ROMA 7 -->
+                    <div id="roma-card-7" onclick="selectRoma(7)" class="cursor-pointer rounded-2xl p-4.5 border-2 border-slate-800 bg-slate-900/70 hover:border-slate-600 transition-all hover:scale-[1.01] flex flex-col justify-between space-y-3">
+                        <div class="space-y-2">
+                            <div class="flex items-center justify-between gap-1">
+                                <span class="px-2 py-0.5 rounded bg-amber-500/15 text-amber-300 font-extrabold text-[10px] border border-amber-500/30 uppercase">✈️ OPÇÃO 7 (13 PALAVRAS)</span>
+                                <span id="roma-status-7" class="text-[11px] font-bold text-slate-500">Selecionar</span>
+                            </div>
+                            <p class="text-[11px] uppercase tracking-wider text-slate-400 font-bold">Situações Críticas de Viagem</p>
+                            <h4 class="text-sm font-extrabold text-white leading-snug">
+                                "Passe pela imigração, hotel e restaurantes com a resposta na ponta da língua."
+                            </h4>
+                            <p class="text-[11px] text-slate-300 leading-relaxed bg-slate-950/70 p-2.5 rounded-lg border border-slate-800">
+                                <strong class="text-amber-400">Gatilho:</strong> Especificidade extrema. Cita os 3 momentos onde todo mundo gela. Alivia a ansiedade de véspera de viagem com uma promessa concreta e realizável.
+                            </p>
+                        </div>
+                        <div class="pt-2.5 border-t border-slate-800 flex items-center justify-between text-xs">
+                            <button onclick="event.stopPropagation(); copyText('Passe pela imigração, hotel e restaurantes com a resposta na ponta da língua.')" class="text-[11px] font-bold text-amber-400 hover:underline">
+                                📋 Copiar Frase
+                            </button>
+                            <span class="text-[10px] text-slate-400 font-semibold">Testar na LP →</span>
+                        </div>
+                    </div>
+                    <!-- ROMA 8 -->
+                    <div id="roma-card-8" onclick="selectRoma(8)" class="cursor-pointer rounded-2xl p-4.5 border-2 border-slate-800 bg-slate-900/70 hover:border-slate-600 transition-all hover:scale-[1.01] flex flex-col justify-between space-y-3">
+                        <div class="space-y-2">
+                            <div class="flex items-center justify-between gap-1">
+                                <span class="px-2 py-0.5 rounded bg-amber-500/15 text-amber-300 font-extrabold text-[10px] border border-amber-500/30 uppercase">🗣️ OPÇÃO 8 (13 PALAVRAS)</span>
+                                <span id="roma-status-8" class="text-[11px] font-bold text-slate-500">Selecionar</span>
+                            </div>
+                            <p class="text-[11px] uppercase tracking-wider text-slate-400 font-bold">Sobrevivência + Conversa Real</p>
+                            <h4 class="text-sm font-extrabold text-white leading-snug">
                                 "Pare de travar no inglês: resolva sua viagem e sustente conversas de verdade."
                             </h4>
-                            <p class="text-xs text-slate-300 leading-relaxed bg-slate-950/70 p-3 rounded-lg border border-slate-800">
-                                <strong>Por que é letal:</strong> Une os dois mundos do seu funil numa frase só: resolver a viagem (Pop Travel) e sustentar conversa real (Aventura Britânica / Backstage).
+                            <p class="text-[11px] text-slate-300 leading-relaxed bg-slate-950/70 p-2.5 rounded-lg border border-slate-800">
+                                <strong class="text-amber-400">Gatilho:</strong> Entrega o pacote completo do funil: resolver a emergência prática (Pop Travel) e conseguir bater papo descontraído com quem mora lá (Backstage English).
                             </p>
                         </div>
-                        <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between">
-                            <button onclick="event.stopPropagation(); copyText('Pare de travar no inglês: resolva sua viagem e sustente conversas de verdade.')" class="text-xs font-bold text-amber-400 hover:underline">
-                                📋 Copiar ROMA 3
+                        <div class="pt-2.5 border-t border-slate-800 flex items-center justify-between text-xs">
+                            <button onclick="event.stopPropagation(); copyText('Pare de travar no inglês: resolva sua viagem e sustente conversas de verdade.')" class="text-[11px] font-bold text-amber-400 hover:underline">
+                                📋 Copiar Frase
                             </button>
-                            <span class="text-[11px] text-slate-400">Aplicar na LP →</span>
+                            <span class="text-[10px] text-slate-400 font-semibold">Testar na LP →</span>
+                        </div>
+                    </div>
+                    <!-- ROMA 9 -->
+                    <div id="roma-card-9" onclick="selectRoma(9)" class="cursor-pointer rounded-2xl p-4.5 border-2 border-slate-800 bg-slate-900/70 hover:border-slate-600 transition-all hover:scale-[1.01] flex flex-col justify-between space-y-3">
+                        <div class="space-y-2">
+                            <div class="flex items-center justify-between gap-1">
+                                <span class="px-2 py-0.5 rounded bg-amber-500/15 text-amber-300 font-extrabold text-[10px] border border-amber-500/30 uppercase">⚡ OPÇÃO 9 (14 PALAVRAS)</span>
+                                <span id="roma-status-9" class="text-[11px] font-bold text-slate-500">Selecionar</span>
+                            </div>
+                            <p class="text-[11px] uppercase tracking-wider text-slate-400 font-bold">Anti-Cursinhos Tradicionais</p>
+                            <h4 class="text-sm font-extrabold text-white leading-snug">
+                                "Esqueça os cursinhos tradicionais: fale o inglês natural que resolve viagens no mundo real."
+                            </h4>
+                            <p class="text-[11px] text-slate-300 leading-relaxed bg-slate-950/70 p-2.5 rounded-lg border border-slate-800">
+                                <strong class="text-amber-400">Gatilho:</strong> Valida a frustração do aluno adulto que já tentou escolas convencionais por anos e desistiu. Apresenta o método como uma alternativa ágil e descomplicada.
+                            </p>
+                        </div>
+                        <div class="pt-2.5 border-t border-slate-800 flex items-center justify-between text-xs">
+                            <button onclick="event.stopPropagation(); copyText('Esqueça os cursinhos tradicionais: fale o inglês natural que resolve viagens no mundo real.')" class="text-[11px] font-bold text-amber-400 hover:underline">
+                                📋 Copiar Frase
+                            </button>
+                            <span class="text-[10px] text-slate-400 font-semibold">Testar na LP →</span>
+                        </div>
+                    </div>
+                    <!-- ROMA 10 -->
+                    <div id="roma-card-10" onclick="selectRoma(10)" class="cursor-pointer rounded-2xl p-4.5 border-2 border-slate-800 bg-slate-900/70 hover:border-slate-600 transition-all hover:scale-[1.01] flex flex-col justify-between space-y-3">
+                        <div class="space-y-2">
+                            <div class="flex items-center justify-between gap-1">
+                                <span class="px-2 py-0.5 rounded bg-amber-500/15 text-amber-300 font-extrabold text-[10px] border border-amber-500/30 uppercase">👑 OPÇÃO 10 (13 PALAVRAS)</span>
+                                <span id="roma-status-10" class="text-[11px] font-bold text-slate-500">Selecionar</span>
+                            </div>
+                            <p class="text-[11px] uppercase tracking-wider text-slate-400 font-bold">Aspiracional & Experiência Local</p>
+                            <h4 class="text-sm font-extrabold text-white leading-snug">
+                                "Destrave sua voz em inglês e viva sua próxima viagem internacional como um nativo."
+                            </h4>
+                            <p class="text-[11px] text-slate-300 leading-relaxed bg-slate-950/70 p-2.5 rounded-lg border border-slate-800">
+                                <strong class="text-amber-400">Gatilho:</strong> Promessa aspiracional máxima de status. Transforma o aluno de mero turista dependente em um viajante elegante, autoconfiante e integrado à cultura local.
+                            </p>
+                        </div>
+                        <div class="pt-2.5 border-t border-slate-800 flex items-center justify-between text-xs">
+                            <button onclick="event.stopPropagation(); copyText('Destrave sua voz em inglês e viva sua próxima viagem internacional como um nativo.')" class="text-[11px] font-bold text-amber-400 hover:underline">
+                                📋 Copiar Frase
+                            </button>
+                            <span class="text-[10px] text-slate-400 font-semibold">Testar na LP →</span>
                         </div>
                     </div>
                 </div>
@@ -427,11 +579,18 @@
                     <p class="text-xs text-slate-400">Teste abaixo as 3 ROMAs e os 2 Modos de Posicionamento de Valor diretamente no layout da página.</p>
                 </div>
                 <div class="flex flex-wrap items-center gap-2">
-                    <div class="flex items-center bg-slate-950 p-1 rounded-xl border border-slate-800 text-xs">
-                        <span class="px-2 text-slate-400 font-semibold">ROMA:</span>
-                        <button onclick="selectRoma(1)" class="px-2.5 py-1 rounded-lg font-bold bg-slate-800 text-amber-400 hover:bg-slate-700">1</button>
-                        <button onclick="selectRoma(2)" class="px-2.5 py-1 rounded-lg font-bold text-slate-300 hover:bg-slate-800">2</button>
-                        <button onclick="selectRoma(3)" class="px-2.5 py-1 rounded-lg font-bold text-slate-300 hover:bg-slate-800">3</button>
+                    <div class="flex items-center bg-slate-950 p-1 rounded-xl border border-slate-800 text-xs gap-1 overflow-x-auto">
+                        <span class="px-2 text-slate-400 font-semibold shrink-0">ROMA (1-10):</span>
+                        <button onclick="selectRoma(1)" id="lp-roma-btn-1" class="px-2.5 py-1 rounded-lg font-bold bg-slate-800 text-amber-400 hover:bg-slate-700 shadow">1</button>
+                        <button onclick="selectRoma(2)" id="lp-roma-btn-2" class="px-2.5 py-1 rounded-lg font-bold text-slate-400 hover:bg-slate-800 hover:text-white">2</button>
+                        <button onclick="selectRoma(3)" id="lp-roma-btn-3" class="px-2.5 py-1 rounded-lg font-bold text-slate-400 hover:bg-slate-800 hover:text-white">3</button>
+                        <button onclick="selectRoma(4)" id="lp-roma-btn-4" class="px-2.5 py-1 rounded-lg font-bold text-slate-400 hover:bg-slate-800 hover:text-white">4</button>
+                        <button onclick="selectRoma(5)" id="lp-roma-btn-5" class="px-2.5 py-1 rounded-lg font-bold text-slate-400 hover:bg-slate-800 hover:text-white">5</button>
+                        <button onclick="selectRoma(6)" id="lp-roma-btn-6" class="px-2.5 py-1 rounded-lg font-bold text-slate-400 hover:bg-slate-800 hover:text-white">6</button>
+                        <button onclick="selectRoma(7)" id="lp-roma-btn-7" class="px-2.5 py-1 rounded-lg font-bold text-slate-400 hover:bg-slate-800 hover:text-white">7</button>
+                        <button onclick="selectRoma(8)" id="lp-roma-btn-8" class="px-2.5 py-1 rounded-lg font-bold text-slate-400 hover:bg-slate-800 hover:text-white">8</button>
+                        <button onclick="selectRoma(9)" id="lp-roma-btn-9" class="px-2.5 py-1 rounded-lg font-bold text-slate-400 hover:bg-slate-800 hover:text-white">9</button>
+                        <button onclick="selectRoma(10)" id="lp-roma-btn-10" class="px-2.5 py-1 rounded-lg font-bold text-slate-400 hover:bg-slate-800 hover:text-white">10</button>
                     </div>
                     <div class="flex items-center bg-slate-950 p-1 rounded-xl border border-slate-800 text-xs">
                         <button onclick="setAccessMode('guest')" id="lp-toggle-guest" class="px-3 py-1.5 rounded-lg font-extrabold bg-amber-400 text-slate-950 transition">
@@ -1238,20 +1397,48 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        // Shorter, Punchier ROMA Options (12 to 14 words)
+                // Shorter, Punchier & Ultra-Persuasive ROMA Options (10 Tactical Angles)
         const romaOptions = {
             1: {
                 plain: 'Destrave o inglês da sua próxima viagem sem decorar uma única regra.',
                 html: 'Destrave o inglês da sua próxima viagem <span class="text-amber-400 underline decoration-british-red">sem decorar uma única regra.</span>'
             },
             2: {
-                plain: 'O método prático de Londres para falar inglês em viagens sem traduzir na cabeça.',
-                html: 'O método prático de Londres para falar inglês em viagens <span class="text-amber-400 underline decoration-british-red">sem traduzir na cabeça.</span>'
+                plain: 'Viaje para o exterior com autonomia total e zero vergonha no inglês.',
+                html: 'Viaje para o exterior com autonomia total e <span class="text-amber-400 underline decoration-british-red">zero vergonha no inglês.</span>'
             },
             3: {
+                plain: 'Nunca mais dependa do Google Tradutor ou de alguém para falar por você.',
+                html: 'Nunca mais dependa do Google Tradutor <span class="text-amber-400 underline decoration-british-red">ou de alguém para falar por você.</span>'
+            },
+            4: {
+                plain: 'O método prático de Londres para falar em viagens sem traduzir mentalmente.',
+                html: 'O método prático de Londres para falar em viagens <span class="text-amber-400 underline decoration-british-red">sem traduzir mentalmente.</span>'
+            },
+            5: {
+                plain: 'O inglês da vida real que aprendi no Savoy Hotel para você nunca mais travar.',
+                html: 'O inglês da vida real que aprendi no Savoy Hotel <span class="text-amber-400 underline decoration-british-red">para você nunca mais travar.</span>'
+            },
+            6: {
+                plain: 'Aprenda a montar dezenas de frases úteis trocando apenas uma única palavra.',
+                html: 'Aprenda a montar dezenas de frases úteis <span class="text-amber-400 underline decoration-british-red">trocando apenas uma única palavra.</span>'
+            },
+            7: {
+                plain: 'Passe pela imigração, hotel e restaurantes com a resposta na ponta da língua.',
+                html: 'Passe pela imigração, hotel e restaurantes com <span class="text-amber-400 underline decoration-british-red">a resposta na ponta da língua.</span>'
+            },
+            8: {
                 plain: 'Pare de travar no inglês: resolva sua viagem e sustente conversas de verdade.',
                 html: 'Pare de travar no inglês: resolva sua viagem e <span class="text-amber-400 underline decoration-british-red">sustente conversas de verdade.</span>'
-            }
+            },
+            9: {
+                plain: 'Esqueça os cursinhos tradicionais: fale o inglês natural que resolve viagens no mundo real.',
+                html: 'Esqueça os cursinhos tradicionais: fale o inglês natural que <span class="text-amber-400 underline decoration-british-red">resolve viagens no mundo real.</span>'
+            },
+            10: {
+                plain: 'Destrave sua voz em inglês e viva sua próxima viagem internacional como um nativo.',
+                html: 'Destrave sua voz em inglês e <span class="text-amber-400 underline decoration-british-red">viva sua próxima viagem como um nativo.</span>'
+            },
         };
 
         function selectRoma(optionNumber) {
@@ -1261,20 +1448,30 @@
             document.getElementById('header-roma-preview').textContent = selected.plain;
             document.getElementById('lp-live-roma').innerHTML = selected.html;
 
-            for (let i = 1; i <= 3; i++) {
+            for (let i = 1; i <= 10; i++) {
                 const card = document.getElementById('roma-card-' + i);
                 const status = document.getElementById('roma-status-' + i);
+                const btn = document.getElementById('lp-roma-btn-' + i);
+
                 if (card && status) {
                     if (i === optionNumber) {
                         card.classList.remove('border-slate-800', 'bg-slate-900/70');
-                        card.classList.add('border-british-emerald', 'bg-slate-900');
+                        card.classList.add('border-british-emerald', 'bg-slate-900', 'shadow-xl');
                         status.textContent = '✓ ATIVA NO SITE';
-                        status.className = 'text-xs font-bold text-emerald-400';
+                        status.className = 'text-[11px] font-bold text-emerald-400';
                     } else {
-                        card.classList.remove('border-british-emerald', 'bg-slate-900');
+                        card.classList.remove('border-british-emerald', 'bg-slate-900', 'shadow-xl');
                         card.classList.add('border-slate-800', 'bg-slate-900/70');
                         status.textContent = 'Selecionar';
-                        status.className = 'text-xs font-bold text-slate-500';
+                        status.className = 'text-[11px] font-bold text-slate-500';
+                    }
+                }
+
+                if (btn) {
+                    if (i === optionNumber) {
+                        btn.className = 'px-2.5 py-1 rounded-lg font-bold bg-slate-800 text-amber-400 hover:bg-slate-700 shadow';
+                    } else {
+                        btn.className = 'px-2.5 py-1 rounded-lg font-bold text-slate-400 hover:bg-slate-800 hover:text-white';
                     }
                 }
             }
