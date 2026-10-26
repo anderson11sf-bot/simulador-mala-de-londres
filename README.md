@@ -16,6 +16,15 @@ Hub Estratégico & Simulador Oficial de Lançamento Semente — **Prof. Marcos L
 
 ---
 
+## 📱 Estratégia de Mídia Orgânica & Tráfego Pago (Meta Ads)
+1. **Mídia Viral no Instagram (Reels no Estilo Conversa):** Roteiros descontraídos abordando o sentimento de "ser inteligente no Brasil e se sentir burro em inglês", histórias do Savoy Hotel e a quebra de regras gramaticais com Chunks. Todos os vídeos encerram com a **ROMA oficial** e chamada para o Quiz no link da bio.
+2. **Configuração Técnica no Meta Ads (Público Aberto → Pixel → Remarketing):**
+   * **Fase 1 (Início da Captação 28/10):** 70% da verba em Público Aberto (Brasil, 25-52 anos) e Interesses em Cursinhos/Idiomas (CNA, Cultura Inglesa, Duolingo, Business English) para alimentar o Pixel com volume de dados.
+   * **Fase 2 (Otimização):** 20% da verba em Públicos Personalizados (Engajamento Instagram 365d, Vídeo Views 50%+) e Lookalike 1% do evento `Lead`.
+   * **Fase 3 (Véspera e Webinário 11/11):** 10% da verba em Remarketing de abandono de quiz e lembretes de "É Amanhã" / "Estamos Ao Vivo".
+
+---
+
 ## 📅 As 4 Datas Oficiais do Lançamento
 1. **Captação:** 28/10 a 11/11
 2. **Webinário Ao Vivo:** Quarta-feira, **11/11, às 20h** (gratuito)
@@ -37,13 +46,13 @@ Hub Estratégico & Simulador Oficial de Lançamento Semente — **Prof. Marcos L
 ---
 
 ## 🔁 Arquitetura do Funil
-`Anúncio` → `Quiz "Por que meu inglês trava?" (8 perguntas, 4 perfis)` → `Página de Obrigado + PDF 20 Blocos + Grupo VIP de WhatsApp` → `Aquecimento com bastidores do Savoy Hotel e shows de Londres` → `Webinário Ao Vivo (11/11 • 20h)` → `Checkout Hotmart`
+`Reels Orgânico / Anúncio Meta Ads` → `Quiz "Por que meu inglês trava?" (8 perguntas, 4 perfis)` → `Página de Obrigado + PDF 20 Blocos + Grupo VIP de WhatsApp` → `Aquecimento com bastidores do Savoy Hotel e shows de Londres` → `Webinário Ao Vivo (11/11 • 20h)` → `Checkout Hotmart`
 
 ---
 
 ## 💻 Abas do Simulador Online
 1. **🎯 1. O Ponto Principal & ROMA:** O posicionamento oficial, a ROMA blindada e o cronograma das 4 datas.
-2. **📢 2. Criativos (Ads):** Roteiros de tráfego pago convidando para o teste da trava.
+2. **📢 2. Mídia, Tráfego Pago & Ads:** Roteiros virais para Instagram, configuração técnica do funil no Meta Ads e criativos do Quiz.
 3. **💻 3. LP de Captura & Quiz Interativo:** Quiz funcional de 8 perguntas e cálculo de 4 perfis com formulário do passe e envio do PDF 20 Blocos.
 4. **📲 4. Obrigado & WhatsApp:** Histórias do Savoy Hotel e bastidores de shows em Londres.
 5. **🔴 5. Sala da Live (11/11 • 20h):** Player do YouTube, download do PDF 20 Blocos e botão programado para a oferta da Turma Fundadora.

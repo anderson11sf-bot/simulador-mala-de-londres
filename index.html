@@ -87,7 +87,7 @@
                     🎯 1. O Ponto Principal & ROMA
                 </button>
                 <button onclick="switchTab('tab-ads')" id="btn-tab-ads" class="tab-btn shrink-0 px-3 py-2 rounded-lg text-xs font-semibold transition-all bg-slate-800/80 text-slate-300 hover:bg-slate-700">
-                    📢 2. Criativos (Ads do Quiz)
+                    📢 2. Mídia, Tráfego Pago & Ads
                 </button>
                 <button onclick="switchTab('tab-lp')" id="btn-tab-lp" class="tab-btn shrink-0 px-3 py-2 rounded-lg text-xs font-semibold transition-all bg-slate-800/80 text-slate-300 hover:bg-slate-700">
                     💻 3. LP de Captura & Quiz Interativo
@@ -239,85 +239,321 @@
             </div>
         </section>
 
-        <!-- ==========================================
-             ABA 2: CRIATIVOS DE TRÁFEGO PAGO (ADS DO QUIZ)
+                <!-- ==========================================
+             ABA 2: MÍDIA NO INSTAGRAM, CONFIGURAÇÃO META ADS & CRIATIVOS
              ========================================== -->
-        <section id="tab-ads" class="tab-pane hidden space-y-8">
-            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
-                <h2 class="text-xl sm:text-2xl font-extrabold text-white">📢 Roteiros de Criativos (Tráfego Pago) — Foco no Quiz "Por que meu inglês trava?"</h2>
-                <p class="text-sm text-slate-400 mt-1">
-                    Anúncios altamente qualificados para pessoas que <strong>já estudaram inglês e travam na hora de falar</strong> (reuniões, entrevistas e conversas cotidianas).
-                </p>
+        <section id="tab-ads" class="tab-pane hidden space-y-10">
+            <!-- Header Banner -->
+            <div class="bg-gradient-to-r from-british-navy via-british-slate to-british-navy border border-slate-700 rounded-2xl p-6 sm:p-8 shadow-2xl">
+                <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+                    <div class="space-y-2.5 max-w-3xl">
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                            📢 ESTRATÉGIA COMPLETA DE MARKETING & CAPTAÇÃO (META ADS + REELS)
+                        </span>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+                            Construção de Mídia Viral no Instagram & Funil de Tráfego Pago
+                        </h2>
+                        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                            Aqui está o ecossistema completo: primeiro, vídeos virais no Instagram com storytelling de bastidores gerando curiosidade e construindo audiência; segundo, a configuração técnica no <strong>Meta Ads</strong> (público aberto no início, refinamento com o Pixel e remarketing); e terceiro, os criativos diretos para o <strong>Quiz "Por que meu inglês trava?"</strong>.
+                        </p>
+                    </div>
+                    <div class="shrink-0 flex flex-col sm:flex-row lg:flex-col gap-2.5">
+                        <button onclick="switchTab('tab-lp')" class="px-5 py-3.5 rounded-xl bg-british-emerald text-slate-950 font-extrabold text-xs sm:text-sm hover:bg-emerald-400 transition shadow-lg pulse-emerald">
+                            Ver Quiz de Captura →
+                        </button>
+                    </div>
+                </div>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                <!-- Criativo 1 -->
-                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 flex flex-col justify-between space-y-4">
-                    <div class="space-y-3">
-                        <div class="flex items-center justify-between">
-                            <span class="px-2.5 py-1 rounded-full text-[11px] font-extrabold bg-british-red text-white">CRIATIVO 01 • O TESTE DA TRAVA</span>
-                            <span class="text-xs text-slate-400">45 seg</span>
-                        </div>
-                        <h3 class="text-base font-extrabold text-white">Você já estudou e trava? Faça o Quiz</h3>
-                        <div class="bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-amber-300">
-                            <strong>🎬 Visual:</strong> Marcos olhando para a câmera com uma caneca ou bloco de notas, tom calmo e empático de quem entende a frustração do aluno.
-                        </div>
-                        <div id="copy-ad-1" class="space-y-2 text-xs text-slate-200 leading-relaxed bg-slate-950/60 p-3.5 rounded-xl border border-slate-800">
-                            <p><strong class="text-rose-400">[Gancho]:</strong> "Você já passou anos em cursinho tradicional de inglês, entende quando lê ou assiste séries, mas na hora de falar numa reunião, entrevista ou conversa parece que o cérebro congela?"</p>
-                            <p><strong class="text-amber-400">[Identificação]:</strong> "A culpa não é sua. O método tradicional te ensinou a montar frases como se fossem equações de matemática, traduzindo palavra por palavra."</p>
-                            <p><strong class="text-emerald-400">[O Quiz]:</strong> "Eu criei um teste rápido de 1 minuto chamado 'Por que meu inglês trava?'. São 8 perguntas simples que vão te mostrar qual dos 4 perfis está bloqueando sua fala."</p>
-                            <p><strong class="text-blue-400">[Chamada + Presente]:</strong> "No final do teste, você recebe o PDF com os 20 Blocos de Conversação e seu convite para nossa aula gratuita de quarta, 11/11, às 20h. Toque em Saiba Mais e faça o quiz."</p>
-                        </div>
+            <!-- MÓDULO 1: CONSTRUÇÃO DE MÍDIA NO INSTAGRAM (VÍDEOS VIRAIS / REELS NO ESTILO CONVERSA) -->
+            <div class="space-y-4">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800 pb-3">
+                    <div>
+                        <h3 class="text-lg sm:text-xl font-extrabold text-white flex items-center gap-2">
+                            <span>📱</span> 1. Construção de Mídia no Instagram (Vídeos Virais & Conversa Natural)
+                        </h3>
+                        <p class="text-xs sm:text-sm text-slate-400">
+                            Grave no formato informal (com cafezinho ou caminhando, tom próximo e despretensioso). O objetivo é atrair o adulto que já estudou e trava, sempre finalizando com a <strong>ROMA oficial</strong>.
+                        </p>
                     </div>
-                    <button onclick="copyElementText('copy-ad-1')" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-400 font-bold text-xs border border-slate-700 transition">
-                        📋 Copiar Criativo 01
-                    </button>
+                    <span class="text-xs text-amber-400 font-bold">⚡ Reels de Alta Retenção & Identificação</span>
                 </div>
 
-                <!-- Criativo 2 -->
-                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 flex flex-col justify-between space-y-4">
-                    <div class="space-y-3">
-                        <div class="flex items-center justify-between">
-                            <span class="px-2.5 py-1 rounded-full text-[11px] font-extrabold bg-amber-500 text-slate-950">CRIATIVO 02 • BASTIDORES DO SAVOY</span>
-                            <span class="text-xs text-slate-400">55 seg</span>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <!-- Roteiro Viral 1 -->
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 flex flex-col justify-between space-y-4">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="px-2.5 py-1 rounded-full text-[11px] font-extrabold bg-rose-500 text-white">REELS 01 • DESABAFO DO ALUNO</span>
+                                <span class="text-xs text-slate-400">~60 seg</span>
+                            </div>
+                            <h4 class="text-base font-extrabold text-white">"Por que quem é inteligente no Brasil se sente burro em inglês?"</h4>
+                            <div class="bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-amber-300">
+                                <strong>🎬 Formato:</strong> Marcos sentado segurando uma caneca de chá/café, olhando nos olhos da câmera com tom compreensivo, sem edição pirotécnica.
+                            </div>
+                            <div id="copy-viral-1" class="space-y-2 text-xs text-slate-200 leading-relaxed bg-slate-950/60 p-3.5 rounded-xl border border-slate-800">
+                                <p><strong class="text-rose-400">[Gancho 0 a 3s]:</strong> "Você já percebeu como no Brasil você lidera reunião, negocia, escreve bem, mas na hora que alguém fala inglês com você dá a sensação de que o seu QI caiu para 30?"</p>
+                                <p><strong class="text-amber-400">[A Trava]:</strong> "Você sabe a palavra, mas até ela sair da sua cabeça pra sua boca parece que passa por um tribunal de regras gramaticais: 'é do ou does? esse verbo é irregular?'. Enquanto você pensa, o outro já mudou de assunto."</p>
+                                <p><strong class="text-emerald-400">[A Lição do Savoy]:</strong> "Quando morei em Londres e trabalhei no Savoy Hotel, eu vi pessoas do mundo todo falando inglês sem nenhuma vergonha. Sabe por quê? Porque eles usam blocos prontos associados à cultura, e não fórmulas matemáticas de cursinho."</p>
+                                <p><strong class="text-blue-400">[ROMA + CTA]:</strong> "Eu te ajudo a destravar o seu inglês e falar com confiança em 90 dias. Se você quiser descobrir exatamente o que está bloqueando a sua fala, eu criei um teste gratuito de 1 minuto. Clica no link da minha bio e faz o quiz 'Por que meu inglês trava?'."</p>
+                            </div>
                         </div>
-                        <h3 class="text-base font-extrabold text-white">A Lição do Savoy Hotel em Londres</h3>
-                        <div class="bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-amber-300">
-                            <strong>🎬 Visual:</strong> Marcos segurando fotos de Londres e memórias do hotel com a mala aberta ao lado.
-                        </div>
-                        <div id="copy-ad-2" class="space-y-2 text-xs text-slate-200 leading-relaxed bg-slate-950/60 p-3.5 rounded-xl border border-slate-800">
-                            <p><strong class="text-rose-400">[Gancho]:</strong> "Quando eu morei em Londres e trabalhei no clássico Savoy Hotel, eu descobri por que tantos brasileiros preparados travam quando tentam falar inglês."</p>
-                            <p><strong class="text-amber-400">[Choque]:</strong> "Eles tentam traduzir o português na cabeça enquanto a outra pessoa fala. Mas quem fala inglês na vida real não pensa em regras: usa blocos prontos associados à cultura."</p>
-                            <p><strong class="text-emerald-400">[A Promessa]:</strong> "Eu te ajudo a destravar o seu inglês e falar com confiança em 90 dias, sem decorar gramática."</p>
-                            <p><strong class="text-blue-400">[CTA]:</strong> "Na próxima quarta-feira, 11/11, às 20h, vou fazer uma aula ao vivo abrindo essa metodologia. Toque aqui para fazer o quiz 'Por que meu inglês trava?' e garantir sua vaga."</p>
-                        </div>
+                        <button onclick="copyElementText('copy-viral-1')" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-400 font-bold text-xs border border-slate-700 transition">
+                            📋 Copiar Roteiro Viral 01
+                        </button>
                     </div>
-                    <button onclick="copyElementText('copy-ad-2')" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-400 font-bold text-xs border border-slate-700 transition">
-                        📋 Copiar Criativo 02
-                    </button>
+
+                    <!-- Roteiro Viral 2 -->
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 flex flex-col justify-between space-y-4">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="px-2.5 py-1 rounded-full text-[11px] font-extrabold bg-amber-500 text-slate-950">REELS 02 • HISTÓRIA DO SAVOY</span>
+                                <span class="text-xs text-slate-400">~60 seg</span>
+                            </div>
+                            <h4 class="text-base font-extrabold text-white">"A lição que tomei no Savoy Hotel em Londres"</h4>
+                            <div class="bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-amber-300">
+                                <strong>🎬 Formato:</strong> Marcos caminhando ou com fotos reais de Londres ao fundo, em tom de história de bastidor que prende a atenção.
+                            </div>
+                            <div id="copy-viral-2" class="space-y-2 text-xs text-slate-200 leading-relaxed bg-slate-950/60 p-3.5 rounded-xl border border-slate-800">
+                                <p><strong class="text-rose-400">[Gancho 0 a 3s]:</strong> "No meu terceiro dia trabalhando no histórico Savoy Hotel em Londres, eu quase congelei na frente de um hóspede britânico por causa de uma única pergunta."</p>
+                                <p><strong class="text-amber-400">[A História]:</strong> "Eu tinha gabaritado provas de inglês no Brasil, sabia toda a gramática. Mas quando ele falou rápido com sotaque londrino, meu cérebro tentou traduzir palavra por palavra do português. Eu fiquei com cara de paisagem gaguejando."</p>
+                                <p><strong class="text-emerald-400">[O Ponto de Virada]:</strong> "O concierge inglês olhou pra mim e disse: 'Marcos, para de tentar traduzir o português. O inglês da vida real é falado em Chunks — blocos prontos que já saem no automático'."</p>
+                                <p><strong class="text-blue-400">[ROMA + CTA]:</strong> "Se você já estudou inglês e ainda trava na hora de falar: eu te ajudo a destravar o seu inglês e falar com confiança em 90 dias. Responda o teste 'Por que meu inglês trava?' no link da minha bio para receber seu diagnóstico."</p>
+                            </div>
+                        </div>
+                        <button onclick="copyElementText('copy-viral-2')" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-400 font-bold text-xs border border-slate-700 transition">
+                            📋 Copiar Roteiro Viral 02
+                        </button>
+                    </div>
+
+                    <!-- Roteiro Viral 3 -->
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 flex flex-col justify-between space-y-4">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="px-2.5 py-1 rounded-full text-[11px] font-extrabold bg-emerald-500 text-slate-950">REELS 03 • O SEGREDO DOS 20 BLOCOS</span>
+                                <span class="text-xs text-slate-400">~50 seg</span>
+                            </div>
+                            <h4 class="text-base font-extrabold text-white">"O teste prático: você não precisa de mais gramática"</h4>
+                            <div class="bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-amber-300">
+                                <strong>🎬 Formato:</strong> Marcos mostrando na tela do celular ou em uma folha como montar 5 frases em 10 segundos apenas trocando uma palavra.
+                            </div>
+                            <div id="copy-viral-3" class="space-y-2 text-xs text-slate-200 leading-relaxed bg-slate-950/60 p-3.5 rounded-xl border border-slate-800">
+                                <p><strong class="text-rose-400">[Gancho 0 a 3s]:</strong> "Quer ver como você não precisa decorar mais nenhuma regra de gramática para destravar sua fala em inglês? Olha isso aqui."</p>
+                                <p><strong class="text-amber-400">[Demonstração]:</strong> "Pega essa estrutura pronta: 'I was wondering if you could...'. Não pensa em tempos verbais. Troca só o final: '...help me?', '...send me the report?', '...join the meeting?'. Pronto: 3 frases impecáveis sem gastar 1 neurônio com gramática."</p>
+                                <p><strong class="text-emerald-400">[Mecanismo]:</strong> "80% das conversas profissionais e cotidianas são sustentadas por apenas 20 blocos desse tipo. Quando você domina os 20 blocos, seu medo de falar desaparece."</p>
+                                <p><strong class="text-blue-400">[ROMA + CTA]:</strong> "Eu resumi isso no PDF 20 Blocos. Eu te ajudo a destravar o seu inglês e falar com confiança em 90 dias. Vai na minha bio, responde o quiz rápido e baixa seu material agora!"</p>
+                            </div>
+                        </div>
+                        <button onclick="copyElementText('copy-viral-3')" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-400 font-bold text-xs border border-slate-700 transition">
+                            📋 Copiar Roteiro Viral 03
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MÓDULO 2: CONFIGURAÇÃO TÉCNICA DO TRÁFEGO PAGO NO META ADS -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 space-y-6">
+                <div class="border-b border-slate-800 pb-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                    <div>
+                        <span class="text-xs font-extrabold uppercase tracking-wider text-amber-400">⚙️ GUIA DE IMPLEMENTAÇÃO TÉCNICA</span>
+                        <h3 class="text-lg sm:text-xl font-extrabold text-white mt-0.5">
+                            2. Configuração de Tráfego Pago no Meta Ads (Facebook & Instagram)
+                        </h3>
+                        <p class="text-xs sm:text-sm text-slate-400">
+                            Estratégia completa: início com <strong>Público Aberto + Interesses</strong> para alimentar o Pixel, refinamento com <strong>Lookalike e Engajamento</strong> e remarketing final.
+                        </p>
+                    </div>
+                    <span class="text-xs px-3 py-1 rounded bg-blue-500/20 text-blue-300 border border-blue-500/30 font-bold shrink-0">
+                        Objetivo: Leads (Cadastros)
+                    </span>
                 </div>
 
-                <!-- Criativo 3 -->
-                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 flex flex-col justify-between space-y-4">
-                    <div class="space-y-3">
+                <!-- O Funil de Tráfego no Meta Ads em 3 Fases -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                    <!-- Fase 1 -->
+                    <div class="bg-slate-950 p-5 rounded-2xl border border-slate-800 space-y-3">
                         <div class="flex items-center justify-between">
-                            <span class="px-2.5 py-1 rounded-full text-[11px] font-extrabold bg-emerald-500 text-slate-950">CRIATIVO 03 • O PDF DOS 20 BLOCOS</span>
-                            <span class="text-xs text-slate-400">40 seg</span>
+                            <span class="text-[10px] font-extrabold px-2.5 py-0.5 rounded bg-blue-500/20 text-blue-300 uppercase">FASE 1 • DIAS 1 A 5 (28/10 A 01/11)</span>
+                            <span class="text-xs text-slate-400 font-mono">70% da Verba</span>
                         </div>
-                        <h3 class="text-base font-extrabold text-white">Presente Prático: 20 Chunks de Conversação</h3>
-                        <div class="bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-amber-300">
-                            <strong>🎬 Visual:</strong> Marcos mostrando no tablet ou celular a página do PDF "20 Blocos de Conversação".
-                        </div>
-                        <div id="copy-ad-3" class="space-y-2 text-xs text-slate-200 leading-relaxed bg-slate-950/60 p-3.5 rounded-xl border border-slate-800">
-                            <p><strong class="text-rose-400">[Gancho]:</strong> "Você sabia que 80% das conversas do dia a dia em inglês são sustentadas por apenas 20 blocos de linguagem?"</p>
-                            <p><strong class="text-amber-400">[Mecanismo]:</strong> "Quando você domina esses blocos, você para de traduzir palavra por palavra e sua resposta sai no automático, com naturalidade e confiança."</p>
-                            <p><strong class="text-emerald-400">[O Presente]:</strong> "Eu resumi essa estrutura no 'PDF 20 Blocos de Conversação', que você recebe de presente ao responder o teste rápido 'Por que meu inglês trava?'."</p>
-                            <p><strong class="text-blue-400">[CTA]:</strong> "Toque no link, descubra o seu perfil e garanta seu passe gratuito para a aula ao vivo de quarta, 11/11."</p>
+                        <h4 class="text-sm font-extrabold text-white">Alimentar o Pixel: Público Aberto & Interesses</h4>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            No início da captação, o Pixel não tem dados suficientes. Rodamos com segmentação ampla para a IA do Meta identificar quem clica e conclui o quiz.
+                        </p>
+                        <div class="bg-slate-900/80 p-3 rounded-xl border border-slate-800 text-[11px] text-slate-300 space-y-1">
+                            <p><strong class="text-amber-400">• Conjunto 01 (Broad Aberto):</strong> Brasil, 25 a 52 anos, posicionamento Advantage+ (sem segmentação de interesses).</p>
+                            <p><strong class="text-amber-400">• Conjunto 02 (Interesses em Idiomas):</strong> Interesses em: <em>Inglês, Cursos de Idiomas, Duolingo, CNA, Cultura Inglesa, Business English</em>.</p>
+                            <p><strong class="text-amber-400">• Conjunto 03 (Profissional/Carreira):</strong> Interesses em: <em>LinkedIn, Desenvolvimento Profissional, Multinacionais, Viagens de Negócios</em>.</p>
                         </div>
                     </div>
-                    <button onclick="copyElementText('copy-ad-3')" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-400 font-bold text-xs border border-slate-700 transition">
-                        📋 Copiar Criativo 03
-                    </button>
+
+                    <!-- Fase 2 -->
+                    <div class="bg-slate-950 p-5 rounded-2xl border border-slate-800 space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-[10px] font-extrabold px-2.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 uppercase">FASE 2 • DIAS 6 A 10 (02/11 A 09/11)</span>
+                            <span class="text-xs text-slate-400 font-mono">20% da Verba</span>
+                        </div>
+                        <h4 class="text-sm font-extrabold text-white">Otimização: Lookalike & Públicos Quentes</h4>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            Com mais de 100 leads cadastrados, o Pixel aprende o padrão dos alunos. Ativamos públicos personalizados e semelhantes de alta conversão.
+                        </p>
+                        <div class="bg-slate-900/80 p-3 rounded-xl border border-slate-800 text-[11px] text-slate-300 space-y-1">
+                            <p><strong class="text-emerald-400">• Conjunto 04 (Engajamento Instagram):</strong> Pessoas que interagiram com o perfil do Marcos Lobão nos últimos 365 dias.</p>
+                            <p><strong class="text-emerald-400">• Conjunto 05 (Vídeo Views 50%+):</strong> Pessoas que assistiram a pelo menos metade dos vídeos virais do Reels.</p>
+                            <p><strong class="text-emerald-400">• Conjunto 06 (Lookalike 1%):</strong> Semelhante 1% com base na lista de quem gerou o evento Lead no Quiz.</p>
+                        </div>
+                    </div>
+
+                    <!-- Fase 3 -->
+                    <div class="bg-slate-950 p-5 rounded-2xl border border-slate-800 space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-[10px] font-extrabold px-2.5 py-0.5 rounded bg-rose-500/20 text-rose-300 uppercase">FASE 3 • DIAS 10 E 11 (10/11 E 11/11)</span>
+                            <span class="text-xs text-slate-400 font-mono">10% da Verba</span>
+                        </div>
+                        <h4 class="text-sm font-extrabold text-white">Remarketing & Comparecimento no Webinário</h4>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            Na véspera e no dia do evento ao vivo (11/11), o foco vira taxa de comparecimento (show-up rate) e recuperação de quem começou o quiz e não concluiu.
+                        </p>
+                        <div class="bg-slate-900/80 p-3 rounded-xl border border-slate-800 text-[11px] text-slate-300 space-y-1">
+                            <p><strong class="text-rose-400">• Anúncio "É Amanhã":</strong> Rodado dia 10/11 para todos os inscritos: "Coloque o alarme: nossa aula ao vivo é amanhã às 20h!".</p>
+                            <p><strong class="text-rose-400">• Anúncio "Estamos Ao Vivo":</strong> Rodado dia 11/11 a partir das 19h45 com link direto para a Sala da Live.</p>
+                            <p><strong class="text-rose-400">• Recuperação de Abandono:</strong> Impacta quem visitou a LP do quiz nos últimos 7 dias e não preencheu o formulário.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Eventos do Pixel da Meta -->
+                <div class="bg-slate-950 p-5 rounded-2xl border border-slate-800 space-y-3">
+                    <h4 class="text-xs font-bold text-amber-400 uppercase tracking-wider">
+                        🎯 Eventos do Pixel da Meta & Parâmetros Recomendados:
+                    </h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+                        <div class="bg-slate-900 p-3 rounded-xl border border-slate-800 space-y-1">
+                            <span class="font-bold text-white block">1. PageView</span>
+                            <p class="text-slate-400">Disparado no carregamento da LP do Quiz (/quiz-ingles-trava).</p>
+                        </div>
+                        <div class="bg-slate-900 p-3 rounded-xl border border-slate-800 space-y-1">
+                            <span class="font-bold text-white block">2. ViewContent</span>
+                            <p class="text-slate-400">Disparado quando o usuário clica na primeira resposta do Quiz.</p>
+                        </div>
+                        <div class="bg-slate-900 p-3 rounded-xl border border-slate-800 space-y-1">
+                            <span class="font-bold text-emerald-400 block">3. Lead (Conversão Principal)</span>
+                            <p class="text-slate-400">Disparado no envio do formulário ao abrir a página /passe-confirmado com o PDF.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cenários de Orçamento & Metas de KPIs -->
+                <div class="bg-slate-950 p-5 rounded-2xl border border-slate-800 space-y-3">
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider">
+                        📊 Metas de Métricas & Estimativa de Leads (Período de Captação: 28/10 a 11/11 • 14 dias):
+                    </h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
+                        <div class="bg-slate-900 p-3.5 rounded-xl border border-slate-800 space-y-1">
+                            <span class="text-slate-400 text-[11px] font-bold">CENÁRIO CONSERVADOR</span>
+                            <p class="text-sm font-extrabold text-white">R$ 30 / dia (Total: R$ 420)</p>
+                            <p class="text-emerald-400 font-semibold">• CPL Médio: R$ 3,50</p>
+                            <p class="text-slate-300">• Leads esperados: ~120 inscritos</p>
+                            <p class="text-slate-400">• Entram no WhatsApp: ~80 pessoas</p>
+                        </div>
+                        <div class="bg-slate-900 p-3.5 rounded-xl border-2 border-british-emerald space-y-1">
+                            <span class="text-emerald-400 text-[11px] font-extrabold">CENÁRIO RECOMENDADO ⭐</span>
+                            <p class="text-sm font-extrabold text-white">R$ 50 / dia (Total: R$ 700)</p>
+                            <p class="text-emerald-400 font-semibold">• CPL Médio: R$ 3,00</p>
+                            <p class="text-slate-300">• Leads esperados: ~230 inscritos</p>
+                            <p class="text-slate-400">• Entram no WhatsApp: ~160 pessoas</p>
+                        </div>
+                        <div class="bg-slate-900 p-3.5 rounded-xl border border-slate-800 space-y-1">
+                            <span class="text-slate-400 text-[11px] font-bold">CENÁRIO ESCALA ACELERADA</span>
+                            <p class="text-sm font-extrabold text-white">R$ 100 / dia (Total: R$ 1.400)</p>
+                            <p class="text-emerald-400 font-semibold">• CPL Médio: R$ 2,80</p>
+                            <p class="text-slate-300">• Leads esperados: ~500 inscritos</p>
+                            <p class="text-slate-400">• Entram no WhatsApp: ~350 pessoas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MÓDULO 3: CRIATIVOS DE TRÁFEGO PAGO OFICIAIS PARA O QUIZ -->
+            <div class="space-y-4">
+                <div class="border-b border-slate-800 pb-3">
+                    <h3 class="text-lg sm:text-xl font-extrabold text-white flex items-center gap-2">
+                        <span>🎬</span> 3. Criativos Patrocinados para o Quiz (Meta Ads)
+                    </h3>
+                    <p class="text-xs sm:text-sm text-slate-400">
+                        Anúncios diretos no feed e stories chamando para o teste rápido de 1 minuto:
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <!-- Criativo 1 -->
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 flex flex-col justify-between space-y-4">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="px-2.5 py-1 rounded-full text-[11px] font-extrabold bg-british-red text-white">CRIATIVO 01 • O TESTE DA TRAVA</span>
+                                <span class="text-xs text-slate-400">45 seg</span>
+                            </div>
+                            <h4 class="text-base font-extrabold text-white">Você já estudou e trava? Faça o Quiz</h4>
+                            <div class="bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-amber-300">
+                                <strong>🎬 Visual:</strong> Marcos olhando para a câmera com uma caneca ou bloco de notas, tom calmo e empático de quem entende a frustração do aluno.
+                            </div>
+                            <div id="copy-ad-1" class="space-y-2 text-xs text-slate-200 leading-relaxed bg-slate-950/60 p-3.5 rounded-xl border border-slate-800">
+                                <p><strong class="text-rose-400">[Gancho]:</strong> "Você já passou anos em cursinho tradicional de inglês, entende quando lê ou assiste séries, mas na hora de falar numa reunião, entrevista ou conversa parece que o cérebro congela?"</p>
+                                <p><strong class="text-amber-400">[Identificação]:</strong> "A culpa não é sua. O método tradicional te ensinou a montar frases como se fossem equações de matemática, traduzindo palavra por palavra."</p>
+                                <p><strong class="text-emerald-400">[O Quiz]:</strong> "Eu criei um teste rápido de 1 minuto chamado 'Por que meu inglês trava?'. São 8 perguntas simples que vão te mostrar qual dos 4 perfis está bloqueando sua fala."</p>
+                                <p><strong class="text-blue-400">[Chamada + Presente]:</strong> "No final do teste, você recebe o PDF com os 20 Blocos de Conversação e seu convite para nossa aula gratuita de quarta, 11/11, às 20h. Toque em Saiba Mais e faça o quiz."</p>
+                            </div>
+                        </div>
+                        <button onclick="copyElementText('copy-ad-1')" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-400 font-bold text-xs border border-slate-700 transition">
+                            📋 Copiar Criativo 01
+                        </button>
+                    </div>
+
+                    <!-- Criativo 2 -->
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 flex flex-col justify-between space-y-4">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="px-2.5 py-1 rounded-full text-[11px] font-extrabold bg-amber-500 text-slate-950">CRIATIVO 02 • BASTIDORES DO SAVOY</span>
+                                <span class="text-xs text-slate-400">55 seg</span>
+                            </div>
+                            <h4 class="text-base font-extrabold text-white">A Lição do Savoy Hotel em Londres</h4>
+                            <div class="bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-amber-300">
+                                <strong>🎬 Visual:</strong> Marcos segurando fotos de Londres e memórias do hotel com a mala aberta ao lado.
+                            </div>
+                            <div id="copy-ad-2" class="space-y-2 text-xs text-slate-200 leading-relaxed bg-slate-950/60 p-3.5 rounded-xl border border-slate-800">
+                                <p><strong class="text-rose-400">[Gancho]:</strong> "Quando eu morei em Londres e trabalhei no clássico Savoy Hotel, eu descobri por que tantos brasileiros preparados travam quando tentam falar inglês."</p>
+                                <p><strong class="text-amber-400">[Choque]:</strong> "Eles tentam traduzir o português na cabeça enquanto a outra pessoa fala. Mas quem fala inglês na vida real não pensa em regras: usa blocos prontos associados à cultura."</p>
+                                <p><strong class="text-emerald-400">[A Promessa]:</strong> "Eu te ajudo a destravar o seu inglês e falar com confiança em 90 dias, sem decorar gramática."</p>
+                                <p><strong class="text-blue-400">[CTA]:</strong> "Na próxima quarta-feira, 11/11, às 20h, vou fazer uma aula ao vivo abrindo essa metodologia. Toque aqui para fazer o quiz 'Por que meu inglês trava?' e garantir sua vaga."</p>
+                            </div>
+                        </div>
+                        <button onclick="copyElementText('copy-ad-2')" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-400 font-bold text-xs border border-slate-700 transition">
+                            📋 Copiar Criativo 02
+                        </button>
+                    </div>
+
+                    <!-- Criativo 3 -->
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 flex flex-col justify-between space-y-4">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="px-2.5 py-1 rounded-full text-[11px] font-extrabold bg-emerald-500 text-slate-950">CRIATIVO 03 • O PDF DOS 20 BLOCOS</span>
+                                <span class="text-xs text-slate-400">40 seg</span>
+                            </div>
+                            <h4 class="text-base font-extrabold text-white">Presente Prático: 20 Chunks de Conversação</h4>
+                            <div class="bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-amber-300">
+                                <strong>🎬 Visual:</strong> Marcos mostrando no tablet ou celular a página do PDF "20 Blocos de Conversação".
+                            </div>
+                            <div id="copy-ad-3" class="space-y-2 text-xs text-slate-200 leading-relaxed bg-slate-950/60 p-3.5 rounded-xl border border-slate-800">
+                                <p><strong class="text-rose-400">[Gancho]:</strong> "Você sabia que 80% das conversas do dia a dia em inglês são sustentadas por apenas 20 blocos de linguagem?"</p>
+                                <p><strong class="text-amber-400">[Mecanismo]:</strong> "Quando você domina esses blocos, você para de traduzir palavra por palavra e sua resposta sai no automático, com naturalidade e confiança."</p>
+                                <p><strong class="text-emerald-400">[O Presente]:</strong> "Eu resumi essa estrutura no 'PDF 20 Blocos de Conversação', que você recebe de presente ao responder o teste rápido 'Por que meu inglês trava?'."</p>
+                                <p><strong class="text-blue-400">[CTA]:</strong> "Toque no link, descubra o seu perfil e garanta seu passe gratuito para a aula ao vivo de quarta, 11/11."</p>
+                            </div>
+                        </div>
+                        <button onclick="copyElementText('copy-ad-3')" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-400 font-bold text-xs border border-slate-700 transition">
+                            📋 Copiar Criativo 03
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
