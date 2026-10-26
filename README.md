@@ -1,37 +1,51 @@
-# Mala de Londres: Cultura e Idioma 🇬🇧🧳
+# Mala de Londres: Cultura e Idioma 🇬🇧
 
-Hub Estratégico & Simulador Interativo de Lançamento Semente para o treinamento do **Prof. Marcos Lobão**.
+Hub Estratégico & Simulador Oficial de Lançamento Semente — **Prof. Marcos Lobão**.
 
 ---
 
-## 🎯 Posicionamento & ROMA Oficial
+## ⚠️ O Ponto Principal da Estratégia
+* **NÃO é curso de viagem:** É um curso/treinamento de inglês com **cultura e idioma**. O Prof. Marcos Lobão ensina inglês através da cultura britânica e das suas histórias reais de Londres (Savoy Hotel, bastidores de shows, Britpop e vivência internacional).
+* **O Aluno-Alvo:** É quem **já estudou inglês e trava na hora de falar** (em reuniões de trabalho, entrevistas de emprego ou conversas do dia a dia). **Não é o turista.**
+* **Produtos fora:** O *Pop Travel* está na gaveta e não entra neste lançamento (nem como downsell). O nome *Backstage English* não existe mais.
 
+---
+
+## 🎯 ROMA Oficial (Usar igual em tudo)
 > **"Eu te ajudo a destravar o seu inglês e falar com confiança em 90 dias."**
 
-* **Público-Alvo:** Adultos que já estudaram inglês em cursinhos tradicionais, entendem livros, músicas e séries, mas **travam na hora de conversar**.
-* **Mecanismo Único:** Vivência real dos 4 anos em Londres trabalhando no clássico **Savoy Hotel** + Domínio dos **Chunks de Conversação** (blocos prontos que eliminam a tradução mental).
-* **Posicionamento de Entrada:** Sem uso da palavra "grátis" e sem a falsa ancoragem de R$ 197. A entrada é via **Quiz "Por que meu inglês trava?"** (8 perguntas, 4 perfis), concedendo um passe exclusivo de participante para quem concluir.
-* **Isca / Presente:** **PDF: 20 Blocos de Conversação (Chunks)**.
+---
+
+## 📅 As 4 Datas Oficiais do Lançamento
+1. **Captação:** 28/10 a 11/11
+2. **Webinário Ao Vivo:** Quarta-feira, **11/11, às 20h** (gratuito)
+3. **Fechamento de Carrinho:** Domingo, **15/11**
+4. **Início da Turma:** Quarta-feira, **25/11**
 
 ---
 
-## 📅 Datas & Oferta Oficial (Turma Fundadora)
-
-* **Webinário Ao Vivo:** Quarta-feira, **11/11, às 20h**.
-* **Fechamento de Carrinho:** Domingo, **15/11**.
-* **Escassez Real:** Apenas **20 vagas** para acompanhamento próximo.
-* **Preço Individual:** **R$ 497,00 à vista** (ou 12x no cartão).
-* **Opção Dupla (Você + 1 Amigo):** **R$ 797,00 à vista** (R$ 398,50 por pessoa).
-* **Dupla Garantia:** 7 dias incondicional + Garantia Condicional de 90 Dias de conversação.
+## 📦 Produto & Condições Comerciais (Hotmart)
+* **Nome do Produto:** *Mala de Londres: Cultura e Idioma — Turma Fundadora*
+* **Vaga Individual:** **R$ 497,00 à vista** (ou 12x no cartão de crédito via Hotmart).
+* **Opção Dupla (Você + 1 Amigo/Parceiro):** **R$ 797,00 à vista** (apenas R$ 398,50 por vaga).
+* **Vagas Limitadas:** Apenas **20 vagas** abertas para a Turma Fundadora.
+* **Dupla Garantia:** 
+  * Garantia incondicional de 7 dias (basta 1 e-mail na Hotmart).
+  * Garantia condicional de 90 dias de conversação com o Prof. Marcos Lobão.
+* **Sem OTO, sem downsell e sem falso selo de R$ 197.**
 
 ---
 
-## 🛠️ Arquitetura das 7 Abas do Simulador
+## 🔁 Arquitetura do Funil
+`Anúncio` → `Quiz "Por que meu inglês trava?" (8 perguntas, 4 perfis)` → `Página de Obrigado + PDF 20 Blocos + Grupo VIP de WhatsApp` → `Aquecimento com bastidores do Savoy Hotel e shows de Londres` → `Webinário Ao Vivo (11/11 • 20h)` → `Checkout Hotmart`
 
-1. **🎯 1. Nova ROMA & Posicionamento:** A promessa oficial, variações estratégicas e o novo enquadramento de valor sem falsas ancoragens.
-2. **📢 2. Criativos (Ads):** Roteiros de tráfego pago focados no quiz de identificação da trava e na história do Savoy Hotel.
-3. **💻 3. LP de Captura & Quiz Interativo:** Quiz funcional de 8 perguntas calculando 4 perfis em tempo real com captura de lead e entrega do PDF 20 Blocos.
-4. **📲 4. Obrigado & WhatsApp:** Histórias de bastidores de Londres e do Savoy Hotel preparando para o evento do dia 11/11.
-5. **🔴 5. Sala da Live (11/11 • 20h):** Sala de transmissão com player incorporado do YouTube, entrega do PDF 20 Blocos e botão programado para a oferta.
-6. **🛒 6. Oferta Turma Fundadora:** Página de checkout direto na primeira dobra com as opções Individual (R$ 497) e Dupla (R$ 797).
-7. **🎨 7. Ideias de Design (UI/UX):** Diretrizes estéticas "British Vintage & Savoy Heritage".
+---
+
+## 💻 Abas do Simulador Online
+1. **🎯 1. O Ponto Principal & ROMA:** O posicionamento oficial, a ROMA blindada e o cronograma das 4 datas.
+2. **📢 2. Criativos (Ads):** Roteiros de tráfego pago convidando para o teste da trava.
+3. **💻 3. LP de Captura & Quiz Interativo:** Quiz funcional de 8 perguntas e cálculo de 4 perfis com formulário do passe e envio do PDF 20 Blocos.
+4. **📲 4. Obrigado & WhatsApp:** Histórias do Savoy Hotel e bastidores de shows em Londres.
+5. **🔴 5. Sala da Live (11/11 • 20h):** Player do YouTube, download do PDF 20 Blocos e botão programado para a oferta da Turma Fundadora.
+6. **🛒 6. Oferta Turma Fundadora (Hotmart):** Página de vendas com checkout logo na primeira dobra (Individual R$ 497 / Dupla R$ 797).
+7. **🎨 7. Ideias de Design (UI/UX):** Diretrizes visuais "British Vintage & Savoy Heritage".
