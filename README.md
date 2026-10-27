@@ -1,60 +1,92 @@
 # Mala de Londres: Cultura e Idioma 🇬🇧
+### Hub Estratégico & Simulador Oficial de Lançamento Semente — Prof. Marcos Lobão & Anderson
 
-Hub Estratégico & Simulador Oficial de Lançamento Semente — **Prof. Marcos Lobão**.
-
----
-
-## ⚠️ O Ponto Principal da Estratégia
-* **NÃO é curso de viagem:** É um curso/treinamento de inglês com **cultura e idioma**. O Prof. Marcos Lobão ensina inglês através da cultura britânica e das suas histórias reais de Londres (Savoy Hotel, bastidores de shows, Britpop e vivência internacional).
-* **O Aluno-Alvo:** É quem **já estudou inglês e trava na hora de falar** (em reuniões de trabalho, entrevistas de emprego ou conversas do dia a dia). **Não é o turista.**
-* **Produtos fora:** O *Pop Travel* está na gaveta e não entra neste lançamento (nem como downsell). O nome *Backstage English* não existe mais.
+Plataforma interativa executiva e protótipo de alta fidelidade para o lançamento semente do treinamento **Mala de Londres: Cultura e Idioma**, 100% alinhado ao **Briefing Anderson (27 de outubro de 2026)**.
 
 ---
 
-## 🎯 ROMA Oficial (Usar igual em tudo)
+## ⚠️ 1. O Ponto Principal da Estratégia
+* **NÃO é curso de viagem:** É um curso/treinamento de inglês com **cultura e idioma**. O Prof. Marcos Lobão ensina inglês através da cultura britânica e das suas histórias reais de Londres (bastidores do lendário **Savoy Hotel**, banquete para 500 pessoas de black tie, shows de rock britânico e vivência cotidiana).
+* **O Aluno-Alvo:** É o profissional que **já estudou inglês e trava na hora de falar** (em reuniões de trabalho, entrevistas de emprego ou conversas espontâneas). **Não é o turista.**
+* **Produtos fora:** O *Pop Travel* está na gaveta e não entra neste lançamento (nem como downsell). O nome *Backstage English* não existe mais. Sem selo falso de R$ 197.
+
+---
+
+## 🎯 2. ROMA Oficial (Usar igual em tudo, palavra por palavra)
 > **"Eu te ajudo a destravar o seu inglês e falar com confiança em 90 dias."**
 
 ---
 
-## 📱 Estratégia de Mídia Orgânica & Tráfego Pago (Meta Ads)
-1. **Mídia Viral no Instagram (Reels no Estilo Conversa):** Roteiros descontraídos abordando o sentimento de "ser inteligente no Brasil e se sentir burro em inglês", histórias do Savoy Hotel e a quebra de regras gramaticais com Chunks. Todos os vídeos encerram com a **ROMA oficial** e chamada para o Quiz no link da bio.
-2. **Configuração Técnica no Meta Ads (Público Aberto → Pixel → Remarketing):**
-   * **Fase 1 (Início da Captação 28/10):** 70% da verba em Público Aberto (Brasil, 25-52 anos) e Interesses em Cursinhos/Idiomas (CNA, Cultura Inglesa, Duolingo, Business English) para alimentar o Pixel com volume de dados.
-   * **Fase 2 (Otimização):** 20% da verba em Públicos Personalizados (Engajamento Instagram 365d, Vídeo Views 50%+) e Lookalike 1% do evento `Lead`.
-   * **Fase 3 (Véspera e Webinário 11/11):** 10% da verba em Remarketing de abandono de quiz e lembretes de "É Amanhã" / "Estamos Ao Vivo".
+## 📄 e 📊 3. Motor Nativo de Exportação para Microsoft Word (.doc) e Excel (.xls)
+Para facilitar o trabalho do Prof. Marcos Lobão e da equipe:
+* **Botões Individuais em Cada Roteiro:** 
+  * 📋 **Copiar:** Copia o texto para a área de transferência.
+  * 📄 **Word (.doc):** Gera e baixa instantaneamente um documento formatado para o Microsoft Word, com cabeçalho oficial, dicas de gravação e texto do roteiro.
+  * 📊 **Excel (.xls):** Gera e baixa uma planilha formatada com colunas de ID, Emoção, Gancho, Roteiro e Status de Gravação.
+* **Exportação Global em Lote (1-Clique):**
+  * 📄 **Apostila Completa em Word (.doc):** Exporta todos os 8 criativos ou todos os Reels em um único documento pronto para leitura e impressão.
+  * 📊 **Planilha de Gravação no Excel (.xls):** Exporta todos os roteiros estruturados em tabela para acompanhamento de produção.
 
 ---
 
-## 📅 As 4 Datas Oficiais do Lançamento
-1. **Captação:** 28/10 a 11/11
-2. **Webinário Ao Vivo:** Quarta-feira, **11/11, às 20h** (gratuito)
-3. **Fechamento de Carrinho:** Domingo, **15/11**
-4. **Início da Turma:** Quarta-feira, **25/11**
+## 🎬 4. Os 8 Criativos Patrocinados para o Meta Ads
+1. **Criativo 01 — Convite Clássico (Olhando para a câmera):** Emoção de confiança. Foco em quem estudou anos e trava.
+2. **Criativo 02 — Apontar o Problema:** Alívio. O erro de montar a frase em português antes de falar ("What do you think?").
+3. **Criativo 03 — A Reunião (A Dor do Avatar):** Identificação profunda. 15 anos de carreira e na call só sai *"Yes, I agree"*.
+4. **Criativo 04 — "Marcos, libera uma aula de inglês pra nós!":** Entusiasmo e quebra de padrão com histórias reais do Savoy e a ROMA oficial.
+5. **Criativo 05 — Savoy, 1989 (A História Real):** Curiosidade. Chegada em Londres, banquete de 500 pessoas de black tie e o garçom português.
+6. **Criativo 06 — Choque Cultural em Londres (Humor Britânico):** O enigma do *"Sorry!"*, a etiqueta do metrô (Tube) e a quebra de regras gramaticais da apostila.
+7. **Criativo 07 — Estudo de Caso (Prova Social):** Aluno que travava em reuniões internacionais e áudio comemorando o resultado.
+8. **Criativo 08 — O Segredo dos 20 Blocos (O Presente):** Demonstração dos Smart Chunks e chamada para o PDF gratuito no fim do Quiz.
 
 ---
 
-## 📦 Produto & Condições Comerciais (Hotmart)
-* **Nome do Produto:** *Mala de Londres: Cultura e Idioma — Turma Fundadora*
-* **Vaga Individual:** **R$ 497,00 à vista** (ou 12x no cartão de crédito via Hotmart).
-* **Opção Dupla (Você + 1 Amigo/Parceiro):** **R$ 797,00 à vista** (apenas R$ 398,50 por vaga).
-* **Vagas Limitadas:** Apenas **20 vagas** abertas para a Turma Fundadora.
-* **Dupla Garantia:** 
-  * Garantia incondicional de 7 dias (basta 1 e-mail na Hotmart).
-  * Garantia condicional de 90 dias de conversação com o Prof. Marcos Lobão.
-* **Sem OTO, sem downsell e sem falso selo de R$ 197.**
+## 📱 5. Construção de Mídia no Instagram (4 Reels Virais)
+* **Reels 01:** *"Por que quem é inteligente no Brasil se sente burro em inglês?"* (Desabafo do Aluno • ~60 seg)
+* **Reels 02:** *"A lição que tomei no Savoy Hotel em Londres"* (História dos Bastidores • ~60 seg)
+* **Reels 03:** *"O teste prático: você não precisa de mais gramática"* (Demonstração dos 20 blocos • ~50 seg)
+* **Reels 04 (Novo):** *"A pegadinha do Pub em Londres & A regra do 'Cheers'"* (Humor britânico, dica prática de inglês da vida real sem tribunal de gramática e chamada para a bio para fazer o quiz).
 
 ---
 
-## 🔁 Arquitetura do Funil
-`Reels Orgânico / Anúncio Meta Ads` → `Quiz "Por que meu inglês trava?" (8 perguntas, 4 perfis)` → `Página de Obrigado + PDF 20 Blocos + Grupo VIP de WhatsApp` → `Aquecimento com bastidores do Savoy Hotel e shows de Londres` → `Webinário Ao Vivo (11/11 • 20h)` → `Checkout Hotmart`
+## ⚙️ 6. Configuração de Tráfego Pago no Meta Ads (4 Campanhas Oficiais)
+1. **Campanha 1 • Captação Fria (30/10 a 8/11 • 70% da Verba):** Brasil, 30 a 55 anos. Interesses: inglês, Londres, cultura britânica, Britpop, carreira internacional e Lookalike. Criativos 1 a 4.
+2. **Campanha 2 • Remarketing (5 a 11/11 • 20% da Verba):** Quem viu 50% dos vídeos ou visitou a LP do quiz e não concluiu.
+3. **Campanha 3 • Lembrete (10 e 11/11 • 10% da Verba):** Inscritos (*"É hoje às 20h"*).
+4. **Campanha 4 • Carrinho (12 a 15/11):** Inscritos e quem assistiu à live mas não comprou.
+* **Metas de CPL:** R$ 6 a R$ 8 por inscrito. Pausar qualquer anúncio acima de R$ 8.
 
 ---
 
-## 💻 Abas do Simulador Online
-1. **🎯 1. O Ponto Principal & ROMA:** O posicionamento oficial, a ROMA blindada e o cronograma das 4 datas.
-2. **📢 2. Mídia, Tráfego Pago & Ads:** Roteiros virais para Instagram, configuração técnica do funil no Meta Ads e criativos do Quiz.
-3. **💻 3. LP de Captura & Quiz Interativo:** Quiz funcional de 8 perguntas e cálculo de 4 perfis com formulário do passe e envio do PDF 20 Blocos.
-4. **📲 4. Obrigado & WhatsApp:** Histórias do Savoy Hotel e bastidores de shows em Londres.
-5. **🔴 5. Sala da Live (11/11 • 20h):** Player do YouTube, download do PDF 20 Blocos e botão programado para a oferta da Turma Fundadora.
-6. **🛒 6. Oferta Turma Fundadora (Hotmart):** Página de vendas com checkout logo na primeira dobra (Individual R$ 497 / Dupla R$ 797).
-7. **🎨 7. Ideias de Design (UI/UX):** Diretrizes visuais "British Vintage & Savoy Heritage".
+## 💻 7. LP de Captura & Quiz Oficial (8 Perguntas e 4 Perfis)
+* **Selo:** *Aula fechada • Quarta, 11 de novembro • 20h • Ao vivo*
+* **Âncora:** *"O que eu ensino nesta aula é o que os meus alunos particulares aprendem a R$ 190 por aula. Nesta edição, a entrada é por convite."*
+* **As 8 Perguntas Oficiais do Quiz:**
+  1. O que acontece primeiro quando alguém fala inglês com você?
+  2. Como se sente quando erra na frente dos outros?
+  3. Você entende melhor inglês como?
+  4. Numa reunião em inglês, o que você normalmente faz?
+  5. Quanto tempo por semana você fala inglês de verdade?
+  6. O que mais te incomoda?
+  7. Como estudou inglês até hoje?
+  8. O que você mais quer conseguir?
+* **Os 4 Perfis Oficiais:**
+  * **(M) Travado pelo Medo**
+  * **(T) Travado pela Tradução**
+  * **(O) Travado pelo Ouvido**
+  * **(P) Travado pela Falta de Prática**
+
+---
+
+## 🛒 8. Oferta Turma Fundadora (Hotmart)
+* **Vaga Individual:** **R$ 497,00 à vista** ou em até 12x no cartão.
+* **Opção Dupla (2 vagas):** **R$ 797,00 à vista** (apenas R$ 398,50 por pessoa • máximo 5 duplas).
+* **Vagas:** Apenas **20 vagas** abertas.
+* **Garantia:** Incondicional de 7 dias + condicional de 90 dias de conversação.
+* **Comparação de Valor:** 12 aulas particulares R$ 2.280 ➔ Próxima turma R$ 997 ➔ Turma Fundadora R$ 497.
+
+---
+
+## 🌐 Deploy e Repositório
+* **Site no ar (Vercel Produção):** [https://simulador-mala-de-londres.vercel.app](https://simulador-mala-de-londres.vercel.app)
+* **Repositório GitHub:** [anderson11sf-bot/simulador-mala-de-londres](https://github.com/anderson11sf-bot/simulador-mala-de-londres)
